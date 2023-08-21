@@ -1,0 +1,153 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    padding: 0 2rem;
+}
+
+.nav-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.nav-container a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-links {
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.form-inner {
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    gap: 8px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.form-body {
+    grid-template-columns: 1fr;
+}
+
+.form-inner > h2 {
+    padding-bottom: 5px;
+    color: white;
+    font-size: xx-large;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.form-inner > pre {
+    padding-bottom: 5px;
+    color: white;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.form-inner *{
+    color: white;
+}
+
+.form-inner > button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+.form-inner > p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    color: white;
+}
+
+.form-inner > p.left {
+    text-align: left;
+}
+
+.form-inner input, .form-inner select {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(/static/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo{
+    z-index: 0;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    -webkit-box-shadow: 5px 11px 44px 37px rgba(96,255,5,0.7); 
+    box-shadow: 5px 11px 44px 37px rgba(96,255,5,0.7);
+    transition: 0.5s;
+}
