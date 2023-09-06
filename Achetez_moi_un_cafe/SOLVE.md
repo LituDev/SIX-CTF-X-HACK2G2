@@ -1,4 +1,4 @@
-# Solve
+# Solve - Achetez moi un café
 
 Pour m'acheter un café, vous aviez plusieurs solutions.
 

@@ -1,8 +1,10 @@
-# Auteur : Neoreo
-# Type : Misc
-# Difficulté : Hard
+# Who's that Pokemon ?
 
-# Enoncé : 
+Auteur : Neoreo  
+Type : Misc  
+***Difficulté : Difficile***
+
+### Enoncé : 
 
 ***J'ai perdu ma Nintendo DS et j'ai besoin de retrouver le nom que j'avais donné à mon Motisma  
 Heureusement, j'ai retrouvé une vieille sauvegarde de mon aventure. Comme je suis nul avec les ordinateurs, j'ai besoin d'aide***

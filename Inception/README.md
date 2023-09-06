@@ -1,8 +1,10 @@
-# Autheur : Neoreo
-# Type : Steganographie
-# Difficulté : Easy
+# Inception
 
-# Enoncé : 
+Auteur : Neoreo  
+Type : Steganographie  
+***Difficulté : Facile***
+
+### Enoncé : 
 
 ***Je viens de trouver un sac par terre, qu'est ce qu'il y a dedans ?***
 

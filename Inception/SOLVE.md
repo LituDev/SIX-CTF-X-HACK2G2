@@ -1,4 +1,4 @@
-# Solve :
+# Solve - Inception
 
 It requires a basic usage of steghide, a common tool in steganography
 
