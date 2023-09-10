@@ -1,0 +1,31 @@
+{
+    "name": "shockedplot7560/labyrinth-level1",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ShockedPlot7560",
+            "email": "66992287+ShockedPlot7560@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lib\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "lib\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "shockedplot7560/perlin-noise": "^1.0",
+        "react/socket": "^1.12",
+        "shockedplot7560/monolog-colored": "^1.1",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

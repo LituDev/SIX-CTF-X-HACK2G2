@@ -1,0 +1,4 @@
+vendor/
+tests/
+logs/
+.php-cs-fixer.*
