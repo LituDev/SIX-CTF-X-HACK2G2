@@ -1,0 +1,63 @@
+img {
+    height: 430px;
+    display: block; /* Assurez-vous que l'image est un élément de bloc (par défaut pour les balises <img>) */
+  margin-left: auto; /* Marge gauche automatique */
+  margin-right: auto; /* Marge droite automatique */
+  text-align: center;
+  font-size: 30px ;
+  color: #aaa;
+}
+
+h1 {
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: -0.3vw;
+    margin-top: -0vw;
+}
+
+h2 {
+    text-align: center;
+    color: #ff0000;
+}
+
+h3 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+button {
+    text-align: center;
+    width: 100px;
+    margin: 10px;
+    min-width: 100px;
+    border-radius: 5px;
+    height: 30px;
+    
+}
+
+.bouton-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+body {
+    background-image: linear-gradient(to bottom, #ffffff, #555); /* Dégradé en arrière-plan */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* L'arrière-plan reste fixe pendant le défilement */
+    font-family: Arial, sans-serif; /* Police de caractères pour le texte sur l'arrière-plan */
+    
+  }
+
