@@ -1,7 +1,7 @@
 L'association sportive a sorti une nouvelle application web pour ses participants.  
 On vous a demandé de la testé, retrouver le nom prénom lié à l'administrateur.
 
-> Format du flag: ``xxxxx{nom_prenom}`` où nom et prénom sont en minuscule et sans accent.
+> Format du flag: ``IUT{nom_prenom}`` où nom et prénom sont en minuscule et sans accent.
 
 
 ## Solution

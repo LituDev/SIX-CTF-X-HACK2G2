@@ -54,8 +54,8 @@ RUN usermod -u 1000 apache;
 
 # Setup apache
 COPY build/virtual_host.conf /etc/apache2/httpd.conf
-#Replace krhackDOMAIN with your domain
-RUN sed -i "s/krhackctfDomain/${APACHE_SERVER_NAME}/g" /etc/apache2/httpd.conf
+#Replace iutDomain with your domain
+RUN sed -i "s/iutDomain/${APACHE_SERVER_NAME}/g" /etc/apache2/httpd.conf
 
 # copy files
 COPY controllers/ /var/www/html/controllers/
