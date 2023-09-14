@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Test des Headers HTTP</title>
+    <title>SUPER SECRET</title>
     <style>
         body {
             background-color: #FFDDC1; /* Couleur chair */
@@ -16,7 +16,9 @@
             background-color: #FFFFFF; /* Fond blanc */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
+        
     </style>
 </head>
 
@@ -24,11 +26,12 @@
 
 <body>
     <div class="container">
-        <h1>Test des Headers HTTP</h1>
+        <h1>INTERDIT AUX VISITEURS</h1>
         <?php
             // Vérification du header User-Agent
             if (!isset($_SERVER['HTTP_USER_AGENT']) || $_SERVER['HTTP_USER_AGENT'] !== 'kaz.bzh') {
-                echo "<p>Vous n'utilisez pas le navigateur kaz.bzh</p>";
+                echo "<p>Vous n'utilisez pas le navigateur kaz.bzh</p>\n";
+                echo '<img src="who_are_you.png" alt="Who are you ?" width="500">' ;
                 die();
             } 
 

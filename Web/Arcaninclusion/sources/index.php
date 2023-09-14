@@ -12,25 +12,24 @@
     <h1>Galerie Pokémon</h1>
 
     <p> Je sais pas si vous avez remarqué mais j'aime bien les challs sur les Pokémon <br>
-     Pour la peine, voici quelques images de Pokémon <br>
+     Pour la peine, voici quelques images de Pokémons <br>
      N'hésitez pas à vous détendre durant le CTF, n'oubliez pas de vous hydrater <br>
-     Vous pouvez aussi hydrater les PCs de vos concurrents mais je ne serai pas tenu pour responsable eheh <br>
-     Souvent, ma maman me dit que j'ai besoin d'une douche <br>
-     Je viens tout juste d'apprendre les bases du PHP pour vous faire ce site <br>
+     Vous pouvez aussi hydrater les PC de vos concurrents mais je ne serai pas tenu pour responsable eheh :)) <br>
+     Je viens tout juste d'apprendre les bases du PHP pour vous faire ce site, j'ai bien besoin d'une douche<br>
      En plus PHP c'est invulnérable comme langage <br>
      Point Faible : Trop Fort <br>
-     Désolé ça pique un peu les yeux mais ça fait parti du chall :)</p>
+     Désolé ça pique un peu les yeux mais c'est hess hess</p>
 
     <div class="bouton-container">
     <?php
     // Boucle pour générer les boutons et leurs liens
     for ($i = 1; $i <= 10; $i++) {
         $imageName = "Pokemon" . $i . ".jpeg";
-        echo '<button onclick="window.location.href=\'index.php?img=' . $imageName . '\'">Pokémon ' . $i . '</button><br>';    }
-    ?>
-    </div>
+        echo '<button onclick="window.location.href=\'index.php?img=' . $imageName . '\'">Pokémon ' . $i . '</button><br>';   
+    }
+    
+    echo "</div>";
 
-    <?php
     function neContientAucunRepertoireLinux($chaine) {
         // Liste des répertoires Linux à exclure
         $repertoiresLinux = array('root', 'bin', 'boot', 'dev', 'etc', 'home', 'lib', 'mnt', 'tmp', 'var');
