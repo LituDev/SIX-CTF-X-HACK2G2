@@ -23,7 +23,7 @@ ou
 
 ***Avec Jhon the Ripper***  
 ```bash
-# On doit fusionner les deux fichiers
+# On doit fusionner les deux fichiers avec unshadow
 unshadow passwd shadow > unshadowed.txt
 # On crack depuis le fichier
 john --format=sha512crypt --wordlist=/usr/share/wordlists/rockyou.txt unshadow

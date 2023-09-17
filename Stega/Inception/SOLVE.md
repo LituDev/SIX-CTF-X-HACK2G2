@@ -26,4 +26,5 @@ Open them
 eog Card.png 
 cat flag.txt
 ```
-## Flag 6PHACK{charizard_p0k3m0n_4r3_gr34t}
+## Flag IUT{charizard_p0k3m0n_4r3_gr34t}
+Note : dracaufeu works as well as charizard
