@@ -2,7 +2,7 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "{{I need some infos}}"
+name: "{{INeedSomeInfos}}"
 author: "Neoreo"
 category: Web
 description: Récupère le flag
