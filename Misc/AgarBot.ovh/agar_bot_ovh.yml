@@ -78,7 +78,7 @@ flags:
 # They are generally only visible to admins
 # Accepts strings
 topics:
-    - HTTP basics
+    - botting
     # - buffer overflow
     # - memory forensics
 
@@ -100,10 +100,6 @@ tags:
 # Can be removed if unused
 # Accepts dictionaries or strings
 hints:
-    - {
-        content: "Modifie les headers HTTP",
-        cost: 15
-    }
     # - This hint is free
 
 # Requirements are used to make a challenge require another challenge to be
