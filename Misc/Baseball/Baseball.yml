@@ -2,11 +2,11 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "{{I need some infos}}"
+name: "{{Baseball}}"
 author: "Neoreo"
-category: Web
-description: Récupère le flag
-value: 100
+category: Misc
+description: J'ai besoin de dire ce qu'il faut faire ?
+value: 50
 type: standard
 
 # The extra field provides additional fields for data during the install/sync commands/
@@ -23,19 +23,19 @@ type: standard
 # If you have a Dockerfile set to .
 # If you have an imaged hosted on Docker set to the image url (e.g. python/3.8:latest, registry.gitlab.com/python/3.8:latest)
 # Follow Docker best practices and assign a tag
-image: .
+# image: .
 
 # Specify a protocol that should be used to connect to the running image
 # For example if the image is a website you can specify http or https
 # Otherwise you can specify tcp
-protocol: http
+# protocol: http
 
 # Specify a host to deploy the challenge onto.
 # The currently supported URI schemes are ssh:// and registry://
 # ssh is an ssh URI where the above image will be copied to and deployed (e.g. ssh://root@123.123.123.123)
 # registry is a Docker registry tag (e.g registry://registry.example.com/test/image)
 # host can also be specified during the deploy process: `ctf challenge deploy challenge --host=ssh://root@123.123.123.123`
-host: null
+# host: null
 
 # Optional settings
 
@@ -55,7 +55,7 @@ host: null
 # Accepts strings or dictionaries of CTFd API data
 flags:
     # A static case sensitive flag
-    - IUT{7H3R3_4R3_JU57_S0M3_H77P_H3AD3R5}
+    - IUT{1_JU57_45K3D_54N74_CL4U5_F0R_C7F_P01N7S}
     # A static case sensitive flag created with a dictionary
     # - {
     #     type: "static",
@@ -78,7 +78,7 @@ flags:
 # They are generally only visible to admins
 # Accepts strings
 topics:
-    - HTTP basics
+    - Base decoding
     # - buffer overflow
     # - memory forensics
 
@@ -86,24 +86,24 @@ topics:
 # Can be removed if unused
 # Accepts strings
 tags:
-    - web
+    - Base
     # - sandbox
     # - js
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
-# files:
-#     - dist/source.py
+files:
+    - ./flag
 
 # Hints are used to give players a way to buy or have suggestions. They are not
 # required but can be nice.
 # Can be removed if unused
 # Accepts dictionaries or strings
-hints:
-    - {
-        content: "Modifie les headers HTTP",
-        cost: 15
-    }
+# hints:
+#     - {
+#         content: "Modifie les headers HTTP",
+#         cost: 15
+#     }
     # - This hint is free
 
 # Requirements are used to make a challenge require another challenge to be

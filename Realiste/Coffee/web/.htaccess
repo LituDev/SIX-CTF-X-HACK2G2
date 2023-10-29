@@ -1,0 +1,4 @@
+deny from all
+<Files "compiler.php">
+    Allow from all
+</Files>
