@@ -99,11 +99,11 @@ files:
 # required but can be nice.
 # Can be removed if unused
 # Accepts dictionaries or strings
-hints:
-    - {
-        content: "utilise "zsteg -a <fichier>"" et trouve les bons paramètres, puis utilise "zsteg <fichier> -e <parametres> > actions.txt" pour extraire les données cacher.",
-        cost: 15
-    }
+#hints:
+#     - {
+#         content: "Modifie les headers HTTP",
+#         cost: 15
+#     }
     # - This hint is free
 
 # Requirements are used to make a challenge require another challenge to be
