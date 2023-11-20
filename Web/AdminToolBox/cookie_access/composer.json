@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twig/twig": "^3.7",
+        "phpfastcache/phpfastcache": "^9.1"
+    }
+}

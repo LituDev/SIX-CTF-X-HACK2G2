@@ -1,0 +1,10 @@
+    Vos cookies sont:
+    <ul>
+        {% for key, cookie in cookies %}
+            <li><b>{{ key }}</b>: {{ cookie }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if cookies|length == 0 %}
+        <p>Aucun cookie n'est défini.</p>
+    {% endif %}

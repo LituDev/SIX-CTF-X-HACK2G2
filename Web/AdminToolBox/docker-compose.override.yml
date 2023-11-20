@@ -1,0 +1,58 @@
+version: "3.7"
+
+services:
+  cookie_access:
+    build:
+      args:
+        - DOMAIN_NAME=cookies.admin.local
+    volumes:
+      - ./cookie_access:/app
+    labels:
+      - "virtual.host=cookies.admin.local"
+      - "virtual.port=80"
+    environment:
+      ADMIN_PASSWORD: 1234
+
+  main:
+    build:
+      args:
+        - DOMAIN_NAME=admin.local
+    volumes:
+      - ./main:/app
+    labels:
+      - "virtual.host=admin.local"
+      - "virtual.alias=www.admin.local"
+      - "virtual.port=80"
+    environment:
+      COOKIES_DOMAIN: cookies.admin.local
+      AUTH_DOMAIN: auth.admin.local
+      BASE_DOMAIN: admin.local
+
+  creds:
+    build:
+      args:
+        - DOMAIN_NAME=auth.admin.local
+    volumes:
+      - ./creds:/app
+    labels:
+      - "virtual.host=auth.admin.local"
+      - "virtual.port=80"
+    environment:
+      ADMIN_HASH_PASSWORD: "$2y$10$l2.Q/fgJSoPV6hYw0e/V1.a3/.10ZvIcENV0GcusyfTpwxAsyRqbe"
+
+  caddy-gen:
+    container_name: caddy-gen
+    image: "wemakeservices/caddy-gen:latest"
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro # needs socket to read events
+      - ./caddy-info:/data/caddy # needs volume to back up certificates
+    ports:
+      - "80:80"
+    depends_on:
+      cookie_access:
+        condition: service_started
+      main:
+        condition: service_started
+      creds:
+        condition: service_started

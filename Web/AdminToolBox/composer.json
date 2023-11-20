@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "docker compose -f docker-compose.yml -f docker-compose.override.yml up -d",
+    "prod": "docker compose up -d --build"
+  }
+}
