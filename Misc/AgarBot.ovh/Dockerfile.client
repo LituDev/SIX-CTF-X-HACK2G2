@@ -1,0 +1,23 @@
+# Use the official node image as a base
+FROM node:bookworm-slim
+
+# Install git
+RUN apt update && \
+    apt install git -y
+
+# Set the working directory to /app/client
+WORKDIR /app/client
+
+# Clone the client repository
+RUN git clone https://github.com/Cigar2/Cigar2.git .
+
+COPY ./main_out.js /app/client/web/assets/js
+
+# Install npm packages for the client
+RUN npm install
+
+# Expose the client port
+EXPOSE 3000
+
+# Since the WORKDIR is /app/client, you can directly run the webserver.js
+CMD ["node", "webserver.js"]

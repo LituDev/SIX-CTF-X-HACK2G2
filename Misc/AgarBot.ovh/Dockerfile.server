@@ -1,0 +1,27 @@
+# Use the official node image as a base
+FROM node:bookworm-slim
+
+# Install git
+RUN apt update && \
+    apt install git -y
+
+# Set the working directory
+WORKDIR /app
+
+# Clone the server repository and install pm2 globally
+RUN git clone https://github.com/m-byte918/MultiOgarII.git server
+
+# Copy configuration files for the server
+COPY ./config.js /app/server/src
+COPY ./Server.js /app/server/src
+COPY ./Alert.js /app/server/src/packet
+COPY ./Player.js /app/server/src
+COPY ./index.js /app/server/src/packet
+
+# Install npm packages for the server
+RUN cd /app/server && npm install
+
+# Expose the server port
+EXPOSE 8080
+
+CMD ["node", "/app/server/src/index.js"]

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF December : Prompt Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #E0E7FF;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen">
+
+    <div id="snowflakes" class="absolute vh-100 inset-0 pointer-events-none z-10"></div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md w-1/2">
+        <h1 class="text-xl font-bold mb-5 text-center">CTF December : Prompt Engineer</h1>
+
+        <div class="mb-4 p-3 border rounded-md w-full bg-gray-100">
+            <p><strong>User:</strong> <span id="userMessage"></span></p>
+            <p><strong>SantaGPT:</strong> <span id="response"></span></p>
+        </div>
+
+        <input type="text" id="userInput" placeholder="Type your prompt..." class="p-2 border rounded-md w-full mb-4">
+        
+        <button onclick="sendMessage()" class="bg-red-500 text-white p-2 rounded-md w-full hover:bg-red-700 transition duration-300">Send</button>
+
+    </div>
+
+    <script>
+        const flakes = document.getElementById('snowflakes');
+        const count = 100; 
+        
+        for (let i = 0; i < count; i++) {
+            const flake = document.createElement('div');
+            flake.className = 'w-1 h-1 bg-white rounded-full';
+            flake.style.position = 'absolute';
+            flake.style.top = Math.random() * window.innerHeight + 'px';
+            flake.style.left = Math.random() * window.innerWidth + 'px';
+            flake.style.opacity = Math.random();
+            flakes.appendChild(flake);
+        }
+        
+        function animateSnowflakes() {
+            for (const flake of flakes.children) {
+                const speed = Math.random() * 2 + 1;
+                flake.style.top = parseFloat(flake.style.top) + speed + 'px';
+                
+                if (parseFloat(flake.style.top) > window.innerHeight - 30) {
+                    flake.style.top = '0px';
+                    flake.style.left = Math.random() * window.innerWidth + 'px';
+                }
+            }
+            requestAnimationFrame(animateSnowflakes);
+        }
+        
+        animateSnowflakes();
+
+        async function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            document.getElementById('userMessage').innerText = userInput;
+
+            try {
+                const response = await fetch('/ai', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ user: userInput })
+                });
+
+                const data = await response.json();
+                document.getElementById('response').innerText = data.response;
+
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        document.getElementById('userInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+
+</html>
