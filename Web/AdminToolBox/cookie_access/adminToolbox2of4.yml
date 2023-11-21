@@ -5,7 +5,7 @@
 name: "{{Admin Toolbox 2/4}}"
 author: "ShockedPlot7560"
 category: Web
-description: Récupérer le token de l'admin
+description: Récupérer le token de l'admin qui se connecte régulièrement sur le site depuis un VPN qui se trouve sur le serveur
 value: 500
 type: dynamic
 
