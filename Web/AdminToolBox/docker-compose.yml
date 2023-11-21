@@ -24,6 +24,7 @@ services:
     environment:
       COOKIES_DOMAIN: cookies.admin.sixctf.event
       AUTH_DOMAIN: auth.admin.sixctf.event
+      CALCULATOR_DOMAIN: calculator.admin.sixctf.event
       BASE_DOMAIN: admin.sixctf.event
 
   creds:
@@ -37,3 +38,13 @@ services:
       FLAG: flag{this_is_a_flag}
       JWT_SECRET: the_jwt_secret_from_env
       ADMIN_HASH_PASSWORD: admin_password
+
+  calculator:
+    hostname: calculator
+    build:
+      context: calculator
+      dockerfile: Dockerfile
+      args:
+        - DOMAIN_NAME=calculator.admin.sixctf.event
+    environment:
+      FLAG: flag{this_is_a_flag}

@@ -25,6 +25,7 @@ services:
       - "virtual.port=80"
     environment:
       COOKIES_DOMAIN: cookies.admin.local
+      CALCULATOR_DOMAIN: calculator.admin.local
       AUTH_DOMAIN: auth.admin.local
       BASE_DOMAIN: admin.local
 
@@ -39,6 +40,16 @@ services:
       - "virtual.port=80"
     environment:
       ADMIN_HASH_PASSWORD: "$2y$10$l2.Q/fgJSoPV6hYw0e/V1.a3/.10ZvIcENV0GcusyfTpwxAsyRqbe"
+
+  calculator:
+    build:
+      args:
+        - DOMAIN_NAME=calculator.admin.local
+    volumes:
+      - ./calculator:/app
+    labels:
+      - "virtual.host=calculator.admin.local"
+      - "virtual.port=80"
 
   caddy-gen:
     container_name: caddy-gen

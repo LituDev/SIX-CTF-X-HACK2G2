@@ -106,6 +106,22 @@ if(isset($_GET["logout"])){
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-6">
+                    <div class="card">
+                        <div class="card-header p-3 pt-2">
+                            <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
+                                <i class="material-icons opacity-10">weekend</i>
+                            </div>
+                            <div class="text-end pt-1">
+                                <p class="text-sm mb-0 text-capitalize">Calculateur</p>
+                            </div>
+                        </div>
+                        <hr class="dark horizontal my-0">
+                        <div class="card-footer p-3">
+                            <iframe src="http://<?= $_ENV["CALCULATOR_DOMAIN"] ?>"  frameborder="0" style="width: 100%"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
