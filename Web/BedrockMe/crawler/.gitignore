@@ -1,0 +1,3 @@
+node_modules/
+puppeteer_data/
+session.json

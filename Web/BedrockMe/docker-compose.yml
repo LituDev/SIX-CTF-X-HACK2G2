@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  server:
+    image: ghcr.io/pmmp/pocketmine-mp
+    hostname: localserver
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - ./plugins:/plugins
+
+  web:
+    build:
+      context: web
+      dockerfile: Dockerfile
+    hostname: localweb
+    ports:
+      - 80:80
+
+  admin_crawler:
+    build:
+      context: crawler
+    environment:
+      FLAG: "IUT{J3nTenD_P4s_L3s_R4g3ux_MC_B4dR0ck_c4st_M1eUx}"

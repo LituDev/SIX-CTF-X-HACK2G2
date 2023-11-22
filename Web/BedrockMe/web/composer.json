@@ -1,0 +1,9 @@
+{
+    "minimum-stability": "dev",
+    "require": {
+        "xpaw/php-minecraft-query": "dev-master",
+        "phpfastcache/phpfastcache": "^9.1",
+        "jasonw4331/libpmquery": "dev-master",
+        "pocketmine/raklib": "dev-stable"
+    }
+}
