@@ -2,14 +2,20 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "{{CacheCache}}"
+name: "Who's that Pokemon ?"
 author: "Neoreo"
-category: Misc
-description: 
-"
-Un petit filou a caché des données dans le fichier, retrouvez les
+category: Forensic
+description: "
+J'ai perdu ma Nintendo DS et j'ai besoin de retrouver le nom que j'avais donné à mon Motisma.
+Heureusement, j'ai retrouvé une vieille sauvegarde de mon aventure. 
+Comme je suis nul avec les ordinateurs, j'ai besoin d'aide.
 
-**Author :** Neoreo"
+Format du flag (Tout en majuscule) -> IUT{NOMDUMOTISMA}
+Les caractères spéciaux ne changent pas
+Exemple -> IUT{M3RC10L_THE_M4GN1F1C13N7}
+
+**Author :** Neoreo
+"
 
 value: 500
 type: dynamic
@@ -25,17 +31,29 @@ extra:
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{4H_B4H_L4_C'357_C4CH3}
+    - IUT{J41-4D0RE}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Hide HTML tags
+    - Pokemon Platinum save
+    - DeSmuME
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Misc
+    - Forensic
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./CacheCache.txt
+    - ./sauvegarde.dst
+
+# Hints are used to give players a way to buy or have suggestions. 
+hints:
+    - {
+        content: "J'utilisais un émulateur pour ordinateur connu",
+        cost: 40
+    }
+    - {
+        content: "Dialga, Palkia ou ... ?",
+        cost: 60
+    }
