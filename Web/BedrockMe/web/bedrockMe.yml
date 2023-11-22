@@ -92,8 +92,8 @@ tags:
 
   # Provide paths to files from the same directory that this file is in
   # Accepts strings
-  # files:
-  #     - dist/source.py
+files:
+    - index.php
 
   # Hints are used to give players a way to buy or have suggestions. They are not
   # required but can be nice.

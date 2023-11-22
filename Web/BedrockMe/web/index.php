@@ -2,7 +2,7 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-# hide all errors
+error_reporting(0);
 
 const SESSION_ID = 2;
 const TYPE_HANDSHAKE = 0x09;
@@ -17,23 +17,17 @@ function getToken($socket, $type = TYPE_HANDSHAKE) {
         return false;
     }
 
-    //build packet to get challenge.
     $packet = pack("c3N", 0xFE, 0xFD, TYPE_HANDSHAKE, SESSION_ID);
-
-    //write packet
     if (fwrite($socket, $packet, strlen($packet)) === FALSE) {
         throw new \Exception("Unable to write to socket.");
     }
 
-    //read packet.
     $response = fread($socket, 2056);
-
     if (empty($response)) {
         throw new \Exception("Unable to authenticate connection.");
     }
 
     $response_data = unpack("c1type/N1id/a*token", $response);
-
     if (empty($response_data['token'])) {
         throw new \Exception("Unable to authenticate connection.");
     }
@@ -54,41 +48,26 @@ function getInfo($host, $port) {
     }
 
     $packet = pack("c3N2", 0xFE, 0xFD, TYPE_STAT, SESSION_ID, $token);
-
-    //add the full stat thingy.
     $packet = $packet . pack("c4", 0x00, 0x00, 0x00, 0x00);
-
-    //write packet
     if (!fwrite($socket, $packet, strlen($packet))) {
         throw new \Exception("Unable to write to socket.");
     }
 
-    //read packet header
     fread($socket, 16);
-
-    //read the rest of the stream.
     $response = fread($socket, 2056);
 
-    //split the response into 2 parts.
     $payload = explode("\x00\x01player_\x00\x00", $response);
-
     $info_raw = explode("\x00", rtrim($payload[0], "\x00"));
-    //extract key->value chunks from info
     if (count($info_raw) % 2) {
-        /*
-         * if you query a server multiple times in a row in a short period of time,
-         * some servers (minority) will return a response that doesn't contain
-         * all the expected data. Probably for security reasons?
-         */
         throw new \Exception("Server returned malformed information.");
     }
+
     $info = [];
     foreach (array_chunk($info_raw, 2) as $pair) {
         if (!isset($pair[1])) {
             continue;
         }
         list($key, $value) = $pair;
-        //strip possible color format codes from hostname
         if ($key == "hostname") {
             $key = "motd";
             $value = preg_replace('/[\x00-\x1F\x80-\xFF]./', '', $value);
@@ -96,12 +75,9 @@ function getInfo($host, $port) {
         $info[$key] = $value;
     }
 
-    //set real hostname
     $info['hostname'] = $host;
-
-    //get player data
     $info['players'] = [];
-    if (isset($payload[1])) { //no players online
+    if (isset($payload[1])) { 
         $players_raw = rtrim($payload[1], "\x00");
         $players = [];
         if (!empty($players_raw)) {
@@ -129,12 +105,10 @@ function ping($host, $port)  {
     $packet->encode($pk);
 
     $packet = $pk->getBuffer();
-
     if (!fwrite($socket, $packet, strlen($packet))) {
         throw new \Exception("Unable to write to socket.");
     }
 
-    //read the rest of the stream.
     $bf = fread($socket, 2056);
     if($bf === false){
         throw new \Exception("Unable to read from socket.");
