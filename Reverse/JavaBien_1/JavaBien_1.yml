@@ -1,0 +1,40 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "JavaBien_1"
+author: "Neoreo"
+category: Reverse
+description: "
+Trouve le bon mot de passe et récupère le flag
+
+**Author** : Neoreo"
+
+value: 500
+type: dynamic
+
+# The extra field provides additional fields for data during the install/sync commands/
+# Fields in extra can be used to supply additional information for other challenge types
+# For example the follow extra field is for dynamic challenges. To use these following
+# extra fields, set the type to "dynamic" and uncomment the "extra" section below
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+flags:
+    - IUT{Decompiler_L3_J4va}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+topics:
+    - Decompiler java
+
+# Tags are used to provide additional public tagging to a challenge
+tags:
+    - Reverse
+
+# Provide paths to files from the same directory that this file is in
+files:
+    - ./MaClass.class
