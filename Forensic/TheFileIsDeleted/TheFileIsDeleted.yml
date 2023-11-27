@@ -38,4 +38,4 @@ tags:
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./usb_key.dd
+    - ./usb_key.zip
