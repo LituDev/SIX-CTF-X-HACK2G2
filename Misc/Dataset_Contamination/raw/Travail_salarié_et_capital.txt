@@ -1,0 +1,885 @@
+Travail salarié et capital
+
+
+
+Karl Marx
+
+
+
+
+
+Éditions sociales internationales, Paris, 1931
+
+
+
+
+
+Exporté de Wikisource le 20 novembre 2023
+
+
+
+
+
+Introduction
+
+
+Cet ouvrage parut sous la forme d’une série d’articles de fond dans la Neue Rheinische Zeitung, à partir du 4 avril 1849. Les conférences que Marx fit, en 1847, à l’Association des ouvriers allemands de Bruxelles en forment la base. À l’impression, elle est restée à l’état de fragment. L’engagement contenu dans le « À suivre » qui se trouve à la fin de l’article du N° 269 du journal ne fut point tenu par suite des événements qui se précipitaient alors : l’invasion russe en Hongrie, les insurrections à Dresde, Iserlohn, Elberfeld, dans le Palatinat et le Bade, et qui amenèrent la suppression du journal lui-même (19 mai 1849). On n’a point retrouvé le manuscrit de la suite dans les œuvres posthumes de Marx.
+
+Travail salarié et Capital a paru en tirage séparé sous forme de brochure chez plusieurs éditeurs, la dernière fois en 1884 à Hottingen-Zürich, à la Schwei­zeris­che Genossenschafts-Buchdruckerei. Jusqu’ici, ces éditions suivaient exactement le texte littéral de l’original. Mais la présente réimpression ne doit pas être répan­due à moins de 10 000 exemplaires comme brochure de propagande, et, de ce fait, je ne pouvais manquer de me demander si, dans ces conditions, Marx lui-même aurait autorisé une reproduction sans changement du texte littéral.
+
+Vers 1850, Marx n’avait pas encore mis le point final à sa critique de l’éco­no­mie politique. Il ne le fit qu’à la fin des dix années suivantes. Aussi, ses écrits pa­rus antérieure­ment au premier fascicule de Contribution à la Critique de l’éco­no­mie politique (1859), diffèrent-ils sur certains points de ceux qu’il écrivit à partir de 1859. Ils renferment des expres­sions et des phrases entières qui, par rap­port aux ouvrages postérieurs, apparaissent malheu­reu­ses et même inexactes. Or, il est de toute évidence que dans des éditions ordi­naires, destinées au grand pu­blic, ce point de vue antérieur, élément du développement intellectuel de l’auteur, a égale­ment sa place, et que l’auteur aussi bien que le public ont un droit indiscuté à une reproduction intégrale de ces œuvres anciennes. Et il ne me serait pas venu un seul instant à l’esprit d’y changer un seul mot.
+
+Il en est autrement lorsque la réédition est destinée, on peut dire, presque exclusivement à la propagande parmi les ouvriers. Dans ce cas, Marx aurait cer­tainement mis l’ancien exposé datant de 1849 en accord avec son nouveau point de vue, et je suis sûr d’agir dans son esprit en procédant pour cette édition aux quelques changements et adjonctions nécessaires pour atteindre ce but sur tous les points essentiels. Je dis donc à l’avance au lecteur : voici la bro­chure non point tel­le que Marx l’a rédigée en 1849, mais approximativement telle qu’il l’aurait écrite en 1891. Au reste, le texte véritable est diffusé en un nombre si considéra­ble d’exem­plaires qu’il permet d’attendre que je puisse le réimprimer plus tard ne varietur dans une édition des Œuvres complètes.
+
+Mes modifications tournent toutes autour d’un seul point. D’après l’original, c’est son travail que l’ouvrier vend au capitaliste pour le salaire ; d’après le texte actuel, il vend sa force de travail. Il faut que je m’explique sur ce changement. Je dois le faire à l’égard des ouvriers, afin qu’ils voient qu’il ne s’agit pas d’une simple querelle de mots, mais, au contraire, d’un des points les plus importants de toute l’économie politique. Je dois le faire à l’égard des bourgeois, afin qu’ils puis­sent se convaincre que les ouvriers sans instruction auxquels on peut facilement faire comprendre les développements économiques les plus difficiles sont infini­ment supérieurs à nos gens « cultivés » et arrogants pour lesquels des questions aussi complexes restent des énigmes leur vie durant.
+
+L’économie politique classique emprunte à la pratique industrielle cette idée courante chez le fabricant qu’il achète et qu’il paie le travail de ses ouvriers. Cette idée avait été parfaitement suffisante pour les besoins commerciaux, la compta­bi­lité et le calcul des prix du fabricant. Transférée en toute naïveté dans l’économie politique, elle y causa un trouble et un désarroi extraordinaires.
+
+L’économie se trouve en présence de ce fait que les prix de toutes les mar­chan­dises, et entre autres aussi le prix de la marchandise qu’elle appelle « travail », varient continuellement ; ils montent et baissent par suite de circonstances très variées qui, fréquemment, sont sans aucun rapport avec la production de la mar­chandise elle-même, de sorte que les prix sem­blent en règle générale déter­minés par le pur hasard. Or, dès que l’économie se présenta comme une science, une de ses premières tâches fut de chercher la loi qui se cachait derrière ce hasard déterminant apparemment les prix des marchandises et qui, en réalité, dominait ce hasard même. C’est dans les limites de ces prix de marchandises en perpétuelles fluctuations, oscillant entre la hausse et la baisse, qu’elle chercha le centre fixe autour duquel s’accom­plissent ces fluctuations et ces oscillations. En un mot, elle partit des prix des marchandises pour rechercher, comme la loi qui les réglait, la valeur des marchandises, laquelle explique toutes les fluctuations de prix et à laquelle il faut en définitive les ramener toutes.
+
+Or, selon l’économie classique, la valeur d’une marchandise serait déterminée par le travail incorporé en elle, nécessaire à sa production ; et elle se contenta de cette explication. Nous pouvons également nous y arrêter un instant. Mais pour éviter des malentendus, je rappellerai que cette explication est devenue de nos jours tout à fait insuffisante. C’est Marx qui, le premier, a étudié de façon appro­fondie cette propriété qu’a le travail de créer de la valeur, et il a trouvé que tout travail apparemment ou réellement nécessaire à la production d’une marchandise n’ajoute pas en toutes circonstances à cette marchandise une quantité de valeur corres­pondant à la quantité de travail fournie. Si donc nous disons sommairement aujourd’hui, avec des économistes comme Ricardo, que la valeur d’une mar­chan­dise est déterminée par le travail nécessaire à sa production, nous sous-entendons toujours les réserves faites par Marx à ce sujet. Cela suffit ici ; on trouvera le reste chez Marx dans sa Contribution à la Critique de l’économie politique (1859) et dans le premier livre du Capital.
+
+Mais dès que les économistes appliquèrent cette détermination de la valeur par le travail à la marchandise « travail », ils allèrent de contradiction en contra­dic­tion. Comment est déterminée la valeur du « travail » ? Par le travail nécessaire qui y est incorporé. Combien de travail y a-t-il dans le travail d’un ouvrier en une journée, une semaine, un mois, une année ? Le travail d’une journée, d’une semai­ne, d’un mois, d’une année. Si le travail est la mesure de toutes les valeurs, nous ne pou­vons exprimer qu’en travail la « valeur du travail ». Mais nous ne savons absolu­ment rien au sujet de la valeur d’une heure de travail lorsque nous savons seule­ment qu’elle est égale à une heure de travail. Cela ne nous a donc pas rapproché du but de l’épaisseur d’un cheveu, nous ne faisons que tourner conti­nuellement en rond.
+
+Aussi, l’économie classique essaya-t-elle d’employer une autre tournure ; elle dit : la valeur d’une marchandise est égale à ses frais de production. Mais quels sont les frais de production du travail ? Pour répondre à cette question, les écono­mistes sont obligés de faire quelque entorse à la logique. À défaut des frais de production du travail lui-même qui ne peuvent malheureusement pas être établis, ils recherchent alors quels sont les frais de production de l’ouvrier. Et ceux-ci peuvent être établis. Ils varient suivant le moment et les circonstances, mais pour des conditions sociales données, pour une localité donnée, pour une branche de production donnée, ils sont également donnés, du moins dans certaines limites assez étroites. Nous vivons aujourd’hui sous le règne de la production capitaliste où une classe importante et toujours plus nombreuse de la population ne peut vivre que si elle travaille contre salaire pour les possesseurs des moyens de pro­duc­tion : outils, machines, matières premières et moyens de subsistance. Sur la base de ce mode de production, les frais de production de l’ouvrier consistent dans la somme de moyens de subsistance — ou de leurs prix en argent — qui sont en moyenne nécessaires pour lui fournir sa capacité de travail, pour entretenir celle-ci, pour le remplacer par un nouvel ouvrier lorsque la maladie, l’âge ou la mort l’éloignent de la production, c’est-à-dire pour permettre à la classe ouvrière de se perpétuer et de conserver l’effectif dont on a besoin. Supposons que le prix en argent de ces moyens de subsistance soit en moyenne de trois marks par jour.
+
+Notre ouvrier reçoit donc du capitaliste qui l’occupe un salaire de trois marks par jour. Pour cela, le capitaliste le fait travailler, disons, douze heures par jour. À la vérité, ce capitaliste calcule à peu près de la façon suivante :
+
+Supposons que notre ouvrier — un ajusteur — ait à usiner une pièce de machine qu’il termine en une journée. La matière première — le fer et le laiton dans la forme déjà apprêtée néces­saire — coûte 20 marks. La consommation de la machine à va­peur, l’usure de cette même machine à vapeur, du tour et des autres outils avec lesquels l’ouvrier travaille repré­sentent, calculées pour une journée et pour sa quote-part, la valeur d’un mark. Nous avons supposé que le salaire est de 3 marks pour une journée. Cela fait au total pour notre pièce de machine 24 marks. Mais le capitaliste tire de ses calculs qu’il reçoit de ses clients un prix moyen de 27 marks, c’est-à-dire 3 marks de plus que les frais qu’il a engagés.
+
+D’où viennent ces 3 marks qu’empoche le capitaliste ? L’économie classique prétend que les marchandises sont vendues en moyenne à leur valeur, c’est-à-dire à des prix qui corres­pondent aux quantités de travail nécessaires contenues dans ces marchandises. Le prix moyen de notre pièce de machine — 27 marks — serait donc égal à sa valeur, égal au travail qui y est incorporé. Mais de ces 27 marks, 21 marks étaient déjà des valeurs qui existaient avant que notre ajusteur se fût mis au travail. 20 marks étaient incorporés dans la matière première, un mark dans le charbon brûlé pendant le travail ou dans les machines et outils utilisés à cet effet et dont la capacité de production a été réduite jusqu’à concurrence de cette som­me. Restent 6 marks qui ont été ajoutés à la valeur de la matière première. Mais ces 6 marks, comme l’admettent nos économistes eux-mêmes, ne peuvent prove­nir que du travail ajouté à la matière première par notre ouvrier. Ses douze heures de travail ont donc créé une nouvelle valeur de 6 marks. De cette façon, nous aurions donc enfin découvert ce qu’est la «valeur du travail».
+
+« — Halte-là ! s’écrie notre ajusteur. Six marks ? Mais je n’ai touché que trois marks ! Mon capitaliste jure ses grands dieux que la valeur de mes douze heures de travail n’est que de trois marks et lorsque j’en exige six, il se moque de moi. À quoi rime cela ?»
+
+Si, auparavant, nous aboutissions avec notre valeur du travail à un cercle ou à une impasse, nous voilà maintenant tout à fait fourvoyés dans une contradiction insoluble. Nous avons cherché la valeur du travail et nous avons trouvé plus qu’il nous fallait. Pour l’ouvrier, la valeur des douze heures de travail est de trois marks, pour le capitaliste, elle est de six marks, dont il paie à l’ouvrier trois marks comme salaire et dont il empoche lui-même les trois autres. Le travail aurait donc non pas une, mais deux valeurs, et très différentes par-dessus le marché.
+
+La contradiction devient encore plus absurde dès que nous ramenons les valeurs exprimées en argent à du temps de travail. Dans les douze heures de travail, il est créé une nouvelle valeur de six marks, c’est-à-dire en six heures, de trois marks, somme reçue par l’ouvrier pour un travail de douze heures. Pour un travail de douze heures, l’ouvrier reçoit l’équivalent du produit de six heures de travail. Donc, ou bien le travail a deux valeurs dont l’une est le double de l’autre, ou bien douze égalent six ! Dans les deux cas on aboutit à un pur non-sens.
+
+Quoique nous fassions, nous ne sortirons jamais de cette contradiction tant que nous parlerons de l’achat et de la vente du travail et de la valeur du travail. C’est ce qui est arrivé également à nos économistes. Le dernier rameau de l’économie classique, l’école de Ricardo, a sombré en grande partie à cause de l’impossibilité où elle était de résoudre cette contra­diction. L’économie classique s’était fourvoyée dans une impasse. L’homme qui trouva la voie pour en sortir fut Marx.
+
+Ce que les économistes avaient considéré comme les frais de production du « travail » étaient les frais de production non du travail, mais de l’ouvrier vivant lui-même. Et ce que l’ouvrier vendait au capitaliste n’était pas son travail. « Dès que son travail existe, dit Marx, il cesse de lui appartenir et ne peut plus désor­mais être vendu par lui. » Il pourrait donc, tout au plus, vendre son travail futur, c’est-à-dire prendre l’engagement d’accomplir un travail déterminé à un moment déterminé. Mais alors il ne vend pas du travail (qu’il faudrait d’abord effectuer), mais il met à la disposition du capitaliste pour un temps déterminé (dans le salaire journalier) ou aux fins d’un rendement déterminé (dans le salaire aux pièces) sa force de travail contre un paiement déterminé ; il loue ou vend sa force de travail. Mais cette force de travail est intimement liée à sa personne et en est inséparable. Les frais de production de celle-ci coïncident par conséquent avec ses frais de production à lui. Ce que les économistes appelaient les frais de production du travail sont précisément ceux de l’ouvrier et, par suite, ceux de la force de travail. Et ainsi nous pouvons remonter aussi des frais de production de la force de travail à la valeur de la force de travail, et déterminer la quantité de travail socialement nécessaire pour la production d’une force de travail de qualité déterminée, ainsi que l’a fait Marx dans le chapitre de l’achat et de la vente de la force de travail. (Kapital, Band I, Kapitel 4, 3. Abteilung.)
+
+Mais qu’arrive-t-il après que l’ouvrier a vendu sa force de travail au capitaliste, c’est-à-dire l’a mise à sa disposition contre un salaire convenu à l’avance, salaire journalier ou salaire aux pièces ? Le capitaliste conduit l’ouvrier dans son atelier ou son usine où se trouvent déjà tous les objets nécessaires pour son travail, ma­tières premières, matières auxiliaires (charbon, colorants, etc.), outils, machines. Là, l’ouvrier se met à trimer. Son salaire journalier est, comme nous l’avons sup­po­sé plus haut, de trois marks, qu’il les gagne à la journée ou aux pièces, peu importe. Nous supposons également ici que l’ouvrier, en douze heures de son travail, incorpore aux matières premières utilisées une nouvelle valeur de six marks, laquelle nouvelle valeur est réalisée par le capitaliste au moyen de la vente de la pièce une fois finie. Il paie avec cela ses trois marks à l’ouvrier, mais il con­serve pour lui les trois autres marks. Or, si l’ouvrier crée en douze heures une valeur de six marks, en six heures il en crée une de trois marks. Il a donc déjà donné au capitaliste l’équivalent des trois marks touchés sous forme de salaire, lorsqu’il a travaillé six heures pour lui. Après six heures de travail, tous deux sont donc quittes, ils ne se doivent pas un centime l’un à l’autre.
+
+« — Halte-là ! s’écrie maintenant le capitaliste. J’ai loué l’ouvrier pour une jour­née entière, pour douze heures. Or, six heures ne sont qu’une demi-journée. Donc, trimez ferme jusqu’à ce que soient terminées également les six autres heures, c’est seulement alors que nous serons quittes !» Et l’ouvrier doit se soumettre en effet à son contrat accepté « volontairement», d’après lequel il s’engage à travailler douze heures entières pour un produit qui coûte six heures de travail.
+
+Dans le travail aux pièces, il en est exactement de même. Supposons que notre ouvrier fabrique, en douze heures, douze pièces de la même marchandise. Chacune d’elles coûte 2 marks de charbon et d’usure et est vendue 2 marks 50. Si nous faisons les mêmes hypothèses qu’auparavant, le capitaliste va donc donner à l’ouvrier 25 pfennigs par pièce, cela fait pour douze pièces 3 marks que l’ouvrier met douze heures à gagner. Le capitaliste reçoit pour les douze pièces 30 marks ; déduction faite de 24 marks pour la matière première et l’usure, restent six marks dont il paie trois marks de salaire et empoche trois. Tout comme plus haut. Là aussi l’ouvrier travaille six heures pour lui, c’est-à-dire en compensation de son salaire (une demi-heure dans chacune de ses douze heures) et six heures pour le capitaliste.
+
+La difficulté contre laquelle échouaient les meilleurs économistes tant qu’ils partaient de la valeur du « travail » disparaît dès que nous partons de la valeur de la « force de travail » et non de celle du « travail ». La force de travail est, dans notre société capitaliste actuelle, une marchandise comme toutes les autres, mais néanmoins une marchandise tout à fait spéciale. En effet, elle a la propriété parti­culière d’être une force qui crée de la valeur, une source de valeur et, notamment, par un traitement approprié, une source de plus de valeur qu’elle n’en possède elle-même. Dans l’état actuel de la production, la force de travail humaine ne produit pas seulement en une journée une valeur plus grande que celle qu’elle possède et qu’elle coûte elle-même, mais à chaque nouvelle découverte scientifique, à chaque nouvelle invention technique cet excédent de sa production quotidienne s’accroît au-delà de ses frais journaliers, et, par conséquent, la partie de la journée de tra­vail dans laquelle l’ouvrier tire de son travail l’équivalent de son salaire quotidien diminue, alors qu’augmente la partie de la journée de travail pendant laquelle il est obligé d’offrir son travail au capitaliste sans être payé pour cela.
+
+Telle est la constitution économique de toute notre société actuelle : c’est la clas­se labo­rieuse seule qui produit toutes les valeurs. Car le mot valeur n’est qu’une autre expression pour le mot travail, expression par laquelle on désigne dans notre société capitaliste actuelle la quantité de travail socialement nécessaire, incorporée dans une marchandise déterminée. Mais ces valeurs produites par les ouvriers n’appartiennent pas aux ouvriers. Elles appartien­nent aux possesseurs des matières premières, des machines et instruments et des avances d’argent qui leur permettent d’acheter la force de travail de la classe ouvrière. De toute la masse de produits créés par la classe ouvrière, il ne lui revient donc qu’une partie. Et, ainsi que nous venons de le voir, l’autre partie que la classe capitaliste conserve pour elle et qu’il lui faut tout au plus partager encore avec la classe des propriétaires fonciers, devient, à chaque découverte et invention nouvelles, de plus en plus grande, alors que la partie revenant à la classe ouvrière (calculée par tête) ou bien ne s’accroît que très lentement et de façon insignifiante, ou bien reste stationnaire, ou bien encore, dans certaines circonstances, diminue.
+
+Mais ces découvertes et inventions qui s’évincent réciproquement avec une rapidité de plus en plus grande, ce rendement du travail humain qui s’accroît chaque jour dans des proportions inouïes, finissent par créer un conflit dans lequel l’économie capitaliste actuelle ne peut que sombrer. D’un côté, des richesses incommensurables et un excédent de produits que les preneurs ne peuvent absorber. De l’autre, la grande masse de la société prolétarisée, transformée en salariés et mise par ce fait même dans l’incapacité de s’approprier cet excédent de produits. La scission de la société en une petite classe immensément riche et en une grande classe de salariés non possédants fait que cette société étouffe sous son propre superflu alors que la grande majorité de ses membres n’est presque pas, ou même pas du tout, protégée contre l’extrême misère. Cet état de choses devient chaque jour plus absurde et plus inutile. Il faut qu’il cède la place, et il peut céder la place. Un nouvel ordre social est possible dans lequel auront disparu les différences actuelles entre les classes et où — peut-être après une période de transition courte, un peu maigre, mais en tout cas moralement très utile — grâce à une utilisation rationnelle et au développement ultérieur des énormes forces productives déjà existantes de tous les membres de la société, par le travail obligatoire et égal pour tous, les moyens de vivre, de jouir de la vie de se développer et de mettre en œuvre toutes les capacités du corps et de l’esprit seront également à la disposition de tous et dans une abondance toujours croissante. Et la preuve que les ouvriers sont de plus en plus résolus à conquérir par la lutte ce nouvel ordre social nous est fournie des deux côtés de l’Océan par la journée du Premier Mai de demain et celle de dimanche prochain, 3 mai.
+
+Londres, le 30 avril 1891.
+
+Rédigé par Engels pour l’édition séparée de l’ouvrage de Marx Travail salarié et Capital, parue à Berlin en 1891.
+
+
+
+
+
+Travail salarié et Capital
+
+
+
+
+
+De différents côtés on nous a reproché de n’avoir pas exposé les rapports économiques qui constituent de nos jours la base matérielle des combats de classe et des luttes nationales. C’est à dessein que nous n’avons fait qu’effleurer ces rapports que là où ils éclataient directement en collisions politiques.
+
+Il s’agissait avant tout de suivre la lutte des classes au jour le jour de l’histoire et de prouver, de façon empirique, sur la matière historique existante et renouvelée quotidiennement, que l’écrasement de la classe ouvrière réalisée par Février et Mars avait amené du même coup la défaite des adversaires de celle-ci — les républicains bourgeois en France et les classes bourgeoises et paysannes en lutte contre l’absolutisme féodal sur tout le continent européen ; que la victoire de la « République honnête » en France fut en même temps la chute des nations qui avaient répondu à la révolution de Février par des guerres d’indépendance héroïques ; qu’enfin l’Europe, par la défaite des ouvriers révolutionnaires, était retombée dans son ancien double esclavage, l’esclavage anglo-russe. Les combats de Juin à Paris, la chute de Vienne, la tragi-comédie de Berlin en novembre 1848, les efforts désespérés de la Pologne, de l’Italie et de la Hongrie, l’épuisement de l’Irlande par la famine — tels furent les moments principaux où la lutte de classe se concentra entre la bourgeoisie et la classe ouvrière et qui nous permirent de démontrer que chaque soulèvement révolutionnaire, aussi éloigné que son but puisse paraître de la lutte de classe, ne peut qu’échouer jusqu’au moment où la classe ouvrière révolutionnaire sera victorieuse, que toute réforme sociale reste une utopie jusqu’au moment où la révolution prolétarienne et la contre-révolution féodale se mesureront par les armes dans une guerre mondiale. Dans notre exposé, comme dans la réalité, la Belgique et la Suisse étaient des tableaux de genre tragi-comiques et caricaturaux dans la grande fresque de l’histoire, l’une présentée comme l’État modèle de la monarchie bourgeoise, l’autre comme l’État modèle de la République bourgeoise, États qui s’imaginaient tous deux être aussi indépendants de la lutte des classes que de la révolution européenne.
+
+Maintenant que nos lecteurs ont vu se développer la lutte des classes en l’an­née 1848 sous des formes politiques colossales, il est temps d’approfondir les rap­ports économiques eux-mêmes sur lesquels se fondent l’existence de la bourgeoi­sie et sa domination de classe, ainsi que l’esclavage des ouvriers.
+
+Nous exposerons en trois grands chapitres : i) les rapports entre le travail sala­rié et le capital, l’esclavage de l’ouvrier, la domination du capitaliste ; ii) la dispa­ri­tion inévitable des classes moyennes bourgeoises et de ce qu’il est convenu d’appeler la paysannerie (Bürgerstandes) sous le régime actuel ; iii) l’assujettisse­ment commercial et l’exploitation des classes bourgeoises des diverses nations de l’Europe par le despote du marché mondial, l’Angleterre.
+
+Nous chercherons à faire un exposé aussi simple et populaire que possible, et sans supposer connues à l’avance les notions même les plus élémentaires de l’éco­no­mie politique. Nous voulons être compréhensibles pour les ouvriers. Il règne d’ailleurs partout en Allemagne l’ignorance et la confusion d’idées les plus étran­ges au sujet des rapports économiques les plus simples, chez les défenseurs patentés de l’état de choses actuel et jusque chez les thaumaturges socialistes et les génies politiques méconnus dont l’Allemagne morcelée est plus riche encore que de souverains.
+
+Abordons donc la première question : Qu’ est-ce que le salaire ? Comment est-il déterminé ?
+
+Si l’on demandait à des ouvriers : « À combien s’élève votre salaire ?», ils répondraient : l’un : « Je reçois de mon patron 1 mark pour une journée de travail», l’autre : « Je reçois 2 marks », etc. Suivant les diverses branches de travail aux­quelles ils appartiennent, ils énuméreraient les diverses sommes d’argent qu’ils reçoivent de leurs patrons respectifs pour la production d’un travail déterminé, par exemple pour le tissage d’une aune de toile ou pour la composition d’une page d’imprimerie. Malgré la diversité de leurs déclarations, ils seront tous unanimes sur un point : le salaire est la somme d’argent que le capitaliste paie, pour un temps de travail déterminé ou pour la fourniture d’un travail déterminé.
+
+Le capitaliste achète donc (semble-t-il) leur travail avec de l’argent. C’est pour de l’argent qu’ils lui vendent leur travail. Mais il n’en est ainsi qu’apparemment. Ce qu’ils vendent en réalité au capitaliste pour de l’argent, c’est leur force de travail. Le capitaliste achète cette force de travail pour un jour, une semaine, un mois, etc. Et, une fois qu’il l’a achetée, il l’utilise en faisant travailler l’ouvrier pendant le temps stipulé. Pour cette même somme d’argent avec laquelle le capitaliste a acheté sa force de travail, par exemple pour 2 marks, il aurait pu acheter deux livres de sucre ou une quantité déterminée d’une autre marchandise quelconque. Les 2 marks avec lesquels il a acheté deux livres de sucre sont le prix de deux livres de sucre. Les 2 marks avec lesquels il a acheté douze heures d’utilisation de la force de travail sont le prix des douze heures de travail. La force de travail est donc une marchandise, ni plus, ni moins que le sucre. On mesure la première avec la montre et la seconde avec la balance.
+
+Leur marchandise, la force de travail, les ouvriers l’échangent contre la mar­chandise du capitaliste, contre l’argent, et, en vérité, cet échange a lieu d’après un rapport déterminé. Tant d’argent pour tant de durée d’utilisation de la force de travail. Pour douze heures de tissage, 2 marks. Et ces 2 marks ne représentent-ils pas toutes les autres marchandises que je puis acheter pour 2 marks ? L’ouvrier a donc bien échangé une marchandise, la force de travail, contre des marchandises de toutes sortes, et cela suivant un rapport déterminé. En lui donnant 2 marks, le capitaliste lui a donné tant de viande, tant de vêtements, tant de bois, de lumière, etc., en échange de sa journée de travail. Ces 2 marks expriment donc le rapport suivant lequel la force de travail est échangée contre d’autres marchandises, la valeur d’échange de la force de travail. La valeur d’échange d’une marchandise, éva­luée en argent, c’est précisément ce qu’on appelle son prix. Le salaire n’est donc que le nom particulier donné au prix de la force de travail appelé d’ordinaire prix du travail, il n’est que le nom donné au prix de cette marchandise particulière qui n’est en réserve que dans la chair et le sang de l’homme.
+
+Prenons le premier ouvrier venu, par exemple, un tisserand. Le capitaliste lui fournit le métier à tisser et le fil. Le tisserand se met au travail et le fil devient de la toile. Le capitaliste s’approprie la toile et la vend 20 marks par exemple. Le salaire du tisserand est-il alors une part de la toile, des 20 marks, du produit de son travail ? Pas du tout. Le tisserand a reçu son salaire bien avant que la toile ait été vendue et peut-être bien avant qu’elle ait été tissée. Le capitaliste ne paie donc pas ce salaire avec l’argent qu’il va retirer de la toile, mais avec de l’argent accu­mulé d’avance. De même que le métier à tisser et le fil ne sont pas le produit du tisserand auquel ils ont été fournis par l’employeur, les marchandises qu’il reçoit en échange de sa marchandise, la force de travail, ne le sont pas davantage. Il peut arriver que le capitaliste ne trouve pas d’acheteur du tout pour sa toile. Il peut arriver qu’il ne retire pas même le salaire de sa vente. Il peut arriver qu’il la vende de façon très avantageuse par rapport au salaire du tisserand. Tout cela ne regarde en rien le tisserand. Le capitaliste achète avec une partie de sa fortune actuelle, de son capital, la force de travail du tisserand tout comme il a acquis, avec une autre partie de sa fortune, la matière première, le fil, et l’instru­ment de travail, le métier à tisser. Après avoir fait ces achats, et parmi ces achats il y a aussi la force de travail nécessaire à la production de la toile, il ne produit plus qu’avec des matiè­res premières et des instruments de travail qui lui appartiennent à lui seul. Car, de ces derniers fait aussi partie notre brave tisserand qui, pas plus que le métier à tisser, n’a sa part du produit ou du prix de celui-ci.
+
+Le salaire n’est donc pas une part de l’ouvrier à la marchandise qu’il produit. Le salaire est la partie de marchandises déjà existantes avec laquelle le capitaliste s’approprie par achat une quantité déterminée de force de travail productive.
+
+La force de travail est donc une marchandise que son possesseur, le salarié, vend au capital. Pourquoi la vend-il ? Pour vivre.
+
+Mais la manifestation de la force de travail, le travail, est l’activité vitale propre à l’ouvrier, sa façon à lui de manifester sa vie. Et c’est cette activité vitale qu’il vend à un tiers pour s’assurer les moyens de subsistance nécessaires. Son activité vitale n’est donc pour lui qu’un moyen de pouvoir exister. Il travaille pour vivre. Pour lui-même, le travail n’est pas une partie de sa vie, il est plutôt un sacrifice de sa vie. C’est une marchandise qu’il a adjugée à un tiers. C’est pourquoi le produit de son activité n’est pas non plus le but de son activité. Ce qu’il produit pour lui-même, ce n’est pas la soie qu’il tisse, ce n’est pas l’or qu’il extrait du puits, ce n’est pas le palais qu’il bâtit. Ce qu’il produit pour lui-même, c’est le salaire, et la soie, l’or, le palais se réduisent pour lui à une quantité déterminée de moyens de subsistance, peut-être à un tricot de coton, à de la menue monnaie et à un logement dans une cave. Et l’ouvrier qui, douze heures durant, tisse, file, perce, tour­ne, bâtit, manie la pelle, taille la pierre, la transporte, etc., regarde-t-il ces douze heures de tissage, de filage, de perçage, de travail au tour ou de maçonne­rie, de maniement de la pelle ou de taille de la pierre comme une manifestation de sa vie, comme sa vie ? Bien au contraire. La vie commence pour lui où cesse l’ activité, à table, à l’auberge, au lit. Par contre, les douze heures de travail n’ont nulle­ment pour lui le sens de tisser, de filer, de percer, etc., mais celui de gagner ce qui lui permet d’aller à table, à l’auberge, au lit. Si le ver à soie tissait pour subvenir à son existence de chenille, il serait un salarié achevé.
+
+La force de travail ne fut pas toujours une marchandise. Le travail ne fut pas toujours du travail salarié, c’est-à-dire du travail libre. L’esclave ne vendait pas sa force de travail au possesseur d’esclaves, pas plus que le bœuf ne vend le produit de son travail au paysan. L’esclave est vendu, y compris sa force de travail, une fois pour toutes à son propriétaire. Il est une marchandise qui peut passer de la main d’un propriétaire dans celle d’un autre. Il est lui-même une marchandise, mais sa force de travail n’est pas sa marchandise. Le serf ne vend qu’une partie de sa force de travail. Ce n’est pas lui qui reçoit un salaire du propriétaire de la terre ; c’est plutôt le propriétaire de la terre à qui il paie tribut. Le serf appartient à la terre et constitue un rapport pour le maître de la terre. L’ouvrier libre, par contre, se vend lui-même, et cela morceau par morceau. Il vend aux enchères 8, 10, 12, 15 heures de sa vie, jour après jour, aux plus offrants, aux possesseurs des ma­tières premières, des instruments de travail et des moyens de subsistance, c’est-à-dire aux capitalistes. L’ouvrier n’appartient ni à un propriétaire ni à la terre, mais 8, 10, 12, 15 heures de sa vie quotidienne appartiennent à celui qui les achète. L’ouvrier quitte le capitaliste auquel il se loue aussi souvent qu’il veut, et le capitaliste le congédie aussi souvent qu’il le croit bon, dès qu’il n’en tire aucun profit ou qu’il n’y trouve plus le profit escompté. Mais l’ouvrier dont la seule res­sour­ce est la vente de sa force de travail ne peut quitter la classe tout entière des acheteurs, c’est-à-dire la classe capitaliste, sans renoncer à l’existence. Il n’appar­tient pas à tel ou tel employeur, mais à la classe capitaliste, et c’est à lui à y trou­ver son homme, c’est-à-dire à trouver un acheteur dans cette classe bourgeoise.
+
+Avant de pénétrer plus avant dans les rapports entre le capital et le travail salarié, nous allons maintenant exposer brièvement les conditions les plus géné­rales qui entrent en ligne de compte dans la détermination du salaire.
+
+== Partie II ==
+
+Qu’est-ce qui détermine le prix d’une marchandise ?
+
+C’est la concurrence entre les acheteurs et les vendeurs, le rapport entre l’offre et la demande. La concurrence qui détermine le prix d’une marchandise est triple.
+
+La même marchandise est offerte par divers vendeurs. Celui qui vend le meilleur marché des marchandises de même qualité est sûr d’évincer les autres vendeurs et de s’assurer le plus grand débit. Les vendeurs se disputent donc réci­proquement l’écoulement des marchandises, le marché. Chacun d’eux veut vendre, vendre le plus possible, et vendre seul si possible, à l’exclusion des autres ven­deurs. C’est pourquoi l’un vend meilleur marché que l’autre. Il s’établit, par consé­quent, une concurrence entre les vendeurs qui abaisse le prix des marchandises offertes par eux.
+
+Mais il se produit aussi une concurrence entre les acheteurs qui, de son côté, fait monter le prix des marchandises offertes.
+
+Il existe enfin une concurrence entre les acheteurs et les vendeurs ; les uns voulant acheter le meilleur marché possible, les autres voulant vendre le plus cher possible. Le résultat de cette concurrence entre acheteurs et vendeurs dépendra de la façon dont se comporteront les deux côtés de la concurrence mentionnés plus haut, c’est-à-dire du fait que c’est la concurrence dans l’armée des acheteurs ou la concurrence dans l’armée des vendeurs qui sera la plus forte. L’industrie met en campagne deux groupes d’armées l’une en face de l’autre dont chacune à son tour livre une bataille dans ses propres rangs, entre ses propres troupes. Le groupe d’armées parmi les troupes duquel il y a le moins d’échange de coups remporte la victoire sur l’armée adverse.
+
+Supposons qu’il y ait 100 balles de coton sur le marché et, en même temps, des acheteurs pour 1 000 balles de coton. Dans ce cas, la demande est dix fois plus grande que l’offre. La concurrence entre les acheteurs sera par conséquent très forte, chacun de ceux-ci veut s’approprier une, et si possible, l’ensemble des 100 balles. Cet exemple n’est pas une hypothèse arbitraire. Nous avons vécu dans l’histoire du commerce des périodes de mauvaise récolte du coton où quelques capitalistes coalisés entre eux ont cherché à acheter non pas 100 balles, mais tous les stocks de coton du monde entier. Dans le cas donné, un acheteur cherchera donc à évincer l’autre du marché en offrant un prix relativement plus élevé pour la balle de coton. Les vendeurs de coton qui aperçoivent les troupes de l’armée enne­mie en train de se livrer entre elles le combat le plus violent et qui sont absolu­ment assurés de vendre entièrement leurs 100 balles vont se garder de se prendre les uns les autres aux cheveux pour abaisser le prix du coton, à un moment où leurs adversaires rivalisent entre eux pour le faire monter. Voilà donc la paix sur-venue soudain dans l’armée des vendeurs. Ils sont comme un seul homme, face aux acheteurs, ils se croisent philosophiquement les bras et leurs exigences ne connaîtraient pas de bornes si les offres de ceux mêmes qui sont le plus pressés d’acheter n’avaient pas leurs limites bien déterminées.
+
+Si donc l’offre d’une marchandise est plus faible que la demande de cette marchandise, il n’y a pas du tout ou presque pas de concurrence parmi les ven­deurs. La concurrence parmi les acheteurs croît dans la proportion même où diminue cette concurrence. Résultat : hausse plus ou moins importante des prix de la marchandise.
+
+On sait que le cas contraire avec son résultat inverse est beaucoup plus fré­quent. Excédent considérable de l’offre sur la demande : concurrence désespérée parmi les vendeurs ; manque d’acheteurs : vente à vil prix des marchandises.
+
+Mais que signifie hausse, chute des prix, que signifie prix élevé, bas prix ? Un grain de sable est grand, regardé à travers un microscope, et une tour est petite, comparée à une montagne. Et si le prix est déterminé par le rapport entre l’offre et la demande, qu’est-ce qui détermine le rapport de l’offre et de la demande ?
+
+Adressons-nous au premier bourgeois venu. Il n’hésitera pas un instant et, tel un nouvel Alexandre le Grand, il tranchera d’un seul coup ce nœud gordien métaphysique à l’aide du calcul élémentaire. Si la production de la marchandise que je vends m’a coûté 100 marks, nous dira-t-il, et si je retire de la vente de cette marchandise 110 marks —au bout d’un an, entendons-nous —, c’est un gain civil, honnête, convenable. Mais si j’obtiens en échange 120, 130 marks, c’est alors un gain élevé ; et si j’en tirais 200 marks, ce serait alors un gain exceptionnel, énorme. Qu’est-ce qui sert donc au bourgeois à mesurer son gain ? Les frais de production de sa marchandise. S’il reçoit en échange de cette marchandise une somme d’au­tres marchandises dont la production a moins coûté, il a fait une perte. S’il reçoit en échange de sa marchandise une somme de marchandises dont la production a coûté davantage, il a réalisé un gain. Et cette baisse ou cette hausse du gain, il la calcule suivant les proportions dans lesquelles la valeur d’échange de sa mar­chandise se tient au-dessous ou au-dessus de zéro, c’est-à-dire des frais de production.
+
+Mais nous avons vu comment les rapports variables entre l’offre et la demande provo­quent tantôt la hausse, tantôt la baisse, entraînant tantôt des prix élevés, tantôt des prix bas.
+
+Si le prix d’une marchandise monte considérablement par suite d’une offre in­suf­fisante ou d’une demande qui croît démesurément, le prix d’une autre mar­chan­dise quelconque a baissé nécessairement en proportion ; car le prix d’une marchan­dise ne fait qu’exprimer en argent les rapports d’après lesquels de tierces mar­chandises sont échangées contre elle. Si, par exemple, le prix d’une aune d’étoffe de soie monte de 5 à 6 marks, le prix de l’argent a baissé relativement à l’étoffe de soie et le prix de toutes les autres marchandises qui sont restées à leur ancien prix a baissé de même par rapport à l’étoffe de soie. Il faut en donner une plus grande quantité en échange pour recevoir la même quantité d’étoffe de soie.
+
+Quelle sera la conséquence du prix croissant d’une marchandise ? Les capitaux se jetteront en masse sur la branche d’industrie florissante et cette immigration des capitaux dans le domaine de l’industrie favorisée persistera jusqu’à ce que celle-ci rapporte les gains habituels ou plutôt jusqu’au moment où le prix de ses produits descendra, par suite de surproduction, au-dessous des frais de production.
+
+Inversement. Si le prix d’une marchandise tombe au-dessous des frais de pro­duction, les capitaux se retireront de la production de cette marchandise. Si l’on excepte le cas où une branche de production n’étant plus d’époque ne peut moins faire que de disparaître, la production de cette marchandise, c’est-à-dire son offre, va diminuer par suite de cette fuite des capitaux jusqu’à ce qu’elle corresponde à la demande, par conséquent, jusqu’à ce que son prix se relève à nouveau au niveau de ses frais de production ou plutôt jusqu’à ce que l’offre soit tombée au-dessous de la demande, c’est-à-dire jusqu’à ce que son prix se relève au-dessus de ses frais de production, car le prix courant d’une marchandise est toujours au-dessous ou au-dessus de ses frais de production.
+
+Nous voyons que les capitaux émigrent et immigrent constamment, passant du domaine d’une industrie dans celui d’une autre, un prix élevé provoquant une trop forte immigration et un prix bas une trop forte émigration.
+
+Nous pourrions montrer d’un autre point de vue que non seulement l’offre, mais aussi la demande est déterminée par les frais de production. Mais cela nous entraînerait trop loin de notre sujet.
+
+Nous venons de voir que les oscillations de l’offre et de la demande ramènent toujours à nouveau le prix d’une marchandise à ses frais de production. Le prix réel d’une marchandise est certes toujours au-dessus ou au-dessous de ses frais de production ; mais la hausse et la baisse se complètent mutuellement, de sorte que, dans les limites d’une période de temps déterminée, si l’on fait le total du flux et du reflux de l’industrie, les marchandises sont échangées entre elles conformé­ment à leurs frais de production, c’est-à-dire que leur prix est déterminé par leurs frais de production.
+
+Cette détermination du prix par les frais de production ne doit pas être com­prise dans le sens des économistes. Les économistes disent que le prix moyen des marchandises est égal aux frais de production ; que telle est la loi. Ils considèrent comme un fait du hasard le mouvement anarchique par lequel la hausse est com­pensée par la baisse, et la baisse par la hausse. On pourrait considérer avec autant de raison, comme cela est arrivé d’ailleurs à d’autres économistes, les oscillations comme étant la loi, et la détermination par les frais de production comme étant le fait du hasard. Mais ce sont ces oscillations seules qui, regardées de plus près, entraînent les dévastations les plus terribles et, pareilles à des tremblements de terre, ébranlent la société bourgeoise jusque dans ses fondements, ce sont ces oscillations seules qui, au fur et à mesure qu’elles se produisent, déterminent le prix par les frais de production. C’est l’ensemble du mouvement de ce désordre qui est son ordre même. C’est au cours de cette anarchie industrielle, c’est dans ce mouvement en rond que la concurrence compense pour ainsi dire une extra­vagance par l’autre.
+
+Nous voyons donc ceci : le prix d’une marchandise est déterminé par ses frais de production de telle façon que les moments où le prix de cette marchandise monte au-dessus de ses frais de production sont compensés par les moments où il s’abaisse au-dessous des frais de production, et inversement. Naturellement, cela n’est pas vrai pour un seul produit donné d’une industrie, mais seulement pour toute la branche industrielle. Cela n’est donc pas vrai non plus pour un industriel pris isolément, mais seulement pour toute la classe des industriels.
+
+La détermination du prix par les frais de production est identique à la détermi­nation du prix par le temps de travail qui est nécessaire à la production d’une marchandise, car les frais de production se composent i) de matières premières et de l’usure d’instruments, c’est-à-dire de produits industriels dont la production a coûté un certain nombre de journées de travail, et qui représentent par conséquent une certaine somme de temps de travail et ii) de travail immédiat dont la mesure est précisément le temps.
+
+Or, ces mêmes lois générales qui règlent le prix des marchandises en général, règlent naturellement aussi le salaire, le prix du travail.
+
+Le salaire du travail va tantôt monter, tantôt baisser, suivant les rapports entre l’offre et la demande, suivant la forme que prend la concurrence entre les ache­teurs de la force de travail, les capitalistes, et les vendeurs de la force de travail, les ouvriers. Aux fluctuations des prix des marchandises en général correspondent les fluctuations du salaire. Mais dans les limites de ces fluctuations, le prix du travail sera déterminé par les frais de production, par le temps de travail qui est nécessaire pour produire cette marchandise, la force de travail.
+
+Or, quels sont les frais de production de la force de travail elle-même ?
+
+Ce sont les frais qui sont nécessaires pour conserver l’ouvrier en tant qu’ou­vrier et pour en faire un ouvrier.
+
+Aussi, moins un travail exige de temps de formation professionnelle, moins les frais de production de l’ouvrier sont grands et plus le prix de son travail, son salaire, est bas. Dans les branches d’industrie où l’on n’exige presque pas d’appren­tissage et où la simple existence matérielle de l’ouvrier suffit, les frais de produc­tion qui sont nécessaires à ce dernier se bornent presque uniquement aux mar­chan­dises indispensables à l’entretien de sa vie, de manière à lui conserver sa capacité de travail. C’est pourquoi le prix de son travail sera déterminé par le prix des moyens de subsistance nécessaires.
+
+Cependant, il s’y ajoute encore une autre considération. Le fabricant, qui calcule ses frais de production et d’après ceux-ci le prix des produits, fait entrer en ligne de compte l’usure des instruments de travail. Si une machine lui coûte par exemple 1 000 marks et qu’il l’use en dix ans, il ajoute chaque année 100 marks au prix de la marchandise pour pouvoir remplacer au bout de dix ans la machine usée par une neuve. Il faut comprendre de la même manière, dans les frais de pro­duc­tion de la force de travail simple, les frais de reproduction grâce auxquels l’espèce ouvrière est mise en état de s’accroître et de remplacer les ouvriers usés par de nouveaux. L’usure de l’ouvrier est donc portée en compte de la même façon que l’usure de la machine.
+
+Les frais de production de la force de travail simple se composent donc des frais d’existence et de reproduction de l’ouvrier. Le prix de ces frais d’existence et de reproduction constitue le salaire. Le salaire ainsi déterminé s’appelle le mini­mum de salaire. Ce minimum de salaire, tout comme la détermination du prix des marchandises par les frais de production en général, joue pour l’espèce et non pour l’individu pris isolément. Il y a des ouvriers qui, par millions, ne reçoivent pas assez pour pouvoir exister et se reproduire ; mais le salaire de la classe ouvrière tout entière est, dans les limites de ses oscillations, égal à ce minimum.
+
+Maintenant que nous avons fait la clarté sur les lois les plus générales qui régissent le salaire ainsi que le prix de toute autre marchandise, nous pouvons entrer plus avant dans notre sujet.
+
+
+
+
+
+Partie III
+
+
+Le capital se compose de matières premières, d’instruments de travail et de moyens de subsistance de toutes sortes qui sont employés à produire de nouvelles matières premières, de nouveaux instruments de travail et de nouveaux moyens de subsistance. Toutes ces parties constitutives sont des créations du travail, des produits du travail, du travail accumulé. Le travail accumulé qui sert de moyen pour une nouvelle production est du capital.
+
+C’est ainsi que parlent les économistes.
+
+Qu’est-ce qu’un esclave nègre ? Un homme de race noire. Cette explication a autant de valeur que la première.
+
+Un nègre est un nègre. C’est seulement dans des conditions déterminées qu’il devient esclave. Une machine à filer le coton est une machine pour filer le coton. C’est seulement dans des conditions déterminées qu’elle devient du capital. Arrachée à ces conditions, elle n’est pas plus du capital que l’or n’est par lui-même de la monnaie ou le sucre, le prix du sucre.
+
+Dans la production, les hommes n’agissent pas seulement sur la nature, mais aussi les uns sur les autres. Ils ne produisent qu’en collaborant d’une manière déterminée et en échangeant entre eux leurs activités. Pour produire, ils entrent en relations et en rapports déterminés les uns avec les autres, et ce n’est que dans les limites de ces relations et de ces rapports sociaux que s’établit leur action sur la nature, la production.
+
+Suivant le caractère des moyens de production, ces rapports sociaux que les producteurs ont entre eux, les conditions dans lesquelles ils échangent leurs activi­tés et prennent part à l’ensemble de la production seront tout naturellement diffé­rents. Par la découverte d’un nouvel engin de guerre, l’arme à feu, toute l’orga­nisation interne de l’armée a été nécessaire­ment modifiée ; les conditions dans lesquelles les individus constituent une armée et peuvent agir en tant qu’armée se sont trouvées transformées, et les rapports des diverses armées entre elles en ont été changés également.
+
+Donc, les rapports sociaux suivant lesquels les individus produisent, les rapports sociaux de production, changent, se transforment avec la modification et le développement des moyens de production matériels, des forces de production. Dans leur totalité, les rapports de production forment ce qu’on appelle les rap­ports sociaux, la société, et, notamment, une société à un stade de développement historique déterminé, une société à caractère distinctif original. La société anti­que, la société féodale, la société bourgeoise sont des ensembles de rapports de production de ce genre dont chacun caractérise en même temps un stade parti­culier de développement dans l’histoire de l’humanité.
+
+Le capital représente, lui aussi, des rapports sociaux. Ce sont des rapports bourgeois de production, des rapports de production de la société bourgeoise. Les moyens de subsistance, les instruments de travail, les matières premières dont se compose le capital n’ont-ils pas été produits et accumulés dans des conditions socia­les données, suivant des rapports sociaux déterminés ? Ne sont-ils pas employés pour une nouvelle production dans des conditions sociales données, sui­vant des rapports sociaux déterminés ? Et n’est-ce point précisément ce caractère social déterminé qui transforme les produits servant à la nouvelle production en capital ?
+
+Le capital ne consiste pas seulement en moyens de subsistance, en instruments de travail et en matières premières, il ne consiste pas seulement en produits ma­tériels ; il consiste au même degré en valeurs d’échange. Tous les produits dont il se compose sont des marchandises. Le capital n’est donc pas seulement une somme de produits matériels, c’est aussi une somme de marchandises, de valeurs d’échange, de grandeurs sociales.
+
+Le capital reste le même, que nous remplacions la laine par le coton, le blé par le riz, les chemins de fer par les bateaux à vapeur, à cette seule condition que le coton, le riz, les bateaux à vapeur—la matière du capital—aient la même valeur d’échange, le même prix que la laine, le blé, les chemins de fer dans lesquels il était incorporé auparavant. La matière du capital peut se modifier constamment sans que le capital subisse le moindre changement.
+
+Mais si tout capital est une somme de marchandises, c’est-à-dire de valeurs d’échange, toute somme de marchandises, de valeurs d’échange, n’est pas encore du capital.
+
+Toute somme de valeurs d’échange est une valeur d’échange. Chaque valeur d’échange est une somme de valeurs d’échange. Par exemple, une maison qui vaut 1 000 marks est une valeur d’échange de 1 000 marks. Un morceau de papier qui vaut un pfennig est une somme de valeurs d’échange de 100/100 de pfennig. Des produits qui sont échangeables contre d’autres sont des marchandises. Le rapport déterminé suivant lequel ils sont échangeables constitue leur valeur d’échange, ou, exprimé en argent, leur prix. La masse de ces produits ne peut rien changer à leur destination d’être une marchandise ou de constituer une valeur d’échange, ou d’avoir un prix déterminé. Qu’un arbre soit grand ou petit, il reste un arbre. Que nous échangions du fer par onces ou par quintaux contre d’autres produits, cela change-t-il son caractère qui est d’être une marchandise, une valeur d’échange ? Suivant sa masse, une marchandise a plus ou moins de valeur, elle est d’un prix plus élevé ou plus bas.
+
+Mais comment une somme de marchandises, de valeurs d’échange, se change-t-elle en capital ?
+
+Par le fait que, en tant que force sociale indépendante, c’est-à-dire en tant que force d’une partie de la société, elle se conserve et s’accroît par son échange con­tre la force de travail immédiate, vivante. L’existence d’une classe ne possédant rien que sa capacité de travail est une condition première nécessaire du capital.
+
+Ce n’est que la domination de l’accumulation du travail passé, matérialisé, sur le travail immédiat, vivant, qui transforme le travail accumulé en capital.
+
+Le capital ne consiste pas dans le fait que du travail accumulé sert au travail vivant de moyen pour une nouvelle production. Il consiste en ceci que le travail vivant sert de moyen au travail accumulé pour maintenir et accroître la valeur d’échange de celui-ci.
+
+Que se passe-t-il dans l’échange entre le capitaliste et le salarié ?
+
+L’ouvrier reçoit des moyens de subsistance en échange de sa force de travail, mais le capitaliste, en échange de ses moyens de subsistance, reçoit du travail, l’activité productive de l’ouvrier, la force créatrice au moyen de laquelle l’ouvrier non seulement restitue ce qu’il consomme, mais donne au travail accumulé une valeur plus grande que celle qu’il possédait auparavant. L’ouvrier reçoit du capi­ta­liste une partie des moyens de subsistance existants. À quoi lui servent ces moyens de subsistance ? À sa consommation immédiate. Mais dès que je con­somme des moyens de subsistance, ils sont irrémédiablement perdus pour moi, à moins que j’utilise le temps pendant lequel ces moyens assurent mon existence pour produire de nouveaux moyens de subsistance, pour créer par mon travail de nouvelles valeurs à la place des valeurs que je fais disparaître en les consommant. Mais c’est précisément cette noble force de production nouvelle que l’ouvrier cède au capital en échange des moyens de subsistance qu’il reçoit ! Par conséquent, elle s’en trouve perdue par lui-même.
+
+Prenons un exemple. Un fermier donne à son journalier 5 groschen-argent par jour. Pour ces 5 groschen, celui-ci travaille toute la journée dans les champs du fermier et lui assure ainsi un revenu de 10 groschen. Le fermier ne se voit pas seulement restituer les valeurs qu’il doit céder au journalier, il les double. Il a donc utilisé, consommé, les 5 groschen qu’il a donnés au journalier d’une façon féconde, productive. Il a précisément acheté pour ces 5 groschen le travail et la force du journalier qui font pousser des produits du sol pour une valeur double et qui transforment 5 groschen en 10 groschen. Par contre, le journalier reçoit à la place de sa force productive, dont il a cédé les effets au fermier, 5 groschen qu’il échange contre des moyens de subsistance qu’il consomme plus ou moins rapidement. Les 5 groschen ont donc été consommés de double façon, de façon reproductive pour le capital, car ils ont été échangés contre une force de travail qui a rapporté 10 groschen ; de façon improductive pour l’ouvrier, car ils ont été échangés contre des moyens de subsistance qui ont disparu pour toujours et dont il ne peut recevoir de nouveau la valeur qu’en répétant le même échange avec le fermier. Le capital suppose donc le travail salarié, le travail salarié suppose le capital. Ils sont la condition l’un de l’autre ; ils se créent mutuellement.
+
+L’ouvrier d’une fabrique de coton ne produit-il que des étoffes de coton ? Non, il produit du capital. Il produit des valeurs qui servent à leur tour à commander son travail, afin de créer au moyen de celui-ci de nouvelles valeurs.
+
+Le capital ne peut se multiplier qu’en s’échangeant contre de la force de tra­vail, qu’en créant du travail salarié. La force de travail de l’ouvrier salarié ne peut s’échanger que contre du capital, en accroissant le capital, en renforçant la puis­sance dont il est l’esclave. L’accroissement du capital est par conséquent l’ac­crois­se­ment du prolétariat, c’est-à-dire de la classe ouvrière.
+
+L’intérêt du capitaliste et de l’ouvrier est donc le même, prétendent les bour­geois et leurs économistes. En effet ! L’ouvrier périt si le capitaliste ne l’occupe pas. Le capital disparaît s’il n’exploite pas la force de travail, et pour l’exploiter il faut qu’il l’achète. Plus le capital destiné à la production, le capital productif, s’accroît rapidement, plus l’industrie, par conséquent, est florissante, plus la bourgeoisie s’enrichit, mieux vont les affaires, plus le capital a besoin d’ouvriers et plus l’ouvrier se vend cher.
+
+La condition indispensable pour une situation passable de l’ouvrier est donc la croissance aussi rapide que possible du capital productif.
+
+Mais qu’est-ce que la croissance du capital productif ? C’est la croissance de la puissance du travail accumulé sur le travail vivant, c’est la croissance de la domination de la bourgeoisie sur la classe laborieuse. Lorsque le travail salarié produit la richesse étrangère qui le domine, la force qui lui est hostile, le capital, ses moyens d’occupation, c’est-à-dire ses moyens de subsistance, refluent de celui-ci vers lui à condition qu’il devienne de nouveau une partie du capital, le levier qui imprime de nouveau à celui-ci un mouvement de croissance accéléré.
+
+Quand on dit : Les intérêts du capital et les intérêts des ouvriers sont les mê­mes, cela signifie seulement que le capital et le travail salarié sont deux aspects d’un seul et même rapport. L’un est la conséquence de l’autre comme l’usurier et le dissipateur s’engendrent mutuellement.
+
+Tant que l’ouvrier salarié est ouvrier salarié, son sort dépend du capital. Telle est la communauté d’intérêts tant vantée de l’ouvrier et du capitaliste.
+
+
+
+
+
+Partie IV
+
+
+Lorsque le capital s’accroît, la masse du travail salarié grossit, le nombre des ouvriers salariés augmente, en un mot : la domination du capital s’étend sur une masse plus grande d’individus. Et supposons le cas le plus favorable : lorsque le capital productif s’accroît, la demande de travail augmente. Donc le prix du travail, le salaire, monte.
+
+Une maison peut être grande ou petite, tant que les maisons environnantes sont petites elles aussi, elle satisfait à tout ce qu’on exige socialement d’une maison. Mais s’il s’élève à côté de la petite maison un palais, voilà que la petite maison se ravale au rang de la chaumière. La petite maison est alors la preuve que son propriétaire ne peut être exigeant ou qu’il ne peut avoir que des exigences très modestes. Et au cours de la civilisation elle peut s’agrandir tant qu’elle veut, si le palais voisin grandit aussi vite ou même dans de plus grandes proportions, celui qui habite la maison relativement petite se sentira de plus en plus mal à l’aise, mécontent, à l’étroit entre ses quatre murs.
+
+Une augmentation sensible du salaire suppose un accroissement rapide du capi­tal pro­ductif. L’accroissement rapide du capital productif entraîne une crois­sance aussi rapide de la richesse, du luxe, des besoins et des plaisirs sociaux. Donc, bien que les plaisirs de l’ouvrier se soient accrus, la satisfaction sociale qu’ils procurent a diminué, comparativement aux plaisirs accrus du capitaliste qui sont inaccessibles à l’ouvrier, comparativement au stade de développement de la société en général. Nos besoins et nos plaisirs ont leur source dans la société ; nous les mesurons, par conséquent, à la société ; nous ne les mesurons pas aux objets de notre satisfaction. Comme ils sont de nature sociale, ils sont de nature relative.
+
+Le salaire n’est donc pas, somme toute, déterminé seulement par la masse de marchandises que je peux obtenir en échange. Il renferme divers rapports.
+
+Ce que les ouvriers reçoivent tout d’abord pour leur force de travail, c’est une somme d’argent déterminée. Le salaire n’est-il déterminé que par ce prix en argent ?
+
+Au XVI° siècle, l’or et l’argent en circulation en Europe augmentèrent par suite de la découverte en Amérique de mines plus riches et plus faciles à exploi­ter. De ce fait, la valeur de l’or et de l’argent baissa par rapport aux autres mar­chandises. Les ouvriers continuèrent à recevoir la même masse d’argent monnayée pour leur force de travail. Le prix en argent de leur travail resta le même et cependant leur salaire avait baissé, car en échange de la même quantité d’argent ils recevaient une somme moindre d’autres marchandises. Ce fut une des circonstances qui favorisèrent l’accroissement du capital, l’essor de la bourgeoisie au XVI siècle.
+
+Prenons un autre cas. Dans l’hiver de 1847, les produits alimentaires les plus indispen­sables, le blé, la viande, le beurre, le fromage, etc., par suite d’une mau­vaise récolte, avaient considérablement augmenté de prix. Supposons que les ouvriers aient continué à recevoir la même somme d’argent pour leur force de travail. Leur salaire n’avait-il pas baissé ? Mais si. Pour la même somme d’argent, ils recevaient en échange moins de pain, de viande, etc. Leur salaire avait baissé non point parce que la valeur de l’argent avait diminué, mais parce que la valeur des moyens de subsistance avait augmenté.
+
+Supposons enfin que le prix en argent du travail reste le même alors que tous les produits agricoles et manufacturés ont baissé de prix par suite de l’emploi de nouvelles machines, d’une saison plus favorable, etc. Pour la même quantité d’argent, les ouvriers peuvent alors acheter plus de marchandises de toutes sortes. Donc leur salaire a augmenté précisément parce que la valeur en argent de celui-ci n’a pas changé.
+
+Donc, le prix en argent du travail, le salaire nominal, ne coïncide pas avec le salaire réel, c’est-à-dire avec la quantité de marchandises qui est réellement donnée en échange du salaire. Donc, lorsque nous parlons de hausse ou de baisse du salaire, nous ne devons pas seulement considérer le prix en argent du travail, le salaire nominal.
+
+Mais ni le salaire nominal, c’est-à-dire la somme d’argent pour laquelle l’ou­vrier se vend au capitaliste, ni le salaire réel, c’est-à-dire la quantité de marchan­dises qu’il peut acheter avec cet argent n’épuisent les rapports contenus dans le salaire.
+
+Le salaire est encore déterminé avant tout par son rapport avec le gain, avec le profit du capitaliste ; le salaire est relatif, proportionnel.
+
+Le salaire réel exprime le prix du travail relativement au prix des autres marchandises, le salaire relatif, par contre, exprime la part du travail immédiat à la nou­velle valeur qu’il a créée par rapport à la part qui en revient au travail accumulé, au capital.
+
+
+
+
+
+Nous disions plus haut : «Le salaire n’est donc pas une part de l’ouvrier à la marchandise qu’il produit. Le salaire est la partie de marchandises déjà existantes avec laquelle le capita­liste s’approprie par achat une quantité déterminée de force de travail productive.» Mais ce salaire, il faut que le capitaliste le retrouve dans le prix auquel il vend le produit fabriqué par l’ouvrier ; il faut qu’il le retrouve de façon qu’en règle générale il lui reste encore un excédent sur ses frais de production engagés, un profit. Le prix de vente de la marchandise produite par l’ouvrier se divise pour le capitaliste en trois parties : premièrement, le remplace­ment du prix des matières premières qu’il a avancées ainsi que le remplacement de l’usure des instruments, machines et autres moyens de travail qu’il a également avancés ; deuxièmement, le remplacement du salaire qu’il a avancé ; et troisième­ment, ce qui est en excédent, le profit du capitaliste. Alors que la première partie ne remplace que des valeurs qui existaient auparavant, il est clair que le rempla­cement du salaire tout comme le profit excédentaire du capitaliste proviennent, somme toute, de la nouvelle valeur créée par le travail de l’ouvrier et ajoutée aux matières premières. Et c’est dans ce sens que nous pouvons considérer aussi bien le salaire que le profit, quand nous les comparons ensemble, comme des partici­pations de l’ouvrier au produit.
+
+Que le salaire réel reste le même, qu’il augmente même, le salaire relatif n’en peut pas moins baisser. Supposons, par exemple, que tous les moyens de subsis­tance aient baissé de prix des 2/3, alors que le salaire journalier ne baisse que d’un tiers, c’est-à-dire tombe, par exemple, de 3 marks à 2 marks. Bien que l’ouvrier avec ses deux marks dispose d’une plus grande quantité de marchandises qu’aupa­ravant avec 3 marks, son salaire a cependant diminué par rapport au bénéfice du capitaliste. Le profit du capitaliste (par exemple du fabricant) a aug­menté d’un mark, c’est-à-dire que pour une somme moindre de valeurs d’échange qu’il paie à l’ouvrier, il faut que l’ouvrier produise une plus grande quantité de valeurs d’é­chan­ge qu’auparavant. La part du capital proportionnelle­ment à la part du travail s’est accrue. La répartition de la richesse sociale entre le capital et le travail est devenue encore plus inégale. Le capitaliste commande avec le même capital une quantité plus grande de travail. La puissance de la classe capitaliste sur la classe ouvrière a grandi, la situation sociale de l’ouvrier a empiré, elle est descen­due d’un degré de plus au-dessous de celle du capitaliste.
+
+
+
+
+
+Mais quelle est donc la loi générale qui détermine la hausse et la baisse du salaire et du profit dans leurs relations réciproques ?
+
+Ils sont en rapport inverse. La part du capital, le profit, monte dans la mesure même où la part du travail, le salaire quotidien, baisse, et inversement. Le profit monte dans la mesure où le salaire baisse, il baisse dans la mesure où le salaire monte.
+
+On objectera peut-être que le capitaliste peut faire du bénéfice grâce à un échange avanta­geux de ses produits avec d’autres capitalistes, parce que sa mar­chan­dise est plus deman­dée, soit par suite de l’ouverture de nouveaux marchés, soit encore du fait de l’augmen­tation momentanée des besoins sur les anciens marchés, etc. ; que le profit du capitaliste peut donc s’accroître du fait que d’autres capitalistes ont été supplantés, indépendamment de la hausse ou de la baisse du salaire, de la valeur d’échange de la force de travail ; ou que le profit peut égale­ment s’accroître grâce au perfectionnement des instruments de travail, à une nouvelle utilisation des forces naturelles, etc.
+
+On devra tout d’abord reconnaître que le résultat reste le même, bien qu’on y arrive par le chemin inverse. Le profit n’a pas augmenté parce que le salaire a dimi­nué, mais le salaire a diminué parce que le profit a augmenté. Le capitaliste a ache­té avec la même quantité du travail d’autrui une plus grande quantité de valeurs d’échange sans avoir pour cela payé plus cher le travail ; c’est-à-dire que le travail est moins payé par rapport au bénéfice net qu’il laisse au capitaliste.
+
+En outre, rappelons qu’en dépit des oscillations des prix des marchandises, le prix moyen de chaque marchandise, le rapport suivant lequel elle est échangée contre d’autres marchan­dises, est déterminé par ses frais de production. Les dupe­ries mutuelles au sein de la classe capitaliste se feront donc nécessairement équili­bre. Le perfectionnement des machines, l’emploi de nouvelles forces natu­relles au service de la production permettent, dans un temps de travail donné, avec la même quantité de travail et de capital, de créer une plus grande masse de produits, mais nullement une plus grande masse de valeurs d’échange. Si, grâce à l’emploi de la machine à filer, je puis livrer en une heure deux fois plus de fil qu’avant son invention, par exemple cent livres au lieu de cinquante, je ne reçois à la longue pas plus de marchandises en échange qu’auparavant pour cinquante, parce que les frais de production sont tombés de moitié ou parce que je puis livrer avec les mêmes frais le double du produit.
+
+Enfin, quel que soit le rapport suivant lequel la classe capitaliste, la bour­geoisie, soit d’un pays, soit du marché mondial tout entier, répartit entre ses membres le bénéfice net de la production, la somme totale de ce bénéfice net n’est chaque fois que la somme dont a été augmenté, dans l’ensemble, grâce au travail immédiat, le travail accumulé. Cette somme totale s’accroît donc dans la mesure où le travail augmente le capital, c’est-à-dire dans la mesure où le profit s’accroît par rapport au salaire.
+
+Nous voyons donc que, même si nous restons dans les limites du rapport entre le capital et le travail salarié, les intérêts du capital et les intérêts du travail salarié sont diamétra­lement opposés.
+
+Un accroissement rapide du capital équivaut à un accroissement rapide du profit. Le profit ne peut s’accroître rapidement que si le prix du travail, si le salaire relatif, diminue avec la même rapidité. Le salaire relatif peut baisser, même si le salaire réel monte en même temps que le salaire nominal, la valeur en argent du travail, mais à condition que ces derniers ne montent pas dans la même proportion que le profit. Si, par exemple, dans les périodes d’affaires favorables, le salaire monte de 5 pour cent, et le profit par contre de 30 pour cent, le salaire propor­tionnel, le salaire relatif, n’a pas augmenté, mais diminué.
+
+Si donc le revenu de l’ouvrier augmente avec l’accroissement rapide du capi­tal, l’abîme social qui sépare l’ouvrier du capitaliste s’élargit en même temps, la puissance du capital sur le travail, l’état de dépendance du travail envers le capital grandissent du même coup.
+
+Dire : l’ouvrier a intérêt à un accroissement rapide du capital, cela signifie seulement : plus l’ouvrier augmente rapidement la richesse d’autrui, plus les miet­tes du festin qu’il recueille sont substantielles ; plus on peut occuper d’ouvriers et les faire se multiplier, plus on peut augmenter la masse des esclaves sous la dépendance du capital.
+
+Nous avons donc constaté :
+
+Même la situation la plus favorable pour la classe ouvrière, l’accroissement le plus rapide possible du capital, quelque amélioration qu’il apporte à la vie matérielle de l’ouvrier, ne supprime pas l’antagonisme entre ses intérêts et les inté­rêts du bourgeois, les intérêts du capitaliste. Profit et salaire sont, après comme avant, en raison inverse l’un de l’autre.
+
+Lorsque le capital s’accroît rapidement, le salaire peut augmenter, mais le profit du capital s’accroît incomparablement plus vite. La situation matérielle de l’ouvrier s’est améliorée, mais aux dépens de sa situation sociale. L’abîme social qui le sépare du capitaliste s’est élargi.
+
+Enfin :
+
+Dire que la condition la plus favorable pour le travail salarié est un accroisse­ment aussi rapide que possible du capital productif signifie seulement ceci : plus la classe ouvrière augmente et accroît la puissance qui lui est hostile, la richesse étrangère qui la commande, plus seront favorables les circonstances dans lesquelles il lui sera permis de travailler à nouveau à l’augmentation de la richesse bourgeoise, au renforcement de la puissance du capital, contente qu’elle est de forger elle-même les chaînes dorées avec lesquelles la bourgeoisie la traîne à sa remorque.
+
+
+
+
+
+Partie V
+
+
+La croissance du capital productif et l’augmentation du salaire sont-elles vrai­ment aussi inséparablement liées que le prétendent les économistes bourgeois ? Nous ne devons pas les croire sur parole. Nous ne devons même pas les croire lorsqu’ils disent que plus le capital est gras, plus son esclave s’engraisse. La bourgeoisie est trop avisée, elle calcule trop bien pour partager les préjugés du grand seigneur qui tire vanité de l’éclat de sa dome sticité. Les conditions d’exis­tence de la bourgeoisie la contraignent à calculer.
+
+Nous devrons donc étudier de plus près le point suivant :
+
+Quel est l’effet de l’accroissement du capital productif sur le salaire ?
+
+Lorsque, en somme, le capital productif de la société bourgeoise s’accroît, c’est qu’il se produit une accumulation de travail plus étendue. Les capitaux aug­men­tent en nombre et en importance. L’accroissement des capitaux augmente la concurrence entre les capitalistes. L’importance croissante des capitaux permet d’ame­ner sur le champ de bataille industriel des armées plus formidables d’ou­vriers avec des engins de guerre plus gigantesques.
+
+Un capitaliste ne peut évincer l’autre et s’emparer de son capital qu’en vendant meilleur marché. Pour pouvoir vendre meilleur marché sans se ruiner, il faut produire meilleur marché, c’est-à-dire accroître autant que possible la productivité du travail. Mais la producti­vité du travail augmente surtout par une division plus grande du travail, par l’introduction plus générale et le perfectionnement constant des machines. Plus est grande l’armée des ouvriers entre lesquels le travail est divisé, plus le machinisme est introduit à une échelle gigantesque, et plus les frais de production diminuent en proportion, plus le travail devient fructueux. De là, une émulation générale entre les capitalistes, pour augmenter la division du travail et les machines, et les exploiter tous deux à la plus grande échelle possible.
+
+Or, si un capitaliste, grâce à une plus grande division du travail, à l’emploi et au perfec­tion­nement de nouvelles machines, grâce à l’utilisation plus avantageuse et sur une plus grande échelle des forces naturelles, a trouvé le moyen de créer avec la même somme de travail ou de travail accumulé une somme plus grande de produits, de marchandises que ses concurrents ; s’il peut, par exemple, dans le même temps de travail où ces concurrents tissent une demi-aune de drap, produire une aune entière, comment ce capitaliste va-t-il opérer ?
+
+Il pourrait continuer à vendre une demi-aune de drap au prix antérieur du marché, mais ce ne serait pas le moyen d’évincer ses adversaires et d’augmenter son propre débit. Or, au fur et à mesure que sa production s’est étendue, le besoin de débouchés s’est également élargi pour lui. Les moyens de production plus puissants et plus coûteux qu’il a créés lui permettent bien de vendre sa marchan­di­se meilleur marché, mais ils le contraignent en même temps à vendre plus de mar­chan­dises, à conquérir un marché infiniment plus grand pour ses marchan­dises. Notre capitaliste va donc vendre la demi-aune de drap meilleur marché que ses concurrents.
+
+Mais le capitaliste ne vendra pas l’aune entière aussi bon marché que ses concurrents vendent la demi-aune, bien que la production de l’aune entière ne lui coûte pas plus que coûte aux autres celle de la demi-aune. Sinon, il n’aurait aucun bénéfice supplémentaire et ne retrouverait à l’échange que ses frais de production. Dans ce cas, son revenu plus grand proviendrait du fait qu’il a mis en œuvre un capital plus élevé et non pas du fait qu’il aurait fait rendre à son capital plus que les autres. D’ailleurs, il atteint le but qu’il cherche en fixant pour sa marchandise un prix inférieur de quelques pour cent seulement à celui de ses concurrents. Il les évince du marché, il leur enlève tout au moins une partie de leurs débouchés en vendant à plus bas prix. Enfin, rappelons-nous que le prix courant est toujours au-dessus ou au-dessous des frais de production, suivant que la vente d’une marchan­dise tombe dans une saison favorable ou défavorable à l’industrie. Selon que le prix du marché de l’aune de drap est au-dessus ou au-dessous des frais ordinaires de sa production antérieure, le capitaliste qui a employé de nouveaux moyens de production plus avantageux vendra au-dessus de ses frais de production réels suivant des pourcentages différents.
+
+Mais le privilège de notre capitaliste n’est pas de longue durée ; d’autres capitalistes rivaux introduisent les mêmes machines, la même division du travail, le font à la même échelle ou à une échelle plus grande, et cette amélioration se généralise jusqu’au moment où le prix du drap s’abaisse non seulement au-dessous de ses anciens frais de production, mais au-dessous de ses nouveaux frais.
+
+Les capitalistes se trouvent donc à l’égard les uns des autres dans la même situation où ils se trouvaient avant l’introduction des nouveaux moyens de production et si, avec ces moyens, ils peuvent livrer, pour le même prix, le double du produit, ils sont maintenant contraints de livrer au-dessous de l’ancien prix leur production doublée. Au niveau de ces nouveaux frais de production, le même jeu recommence : plus grande division du travail, plus de machines, plus grande échelle à laquelle sont utilisées division du travail et machines. Et la concurrence produit de nouveau la même réaction contre ce résultat.
+
+Nous voyons ainsi comment le mode de production, les moyens de production sont constamment bouleversés, révolutionnés ; comment la division du travail entraîne nécessaire­ment une division du travail plus grande, l’emploi des machi­nes, un plus grand emploi des machines, le travail à une grande échelle, le travail à une échelle plus grande.
+
+Telle est la loi qui rejette constamment la production bourgeoise hors de son ancienne voie et qui contraint toujours le capital à tendre les forces de production du travail, une fois qu’il les a tendues, la loi qui ne lui accorde aucun repos et lui murmure continuellement à l’oreille : Marche ! Marche !
+
+Cette loi n’est autre chose que la loi qui, dans les limites des oscillations des époques com­merciales, maintient nécessairement le prix d’une marchandise égal à ses frais de production.
+
+Aussi formidables que soient les moyens de production avec lesquels un capitaliste entre en campagne, la concurrence généralisera ces moyens de pro­duction, et dès l’instant où ils sont généralisés, le seul avantage du rendement plus grand de son capital est qu’il lui faut alors pour le même prix livrer dix, vingt, cent fois plus qu’auparavant. Mais comme il lui faut écouler peut-être mille fois plus pour compenser par la masse plus grande du produit écoulé le prix de vente plus bas, comme une vente par masses plus considérables est maintenant nécessaire non seulement pour gagner davantage, mais pour récupérer les frais de production — l’instrument de production lui-même, ainsi que nous l’avons vu, coûtant de plus en plus cher—et comme cette vente en masse est une question vitale non seulement pour lui, mais pour ses rivaux, l’ancienne lutte se fait d’autant plus violente que les moyens de production déjà inventés sont plus féconds. La division du travail et l’emploi des machines continueront donc à se développer à une échelle infiniment plus grande.
+
+Quelle que soit donc la puissance des moyens de production employés, la concurrence cherche à ravir au capital les fruits d’or de cette puissance en ramenant le prix de la marchandise à ses frais de production, élevant ainsi la production à bon marché, la livraison de masses de plus en plus grandes de produits pour la même somme à la hauteur d’une loi impérieuse, à mesure qu’elle produit meilleur marché, c’est-à-dire qu’elle produit davantage avec la même quantité de travail. Ainsi donc, par ses propres efforts, le capitaliste n’aurait rien gagné que l’obligation de fournir davantage dans le même temps de travail, en un mot, que des conditions plus difficiles d’exploitation de son capital. Par consé­quent, tandis que la concurrence le poursuit constamment avec sa loi des frais de production, et que chaque arme qu’il forge contre ses rivaux se retourne contre lui-même, le capitaliste cherche constamment à l’emporter sur la concurrence en introduisant sans répit, à la place des anciennes, des machines et des méthodes nouvelles de division du travail, plus coûteuses sans doute, mais produisant à meilleur marché, sans attendre que la concurrence ait rendu surannées les nouvelles.
+
+Représentons-nous maintenant cette agitation fiévreuse simultanément sur le marché mondial tout entier, et nous comprendrons comment la croissance, l’accu­mu­lation et la concentration du capital ont pour conséquence une division du travail ininterrompue, de plus en plus précipitée et exécutée à une échelle toujours plus gigantesque, l’emploi de nouvelles machines et le perfectionnement des anciennes.
+
+Mais quels sont, sur la détermination du salaire, les effets de ces circons­tances insépa­rables de l’accroissement du capital productif ?
+
+La division plus grande du travail permet à un ouvrier de faire le travail de 5, 10, 20 ; elle rend donc la concurrence entre les ouvriers 5, 10, 20 fois plus grande. Les ouvriers ne se font pas seulement concurrence en se vendant meilleur marché les uns que les autres ; ils se font concurrence par le fait qu’un seul accomplit le travail de 5, 10, 20, et c’est la division du travail introduite par le capital et ren­forcée de plus en plus qui contraint les ouvriers à se faire cette sorte de concurrence.
+
+De plus, le travail est simplifié dans la mesure même où augmente la division du travail. L’habileté particulière de l’ouvrier perd sa valeur. Celui-ci est trans­formé en une force productive simple, monotone, qui ne met en jeu aucun effort corporel et intellectuel. Son travail devient du travail accessible à tous. C’est pourquoi les concurrents font de tous les côtés pression sur l’ouvrier et rappelons, en outre, que plus le travail est simple et facile à apprendre, moins on a besoin de frais de production pour se l’assimiler et plus le salaire s’abaisse, car il est déterminé comme le prix de toute autre marchandise par ses frais de production.
+
+Au fur et à mesure donc que le travail apporte moins de satisfaction, plus de dégoût, la concurrence augmente et le salaire diminue. L’ouvrier cherche à con­ser­ver la masse de son salaire en travaillant davantage, soit en faisant plus d’heu­res, soit en fournissant davantage dans la même heure. Poussé par la misère, il augmente donc encore les effets funestes de la division du travail. Le résultat est que plus il travaille, moins il reçoit de salaire, et cela pour la simple raison qu’au fur et à mesure qu’il concurrence ses compagnons de travail, il fait de ceux-ci autant de concurrents qui se vendent à des conditions aussi mauvaises que lui-même, et parce qu’en définitive c’est à lui-même qu’il fait concurrence, à lui-même en tant que membre de la classe ouvrière.
+
+Le machinisme produit les mêmes effets à une échelle bien plus grande encore en évinçant les ouvriers habiles et en les remplaçant par des ouvriers malhabiles, les hommes par des femmes, les adultes par des enfants ; en jetant, là où des machines sont nouvellement introduites, les ouvriers manuels en masse sur le pavé, et là où elles sont développées, améliorées, remplacées par des machines de meilleur rendement, en congédiant les ouvriers par plus petits paquets. Nous avons esquissé plus haut, de façon rapide, la guerre industrielle des capitalistes entre eux ; cette guerre a ceci de particulier que les batailles y sont moins gagnées par le recrutement que par le congédiement de l’armée ouvrière. Les généraux, les capitalistes, rivalisent entre eux à qui pourra licencier le plus de soldats d’industrie.
+
+Les économistes nous racontent bien, il est vrai, que les ouvriers rendus superflus par les machines trouvent de nouvelles branches d’occupation.
+
+Ils n’osent pas affirmer directement que les mêmes ouvriers qui ont été congé­diés trouveront à se caser dans de nouvelles branches de travail. Les faits hurlent trop fort contre ce mensonge. À vrai dire, ils affirment seulement que pour d’autres parties de la classe ouvrière, par exemple pour la partie des jeunes générations d’ouvriers qui était sur le point d’entrer dans la branche d’industrie qui a périclité, il se présentera de nouveaux moyens d’occupation. Naturellement, c’est une grande satisfaction, n’est-ce pas, pour les ouvriers jetés à la rue. Messieurs les capitalistes ne manqueront pas de chair fraîche à exploiter, on laissera les morts enterrer leurs morts. Cela est bien plus une consolation que les bourgeois se donnent à eux-mêmes qu’aux ouvriers. Si toute la classe des salariés était anéantie par le machinisme, quelle chose effroyable pour le capital qui, sans travail salarié, cesse d’être du capital !
+
+Mais supposons que les ouvriers chassés directement du travail par le machi­nisme et toute la partie de la nouvelle génération qui guettait leur place, trouvent une occupation nouvelle. Croit-on que celle-ci sera payée aussi cher que celle qu’ils ont perdue ? Cela serait en contradiction avec toutes les lois économiques. Nous avons vu comment l’industrie moderne tend toujours à substituer à une occupation complexe, supérieure, une occupation plus simple, inférieure.
+
+Comment une masse ouvrière jetée hors d’une branche industrielle par le ma­chi­nisme pourrait-elle donc se réfugier dans une autre, si ce n’est en étant payée plus mal, à un prix plus bas ?
+
+On a cité comme une exception les ouvriers qui travaillent à la fabrication des machines elles-mêmes. Dès que l’industrie exige et consomme plus de machines, a-t-on dit, les machines devraient nécessairement augmenter en nombre et, par suite, la fabrication des machines, donc aussi le nombre des ouvriers occupés à la fabrication des machines et les ouvriers employés dans cette branche d’industrie seraient des ouvriers habiles, voire même qualifiés.
+
+Depuis l’année 1840, cette affirmation qui, auparavant déjà, était seulement à moitié vraie, a perdu toute apparence de valeur puisque, de façon de plus en plus générale, les machines furent autant employées à fabriquer les machines qu’à produire le fil de coton, et que les ouvriers employés dans les fabriques de machines, face à des engins extrêmement perfectionnés, ne purent plus jouer que le rôle de machines tout à fait rudimentaires.
+
+Mais à la place de l’homme chassé par la machine, la fabrique occupe peut-être trois enfants et une femme ! Or, le salaire de l’homme ne devait-il pas être suffisant pour les trois enfants et la femme ? Le minimum du salaire ne devait-il pas suffire à entretenir et augmenter la race ? Que prouve donc cette façon de s’exprimer chère aux bourgeois ? Rien d’autre que ceci : quatre fois plus d’exis­tences ouvrières qu’autrefois se consument pour faire vivre une seule famille ouvrière.
+
+Résumons-nous: Plus le capital producteur s’accroît, plus la division du travail et l’emploi du machinisme prennent de l’extension ; plus la division du travail et l’emploi du machinisme prennent de l’extension, plus la concurrence gagne parmi les ouvriers et plus leur salaire se resserre.
+
+
+
+
+
+Ajoutons encore que la classe ouvrière se recrute dans les couches supérieures de la société. Il s’y précipite une masse de petits industriels et de petits rentiers qui n’ont rien de plus pressé que de lever les bras à côté de ceux des ouvriers. C’est ainsi que la forêt des bras qui se lèvent pour demander du travail se fait de plus en plus épaisse et les bras eux-mêmes de plus en plus maigres.
+
+Il est de toute évidence que le petit industriel ne peut pas résister dans une guerre dont une des conditions premières est de produire à une échelle toujours plus grande, c’est-à-dire d’être un gros et non point un petit industriel.
+
+Que l’intérêt du capital diminue au fur et à mesure que la masse et le nombre des capitaux augmentent, que le capital s’accroît, que par conséquent le petit ren­tier ne peut plus vivre de sa rente, qu’il lui faut par conséquent se rejeter sur l’industrie, c’est-à-dire aider à grossir les rangs des petits industriels et de cette façon les candidats au prolétariat, tout cela n’a pas besoin de plus ample explication.
+
+Au fur et à mesure, enfin, que les capitalistes sont contraints par le mouvement décrit plus haut d’exploiter à une échelle plus grande les moyens de production gigantesques déjà existants, et, dans ce but, de mettre en action tous les ressorts du crédit, les tremblements de terre industriels—au cours desquels le monde commercial ne se maintient qu’en sacrifiant aux dieux des Enfers une partie de la richesse, des produits et même des forces de production —deviennent plus nom­breux, en un mot, les crises augmentent. Elles deviennent de plus en plus fréquen­tes et de plus en plus violentes déjà du fait que, au fur et à mesure que la masse des produits et, par conséquent, le besoin de marchés élargis s’accroissent, le marché mondial se rétrécit de plus en plus et qu’il reste de moins en moins de marchés à exploiter, car chaque crise antérieure a soumis au commerce mondial un marché non conquis jusque-là ou exploité de façon encore superficielle par le commerce. Mais le capital ne vit pas seulement du travail. Maître à la fois distingué et barbare, il entraîne dans sa tombe les cadavres de ses esclaves, des hécatombes entières d’ouvriers qui sombrent dans les crises.
+
+Ainsi, nous voyons que lorsque le capital s’accroît rapidement, la concur­rence entre les ouvriers s’accroît de manière infiniment plus rapide, c’est-à-dire que les moyens d’occu­pa­tion, les moyens de subsistance pour la classe ouvrière diminuent proportionnellement d’autant plus et que, néanmoins, l’accroissement rapide du capital est la condition la plus favorable pour le travail salarié. == Annexe A ==
+
+Déjà expliqué :
+
+Salaire = prix de la marchandise.
+
+
+
+La détermination du salaire coïncide donc en général avec la détermination générale du prix.
+
+Activité humaine = marchandise.
+
+La manifestation de la vie — l’activité vitale— apparaît comme simple moyen : le phénomène dissocié de cette activité comme but.
+
+
+
+En tant que marchandise, le salaire dépend de la concurrence de l’offre et de la demande.
+
+L’offre elle-même dépend des frais de production, c’est-à-dire du temps de travail nécessaire à la production d’une marchandise.
+
+Rapport inverse entre le profit et le salaire. Antagonisme des deux classes dont le profit et le salaire sont l’existence économique.
+
+Lutte pour augmentation ou baisse du salaire. Associations ouvrières.
+
+Prix moyen ou normal du travail ; le minimum n’a de valeur que pour la classe des ouvriers et non pour l’ouvrier pris isolément. Coalition des ouvriers pour maintien des salaires.
+
+Influence de la suppression des impôts, des droits de douane protecteurs, de la réduction des armées, etc., sur le salaire. Le minimum déterminé en moyenne est égal au prix des moyens de subsistance nécessaires. == Annexe B ==
+
+
+
+Adjonction
+
+
+
+
+
+Annexe C
+
+
+
+Quel est l’effet de l’accroissement des forces productrices sur le salaire ? (cf. VI 3)
+
+
+Machines : division du travail.
+
+Le travail est simplifié. Ses frais de production moindres. Il devient meilleur marché. La concurrence des ouvriers entre eux grandit.
+
+Le passage d’une branche de travail dans une autre. Ce qu’en dit le Dr Bowring en 1835 au Parlement au sujet des tisseurs de coton à bras du district de Dacca aux Indes.
+
+Le nouveau travail dans lequel est jeté l’ouvrier, pire que le travail précédent ; de caractère plus subordonné. Travail des adultes remplacé par celui des enfants, celui des hommes par celui des femmes, des ouvriers plus qualifiés par de moins qualifiés.
+
+Ou bien augmentation des heures de travail, ou diminution du salaire.
+
+Concurrence des ouvriers entre eux, non seulement du fait que l’un se vend meilleur marché que l’autre, mais parce qu’un seul fait le travail de deux.
+
+L’accroissement des forces productrices en général a pour conséquences :
+
+Que la situation des ouvriers empire relativement à celle des capitalistes, étant donné que la valeur des jouissances est relative. Les jouissances elles-mê­mes ne sont pas autre chose que des jouissances, des relations, des rapports sociaux.
+
+L’ouvrier devient une force productrice de plus en plus exclusive qui produit le plus possible dans le moins de temps possible. Le travail qualifié se transforme de plus en plus en travail simple.
+
+Le salaire dépend de plus en plus du marché mondial, de même la situation de l’ouvrier.
+
+Dans le capital producteur, la partie consacrée aux machines et aux ma­tières premières croît plus rapidement que celle consacrée à l’approvisionne­ment en moyens de subsistance pour les ouvriers. L’augmentation du capital producteur n’est donc pas accompagnée d’une augmentation nécessaire de la demande de travail.
+
+
+
+Le salaire dépend :
+
+de la masse du capital producteur en général ;
+
+des rapports entre ses parties constitutives.
+
+
+
+Sur ces deux points, l’ouvrier est sans influence.
+
+(S’il n’y avait pas les oscillations du salaire, l’ouvrier ne prendrait aucune part au développement de la civilisation, il resterait stationnaire.) Dans la concurrence des ouvriers avec la machine, il faut remarquer que les ouvriers travaillant à la main (par exemple les tisseurs de coton à bras) souffrent encore davantage que les ouvriers de machines occupés directement dans la fabrique.
+
+Chaque développement d’une nouvelle force productrice est en même temps une arme contre les ouvriers. Par exemple, toutes les améliorations des moyens de communications facilitent la concurrence des ouvriers en divers endroits et font d’une concurrence locale une concurrence nationale, etc.
+
+L’abaissement des prix de toutes les marchandises, ce qui, d’ailleurs, n’est pas le cas pour les moyens de subsistance les plus immédiats, fait que l’ouvrier porte des haillons rapiécés et que sa misère porte les couleurs de la civilisation.
+
+
+
+
+
+Concurrence entre les souvenirs et les employeurs
+
+
+Pour déterminer le salaire relatif, il faut remarquer qu’un thaler pour un ouvrier et un thaler pour un employeur n’ont pas la même valeur. L’ouvrier est obli­gé de tout acheter de plus mauvaise qualité et plus cher. Son thaler ne com­mande ni autant, ni d’aussi bonnes marchandises que celui de l’employeur. L’ouvrier est obligé d’être un gaspilleur et d’acheter et de vendre contre tous les principes économiques. Il nous faut remarquer en général que nous n’examinons ici qu’un seul côté, le salaire lui-même. Mais l’exploitation de l’ouvrier recommence dès qu’il échange à nouveau le fruit de son travail contre d’autres marchandises. Épiciers, prêteurs sur gage, prêteurs à domicile, tout le monde l’exploite encore une fois.
+
+
+
+
+
+Ayant le commandement des moyens d’occupation, l’employeur a le commandement des moyens de subsistance de l’ouvrier, c’est-à-dire que la vie de celui-ci dépend de lui ; de même que l’ouvrier lui-même ravale son activité vitale à un simple moyen d’existence.
+
+La marchandise-travail a de grands désavantages par rapport à d’autres marchandises. Pour le capitaliste, il ne s’agit dans la concurrence avec les ouvriers que du profit, pour les ouvriers, il s’agit de l’existence. Le travail est de nature plus périssable que les autres marchandises. Il ne peut être accumulé. L’offre ne peut pas être augmentée ou diminuée avec la même facilité que pour les autres marchandises.
+
+
+
+
+
+Règlements de fabrique. Législation de l’habitation. Trucksystem, par lesquels l’employeur trompe l’ouvrier en haussant le prix des marchandises, tout en laissant sans changement son salaire nominal.
+
+
+
+
+
+Concurrence des ouvriers entre eux
+
+
+Suivant une loi économique générale, il ne peut y avoir deux prix du mar­ché. Sur 1 000 ouvriers de même habileté, ce ne sont pas les 950 occupés qui déter­mi­nent le salaire, mais les 50 inoccupés. Influence des Irlandais sur la situa­tion des ouvriers anglais et des ouvriers allemands sur la situation des ouvriers alsaciens.
+
+Les ouvriers se font concurrence non seulement parce que l’un s’offre à meilleur marché que les autres, mais aussi parce qu’un travaille pour deux.
+
+
+
+Avantage de l’ouvrier célibataire sur les ouvriers mariés, etc. Concurrence entre les ouvriers de la campagne et les ouvriers des villes.
+
+
+
+
+
+Fluctuations du salaire
+
+
+Elles sont provoquées:
+
+Par les changements de mode.
+
+Par les changements de saison.
+
+Par les fluctuations du commerce.
+
+
+
+En cas de crise :
+
+L’ouvrier réduira ses dépenses ou, pour augmenter sa productivité, il travaillera un plus grand nombre d’heures, ou il produira davantage dans le même temps. Mais comme leur salaire est réduit, du fait que la demande du produit qu’ils fabriquent a baissé, ils augmentent encore le rapport défavorable entre l’offre et la demande et le bourgeois dit alors : Si seulement les gens voulaient travailler. Du fait de leur surmenage, leur salaire s’abaisse donc encore davantage.
+
+Au cours de la crise : Absence complète d’occupation. Réduction du salaire. Maintien du salaire et diminution du nombre des jours de travail.
+
+
+
+
+
+Dans toutes les crises, le mouvement cyclique suivant en ce qui concerne les ouvriers : L’employeur ne peut employer les ouvriers parce qu’il ne peut pas vendre son produit. Il ne peut vendre son produit parce qu’il n’a pas de preneurs. Il n’a pas de preneurs parce que les ouvriers n’ont rien à échanger que leur travail, et c’est précisément à cause de cela qu’ils ne peuvent échanger leur travail.
+
+
+
+
+
+Lorsqu’on parle de hausse du salaire, il est à remarquer qu’il faut toujours avoir en vue le marché mondial et que la hausse du salaire n’est acquise qu’au prix que dans d’autres pays des ouvriers soient privés de pain.
+
+
+
+
+
+Minimum du salaire
+
+
+Le salaire journalier que touche l’ouvrier est le profit que rapporte à son possesseur sa machine, son corps. Il contient la somme qui est nécessaire pour remplacer l’usure de la machine ou, ce qui est la même chose, pour remplacer les ouvriers âgés, usés, par de nouveaux.
+
+Dans le minimum de salaire, il y a le fait que, par exemple, la suppression du dimanche serait une pure perte pour l’ouvrier. Il lui faudrait gagner son salaire dans des conditions plus difficiles. Tel est l’état d’esprit de ces braves philan­thropes qui tonnent contre le repos du dimanche.
+
+Bien que le minimum du salaire soit en moyenne déterminé par le prix des moyens de subsistance les plus indispensables, on doit cependant remarquer :
+
+
+
+Premièrement : que le minimum est différent dans les divers pays, par exem­ple, la pomme de terre en Irlande.
+
+Deuxièmement : il n’y a pas que cela. Le minimum lui-même a un mouvement historique et il s’abaisse de plus en plus vers le niveau absolu le plus bas. Exemple de l’eau-de-vie. D’abord faite avec du marc de raisin, puis du grain, puis du schnaps.
+
+Contribuent à amener au minimum réellement le plus bas :
+
+Le développement général de l’emploi des machines dans la production, la division du travail, la concurrence mobile et débarrassée des entraves locales des ouvriers entre eux, ensuite :
+
+L’accroissement des impôts et des dépenses du budget de l’État, car bien que la suppression d’un impôt, comme nous l’avons vu, ne soit d’aucune utilité pour l’ouvrier, l’établissement de chaque nouvel impôt lui est préjudiciable aussi longtemps que le minimum du salaire n’est pas encore ramené à sa dernière ex­pres­sion possible, et c’est le cas pour tout ce qui trouble et rend plus difficile le commerce bourgeois. L’accroissement des impôts, remarquons-le en passant, devient la ruine des petits paysans, des petits bourgeois et des artisans.
+
+
+
+Un autre exemple, la période qui suit la guerre de libération. Le progrès de l’industrie qui fait surgir des produits à meilleur marché et des produits similaires.
+
+
+
+Le minimum tend à s’égaliser dans les différents pays.
+
+Lorsque le salaire a baissé et qu’il remonte ensuite, il ne s’élève jamais plus, par contre, à son niveau précédent.
+
+
+
+Au cours de son développement, le salaire fait donc une double chute :
+
+Premièrement : de façon relative par rapport au développement de la richesse générale.
+
+Deuxièmement : de façon absolue, par le fait que la quantité de marchandises que l’ouvrier reçoit en échange devient toujours plus petite.
+
+
+
+Au cours du développement de la grande industrie, le temps devient de plus en plus la mesure de la valeur des marchandises, c’est-à-dire aussi la mesure du salaire. En même temps, la production de la marchandise-travail devient toujours meilleur marché et coûte de moins en moins de temps de travail au cours du développement de la civilisation.
+
+
+
+Le paysan a encore des loisirs et il peut encore gagner quelque chose à côté. Mais la grande industrie (non pas l’industrie manufacturière) supprime cette situa­tion patriarcale. Chaque moment de la vie, de l’existence de l’ouvrier est ainsi de plus en plus intégré dans ce trafic sordide.
+
+Viennent encore les chapitres suivants :
+
+Propositions pour améliorer la situation des travailleurs, Malthus, Rossi, etc. Proudhon, Weitling.
+
+Associations de travailleurs.
+
+Sens positif du travail salarié.
+
+
+
+
+
+Propositions pour y remédier
+
+
+I. Une des propositions favorites est le système des caisses d’épargne
+
+Nous ne parlerons pas de l’impossibilité d’épargner où se trouve la plus grande partie des ouvriers eux-mêmes.
+
+
+
+’Le but’ - du moins le sens économique strict des caisses d’épargne - doit être que les ouvriers compensent, grâce à leur prudence et leur clairvoyance, le temps où le travail est défavorable par celui où il est favorable ; que, par conséquent, au cours du cycle par lequel passe le mouvement industriel, ils répartissent leur salaire de manière à ne dépenser jamais plus que le minimum de salaire indis­pensable pour vivre.
+
+Mais nous avons vu que ce ne sont pas seulement les fluctuations du salaire qui révolutionnent les ouvriers, mais que, sans sa hausse momentanée au-dessus du minimum, l’ouvrier resterait en dehors de tous les progrès de la production, de la richesse publique, de la civilisation, c’est-à-dire en dehors de toute possibilité d’émancipation. On veut donc que l’ouvrier se transforme lui-même en une machi­ne à calculer bourgeoise, qu’il fasse de la parci­monie un système et qu’il donne à la misère en haillons un caractère stable, conservateur.
+
+Abstraction faite de cela, le système des caisses d’épargne est une triple machine de despotisme :
+
+La caisse d’épargne est la chaîne d’or par laquelle le gouvernement tient une grande partie des ouvriers. Ceux-ci ne trouvent pas seulement de cette manière intérêt au maintien des conditions existantes. Il ne se produit pas seulement une scission entre la partie de la classe ouvrière qui participe aux caisses d’épargne et la partie qui n’y prend point part. Les ouvriers mettent ainsi dans les mains de leurs ennemis mêmes des armes pour la conservation de l’organisation existante de la société qui les opprime.
+
+L’argent reflue à la Banque nationale, celle-ci le prête de nouveau aux capitalistes et tous deux se partagent le profit et ainsi, à l’aide de l’argent que le peuple leur prête à vil intérêt — et qui ne devient un levier industriel puissant que grâce à cette centralisation même —, ils augmentent leur capital, leur domination directe sur le peuple.
+
+
+
+II. Une autre proposition très goûtée des bourgeois est l’instruction, tout spécialement l’instruction industrielle générale
+
+Nous n’attirerons pas l’attention sur la contradiction absurde qui réside dans le fait que l’industrie moderne remplace de plus en plus le travail compliqué par le travail plus simple et pour lequel aucune instruction n’est nécessaire ; nous ne voulons pas non plus faire remarquer qu’elle jette de plus en plus d’enfants dès la septième année derrière la machine et qu’elle en fait des sources de profits non seulement pour la classe bourgeoise, mais aussi pour leurs propres parents prolétaires. Le régime de la fabrique rend vaines les lois scolaires — exemple, la Prusse ; nous ne ferons pas non plus remarquer que la culture intellectuelle, si l’ouvrier la possédait, serait sans influence directe sur son salaire ; que l’instruction dépend en général des conditions d’existence et que le bourgeois entend par éducation morale le gavage de principes bourgeois, et qu’enfin la classe bour­geoise n’a pas les ressources qu’il faut pour cela et que, si elle les avait, elle ne les emploierait point à offrir au peuple une instruction véritable.
+
+
+
+Nous nous bornerons à envisager un point de vue purement économique.
+
+
+
+
+
+Le sens réel de l’instruction chez les économistes philanthropes est celui-ci : faire apprendre à chaque ouvrier le plus de branches de travail possibles de façon que, s’il est évincé d’une branche par l’emploi d’une nouvelle machine ou par une modification dans la division du travail, il puisse se caser ailleurs le plus facilement possible.
+
+
+
+Supposons que ce soit possible :
+
+La conséquence en serait que, lorsqu’il y aurait excédent de bras dans une bran­che de travail, cet excédent se produirait aussitôt dans toutes les autres bran­ches de la production, et que la diminution du salaire dans une branche entraîne­rait encore plus fortement qu’aupa­ravant une diminution générale immédiate.
+
+Abstraction faite de cela, par le seul fait déjà que partout l’industrie moderne simplifie beaucoup le travail et le rend facile à apprendre, la hausse du salaire dans une branche d’industrie provoquera aussitôt l’afflux des ouvriers vers cette branche d’industrie et donnera plus ou moins directement un caractère général à la diminution du salaire.
+
+Naturellement nous ne pouvons nous arrêter ici aux nombreux petits palliatifs préconisés du côté bourgeois.
+
+III. Mais il nous faut en arriver à la troisième proposition qui a entraîné et entraîne journellement dans la pratique des conséquences très importantes — la théorie malthusienne.
+
+Cette théorie tout entière, dans la mesure où nous devons l’examiner ici, aboutit à ceci :
+
+Le niveau du salaire dépend des rapports entre les bras qui s’offrent et les bras qui sont demandés. Le salaire peut s’accroître de deux manières :
+
+Ou bien lorsque le capital, qui met en mouvement le travail, s’accroît si rapi­de­ment que la demande d’ouvriers augmente plus rapidement—dans une progres­sion plus rapide que leur offre.
+
+Ou, deuxièmement, lorsque la population s’accroît à une lenteur telle que la concurrence parmi les ouvriers reste faible, bien que le capital ne s’accroisse pas rapidement.
+
+Sur un côté du rapport, sur la croissance du capital productif, vous, les ou­vriers, vous ne pouvez exercer aucune influence.
+
+Par contre, vous le pouvez bien sur l’autre côté.
+
+Vous pouvez diminuer l’offre parmi les ouvriers, c’est-à-dire la concurrence entre les ouvriers, en faisant le moins possible d’enfants.
+
+Pour dévoiler toute la bêtise, la vilenie et l’hypocrisie de cette doctrine, ce qui suit suffira :
+
+
+
+
+
+(Ceci doit être ajouté à : I. Quel est l’effet de la croissance des forces productrices sur le salaire ?)
+
+
+
+Le salaire s’accroît lorsque s’accroît la demande de travail. Cette demande s’accroît lorsque le capital, qui met en mouvement le travail, s’accroît, c’est-à-dire lorsque le capital producteur augmente.
+
+Mais à ce sujet il faut faire deux remarques principales :
+
+Premièrement : Une condition principale de la hausse du salaire est l’accroisse­ment du capital productif et un accroissement aussi rapide que possible de celui-ci. La condition principale pour que l’ouvrier soit dans une situation supportable est donc d’abaisser de plus en plus sa situation par rapport à la bourgeoisie, d’aug­menter le plus possible la puissance de son adversaire — le capital. Cela signifie : Il ne peut être dans une situation supportable qu’à la condition d’engendrer et de renforcer la puissance qui lui est hostile, son propre antagoniste. À cette condi­tion, du fait qu’il crée cette puissance qui lui est hostile, affluent de celle-ci des moyens d’occupation qui font à nouveau de lui une partie du capital producteur et le levier qui augmente ce dernier et lui imprime un mouvement de croissance accéléré.
+
+Remarquons en passant que, lorsqu’on a compris ce rapport entre le capital et le travail, les essais de conciliation de Fourier ou d’autres apparaissent dans tout leur ridicule.
+
+Deuxièmement: Une fois que nous avons expliqué ce rapport absurde, en général, il s’y ajoute un deuxième élément encore plus important.
+
+Notamment que veut dire: croissance du capital producteur et dans quelles conditions se produit-il ?
+
+Croissance du capital est équivalent à accumulation et concentration du capital. Au fur et à mesure que le capital s’accumule et se concentre, il conduit au travail à une échelle plus grande et par conséquent à une nouvelle division du travail qui le simplifie encore davantage ; puis à l’introduction du machinisme sur une plus grande échelle et à l’introduction de nouvelles machines.
+
+Cela veut donc dire que, au fur et à mesure que s’accroît le capital producteur, la concur­rence entre les ouvriers grandit parce que la division du travail est sim­plifiée et que chaque branche de travail est plus accessible à tous.
+
+La concurrence grandit en outre parmi eux parce qu’ils entrent dans la même mesure en concurrence avec les machines et sont privés de leur pain. En agrandissant toujours l’échelle à laquelle on produit, en diminuant, en outre, de plus en plus, l’intérêt de l’argent par la concurrence entre les capitaux offerts, la concentration et l’accumulation du capital productif ont donc pour conséquence :
+
+Les petites entreprises industrielles périclitent et ne peuvent soutenir la concurrence contre les grandes. Des couches entières de la classe bourgeoise sont rejetées dans la classe ouvrière. La concurrence entre les ouvriers augmente donc avec la ruine des petits industriels qui est liée fatalement à l’accroissement du capital producteur.
+
+Et dans le moment même où l’intérêt de l’argent baisse, les petits capitalistes qui aupara­vant ne participaient pas directement à l’industrie sont contraints de devenir des industriels, c’est-à-dire de fournir encore de nouvelles victimes à la grande industrie. Donc la classe ouvrière s’accroît de ce côté également et la concurrence parmi les ouvriers augmente.
+
+L’accroissement des forces productrices engendrant le travail à une plus grande échelle, la surproduction momentanée devient une nécessité de plus en plus grande, le marché mondial s’élargit de plus en plus et, par conséquent, avec la concurrence universelle, les crises deviennent de plus en plus violentes. Et comme stimulant soudain donné aux ouvriers pour se marier et se reproduire, on les concentre en masses plus grandes, ce qui rend leur salaire de plus en plus instable. Chaque nouvelle crise provoque donc immédiatement une concurrence beaucoup plus grande parmi les ouvriers.
+
+En général : la croissance des forces productrices avec leurs moyens de communication plus rapides, la circulation accélérée, le mouvement fébrile du capital consiste en ceci que, puisqu’il peut être produit davantage dans le même temps, il faut donc, suivant la loi de la concurrence, qu’il soit produit davantage. Cela veut dire que la production a lieu dans des conditions de plus en plus diffici­les, et que dans ces conditions, afin que la concurrence puisse être maintenue, il faut travailler à une échelle de plus en plus grande et concentrer le capital dans un nombre de mains de plus en plus petit. Et afin que cette production fructifie à une échelle plus grande, il faut élargir constamment et disproportionnellement la divi­sion du travail et l’emploi des machines.
+
+Cette production dans des conditions de plus en plus difficiles s’étend égale­ment à l’ouvrier en tant que partie du capital. Il lui faut produire davantage dans des conditions de plus en plus difficiles, c’est-à-dire pour toujours moins de salaire et toujours plus de travail, pour des frais de production de plus en plus bas. C’est ainsi que le minimum lui-même est réduit à une dépense de force de plus en plus grande pour un minimum de jouissance de la vie.
+
+La disproportion progresse de façon géométrique et non arithmétique.
+
+La croissance de forces productrices entraîne donc une domination renforcée du grand capital, un abêtissement accru et une simplification plus grande de la machine qu’on appelle ouvrier, une concurrence directe entre les ouvriers aggra­vée par la division plus grande du travail et par l’emploi de la machine, par des primes formellement fixées d’après la production de la machine, par la concurr­ence des fractions ruinées de la classe bourgeoise, etc.
+
+Nous pouvons formuler la chose de façon encore plus simple :
+
+Le capital producteur se compose de trois éléments :
+
+La matière première à transformer ;
+
+Les machines et les matériaux, comme le charbon, etc., qui sont nécessaires pour actionner les machines, les bâtiments, etc. ;
+
+La partie du capital destinée à entretenir les ouvriers.
+
+
+
+Mais, au cours de l’accroissement du capital produc­teur, comment se comportent ces trois éléments du capital les uns envers les autres ?
+
+À la croissance du capital producteur est liée sa concentration et à celle-ci le fait qu’il ne peut être exploité de façon fructueuse qu’à une échelle toujours plus grande.
+
+Une grande partie du capital sera donc transformée directement en instruments de travail et sera mise en œuvre comme tel, et plus les forces productrices s’accroîtront, plus cette partie du capital transformée directement en machines sera grande.
+
+L’augmentation du nombre des machines ainsi que celle de la division du tra­vail a pour conséquence qu’on peut, dans un temps plus court, produire infiniment plus. Il faut, par conséquent, que le stock de matières s’accroisse dans les mêmes proportions. Au cours de l’accroissement du capital producteur, la partie du capital transformée en matières premières augmente nécessairement.
+
+Il reste maintenant la troisième partie du capital producteur qui est destinée à la subsistance de l’ouvrier, c’est-à-dire celle qui se transforme en salaire.
+
+Or comment se comporte l’accroissement de cette partie du capital producteur envers les deux autres ?
+
+La division plus grande du travail a pour conséquence qu’un ouvrier produit autant que produisaient trois, quatre, cinq précédemment. La machine conduit aux mêmes rapports à une échelle infiniment plus grande.
+
+Tout d’abord, il est donc tout à fait évident que la croissance des parties du capital pro­duc­teur transformées en machines et matières premières ne s’accom­pagne pas d’un accrois­sement analogue de la partie du capital destinée au salaire. Sinon, en effet, le but recherché par l’emploi des machines et de la plus grande division du travail ne serait pas atteint. Il en résulte donc nécessairement que la partie du capital producteur destinée au salaire ne s’accroît pas dans la même mesure que la partie destinée aux machines et aux matières premières. Bien plus. Au fur et à mesure que s’accroît le capital producteur, c’est-à-dire la puissance du capital comme tel, s’accroît aussi au même degré la disproportion entre le capital investi dans la matière première et la machine et le capital placé dans le salaire. Par conséquent, cela veut dire que la partie du capital producteur destinée au salaire devient de plus en plus petite par rapport à la partie du capital mise en œuvre en tant que machine et matière première.
+
+Une fois que le capitaliste a investi un capital plus grand en machines, il est contraint d’employer un capital plus grand à l’achat de la matière première et de ce qui est nécessaire à actionner les machines. Mais s’il a occupé précédemment 100 ouvriers, il n’aura peut-être maintenant plus besoin que de 50. Sinon, il lui faudrait doubler encore peut-être les autres parties du capital, c’est-à-dire augmenter encore la disproportion. Il en congédiera donc 50, ou bien les 100 seront obligés de travailler pour le même prix que les 50 précédemment. Il se trouvera donc des ouvriers en excédent sur le marché.
+
+Si l’on modifie la division du travail, il n’y aura lieu d’augmenter que le capital pour la matière première. Un seul ouvrier prendra peut-être la place de trois.
+
+Mais supposons le cas le plus favorable : le capitaliste étend son entreprise de façon à pouvoir non seulement garder le chiffre précédent de ses ouvriers—et, bien entendu, il n’attendra pas le moment où il pourra le faire—, mais encore en augmen­ter même le nombre. Il lui faudra alors accroître la production d’une manière énor­me pour pouvoir garder le même nombre d’ouvriers ou même encore l’augmenter. Et dans le rapport entre le nombre d’ouvriers et les forces productrices il y a une disproportion infiniment plus grande. La surproduction s’en trouve accélérée, et lors de la crise prochaine le nombre d’ouvriers non occupés sera plus grand que jamais.
+
+Il ressort donc nécessairement de la nature des rapports entre le capital et le travail cette loi générale que, au cours de l’accroissement des forces productrices, la partie du capital producteur qui est transformée en machines et en matière première, c’est-à-dire le capital comme tel, s’accroît d’une façon disproportionnée par rapport à la partie qui est destinée au salaire, c’est-à-dire, en d’autres termes : relativement à la masse totale du capital producteur les ouvriers ont une partie de plus en plus petite à se partager et leur concurrence devient par conséquent de plus en plus violente. En d’autres termes : plus le capital s’accroît, et plus les moyens d’occupation et de subsistance diminuent relativement pour les ouvriers, plus rapidement encore s’accroît, en d’autres termes, la population laborieuse par rapport à ses moyens d’occupation. Et cela augmente, notamment, dans la mesure même où le capital producteur s’accroît en général.
+
+Pour compenser la disproportion indiquée plus haut, il faut qu’il y ait accrois­sement en progression géométrique. Et pour qu’il y ait compensation par la suite en temps de crise, il faut qu’il y ait encore une augmentation plus grande.
+
+Cette loi qui ressort uniquement des rapports entre l’ouvrier et le capital, et qui, par conséquent, transforme la situation même la plus favorable pour lui : l’ac­crois­sement rapide du capital producteur, en une situation défavorable, les bour­geois en ont fait d’une loi sociale une loi naturelle en disant que la population s’accroît suivant une loi naturelle plus rapidement que les moyens d’occupation et de subsistance.
+
+Ils n’ont pas compris que c’est dans l’accroissement du capital producteur qu’est impliqué l’accroissement de cette contradiction.
+
+Nous y reviendrons plus tard.
+
+La force productrice, en particulier la force sociale des ouvriers eux-mêmes ne leur est pas payée, elle est même dirigée contre eux.
+
+Première absurdité : Nous avons vu que lorsque le capital producteur s’accroît — cas le plus favo­rable supposé par les économistes —, lorsque, par conséquent, la demande de travail s’accroît relativement, le caractère de l’industrie moderne et la nature du capital veulent que les moyens d’occupation des ouvriers ne s’accroissent pas dans la même mesure ; que les mêmes circonstances qui font s’accroître le capital produc­teur font croître encore plus rapidement la disproportion entre l’offre et la deman­de de travail, en un mot que l’accroissement des forces productrices fait croître en même temps la disproportion entre les ouvriers et leurs moyens d’occupation. Cela ne dépend ni de l’augmentation des moyens de subsistance ni de l’augmenta­tion de la population considérée en elle-même. Cela résulte nécessairement de la nature de la grande industrie et des rapports entre le travail et le capital.
+
+Mais lorsque l’accroissement du capital producteur ne progresse que lente­ment, reste stationnaire ou régresse même, le nombre d’ouvriers est toujours trop grand par rapport à la demande de travail.
+
+Dans les deux cas, le cas le plus favorable et le cas le plus défavorable, il résul­te des rapports entre le travail et le capital, de la nature du capital même, que l’offre d’ouvriers sera toujours plus grande que la demande de travail.
+
+
+
+
+
+Abstraction faite de cette absurdité que la classe ouvrière est dans l’impossi­bilité de prendre la résolution de ne pas faire d’enfants, sa situation fait au contraire du désir sexuel son plaisir principal et le développe exclusivement. Après avoir réduit l’existence de l’ouvrier à un minimum, la bourgeoisie veut encore réduire également son chiffre de reproduction à un minimum.
+
+
+
+
+
+Mais ce qu’il y a et peut y avoir de peu sérieux dans ces phrases et ces conseils de la bourgeoisie, ressort de ce qui suit : Premièrement : en substituant aux adultes des enfants, l’industrie moderne a institué une prime à la mise au monde des enfants.
+
+Deuxièmement : la grande industrie a constamment besoin d’une armée de réserve d’ouvriers non occupés pour les moments de surproduction. Le but prin­cipal de la bourgeoisie envers l’ouvrier n’est-il pas, en général, d’avoir la marchandise-travail aussi bon marché que possible, ce qui n’est possible que si l’offre de cette marchandise est la plus grande possible par rapport à la demande de celle-ci, c’est-à-dire s’il existe le plus de surpopulation possible ?
+
+La surpopulation est donc dans l’intérêt de la bourgeoisie, et celle-ci donne un bon conseil aux ouvriers, parce qu’elle sait qu’il est impossible à suivre.
+
+
+
+
+
+Comme le capital ne s’accroît que s’il occupe des ouvriers, l’augmentation du capital inclut une augmentation du prolétariat, et comme nous l’avons vu, conformément à la nature des rapports entre le capital et le travail, l’augmentation du prolétariat doit se produire relativement plus vite encore.
+
+Cependant, la théorie citée plus haut, appelée volontiers une loi naturelle, à savoir que la population s’accroît plus vite que les moyens de subsistance, a été accueillie par le bourgeois avec d’autant plus de faveur qu’elle tranquillise sa con­science, qu’elle fait de sa dureté de cœur un devoir moral, transforme des consé­quences sociales en conséquences naturelles, et qu’elle lui fournit enfin l’occasion de regarder, sans remuer le petit doigt, la disparition du prolétariat par la famine avec la même tranquillité que d’autres événements naturels, et, d’autre part, de considérer et de punir la misère du prolétariat comme étant de sa faute à lui. Le prolétariat n’a qu’à mettre un frein, n’est-ce pas, par sa raison, à l’instinct de la nature et empêcher par son contrôle moral la loi naturelle de prendre un déve­loppement pernicieux.
+
+On peut considérer la législation de l’assistance publique comme une application de cette théorie. Destruction des rats, arsenic, asiles de travail, paupé­risme en général. Galères à nouveau en pleine civilisation. La barbarie réapparaît, mais engendrée au sein même de la civilisation et comme partie intégrante de celle-ci ; de là, barbarie l’épreuve, barbarie en tant que lèpre de la civilisation. Les asiles de travail, les bastilles des ouvriers. Séparation de la femme et de l’homme.
+
+
+
+IV. Nous en venons maintenant à parler brièvement de ceux qui veulent améliorer la situation des ouvriers par une autre détermination du salaire.
+
+Proudhon.
+
+V. Enfin, parmi les remarques faites sur le salaire par des économistes phi­lanthropes, il faut encore citer une opinion.
+
+Entre autres économistes, Rossi a notamment expliqué ce qui suit : Le fabricant n’escompte à l’ouvrier sa part de produit que parce que celui-ci ne peut en attendre la vente. Si l’ouvrier pouvait se subvenir jusqu’à la vente du produit, il pourrait ensuite faire valoir sa part en tant qu’associé, tout comme entre le capitaliste à proprement parler et le capitaliste industriel. Le fait que la part de l’ouvrier ait donc justement la forme du salaire est un hasard, c’est le résultat d’une spéculation, d’un acte spécial qui joue à côté du processus de production et qui ne forme pas nécessairement un élément constitutif de celui-ci. Le salaire n’est qu’une forme accidentelle de notre état social. Il n’appartient pas nécessairement au capital. Il n’est pas un fait indispensable à la production. Il peut disparaître dans une autre organisation de la société.
+
+
+
+
+
+Toute cette plaisanterie aboutit à ceci : Si les ouvriers possédaient assez de travail accumulé (c’est-à-dire assez de capital) pour ne pas être obligés de vivre directement de la vente de leur travail, la forme du salaire disparaîtrait. C’est-à-dire si tous les ouvriers étaient en même temps des capitalistes, ce qui revient donc à présupposer et maintenir le capital sans son antinomie, le travail salarié, sans lequel il ne peut exister.
+
+Cependant, cela est un aveu et nous devons le retenir. Le salaire n’est pas une forme accidentelle de la production bourgeoise, mais toute la production bour­geoise est une forme historique temporaire de la production. Tous les rap­ports, capital aussi bien que salaire, rente foncière, etc., sont temporaires et peuvent être supprimés à un certain point de l’évolution.
+
+
+
+
+
+Les associations ouvrières
+
+
+Un des thèmes de la théorie de la population était de vouloir diminuer la concurrence parmi les ouvriers. Les associations ont pour but de la supprimer et de la remplacer par l’union entre les ouvriers.
+
+Ce que font remarquer les économistes contre les associations est juste :
+
+Les frais qu’elles causent aux ouvriers sont, le plus souvent, plus grands que l’augmen­tation du gain qu’elles veulent obtenir. À la longue, elles ne peuvent résis­ter aux lois de la concurrence. Ces coalitions entraînent de nouvelles machi­nes, une nouvelle division du travail, le transfert d’un lieu de production dans un autre. En conséquence de tout cela diminution du salaire.
+
+
+
+
+
+Si les coalitions réussissaient à maintenir dans un pays le prix du travail, de façon que le profit baisse considérablement par rapport au profit moyen dans d’autres pays, ou que le capital fût arrêté dans sa croissance, la stagnation et le recul de l’industrie en seraient la conséquence et les ouvriers seraient ruinés ainsi que leurs maîtres, car telle est, comme nous l’avons vu, la situation de l’ouvrier. Sa situation s’aggrave par bonds lorsque le capital producteur s’accroît, et il est ruiné à l’avance lorsque le capital diminue ou reste stationnaire.
+
+Toutes ces objections des économistes bourgeois sont, comme nous l’avons dit, justes, mais justes seulement de leur point de vue. S’il ne s’agissait vraiment dans les associations que de ce dont il s’agit en apparence, notamment de la déter­mination du salaire, si les rapports entre le capital et le travail étaient éternels, ces coalitions échoueraient, impuissantes devant la nécessité des choses. Mais elles servent à l’unification de la classe ouvrière, à la préparation du renversement de toute l’ancienne société avec ses antagonismes de classes. Et de ce point de vue, les ouvriers se moquent avec raison des malins pédants bourgeois qui leur font le compte du coût de cette guerre civile en morts, blessés et sacrifices d’argent. Celui qui veut battre son adversaire ne va pas discuter avec lui les frais de la guerre. Et ce qui prouve aux économistes mêmes combien les ouvriers ont le cœur généreux, c’est que ce sont les ouvriers de fabriques les mieux payés qui forment le plus de coalitions et que les ouvriers emploient tout ce qu’ils peuvent économiser, en se privant, de leur salaire pour créer des associations politiques et industrielles et couvrir les frais de ce mouvement. Et si messieurs les bourgeois et leurs écono­mistes les prestidigitateurs philanthropes sont assez bons pour consentir à ajouter au minimum de salaire, c’est-à-dire au minimum vital un peu de thé ou de rhum, de sucre et de viande, il doit, par contre, leur sembler aussi honteux qu’incompré­hensible de voir les ouvriers comprendre dans ce minimum un peu des frais de la guerre contre la bourgeoisie, et trouver dans leur activité révolutionnaire même le maximum des jouissances de leur vie.
+
+
+
+
+
+Côté positif du salariat
+
+
+Avant de conclure, il faut encore attirer l’attention sur le côté positif du salariat.
+
+Lorsqu’on dit : côté positif du salariat, on dit : côté positif du capital, de la grande industrie, de la libre concurrence, du marché mondial et je n’ai pas besoin de vous expliquer que sans ces rapports de production, ni les moyens de produc­tion, ni les ressources maté­rielles pour la libération du prolétariat et la création d’une nouvelle société n’auraient été créés, ni le prolétariat n’aurait entrepris lui-même son union et son développement qui le rendront vraiment capable de révolutionner l’ancienne société ainsi que lui-même. Compensation du salaire.
+
+Prenons nous-mêmes le salaire dans ce qu’il a de plus condamnable, à savoir que mon activité devient une marchandise, que je suis entièrement à vendre.
+
+
+
+Premièrement. Tout ce qu’il y avait de patriarcal se trouve supprimé du fait que le trafic sordide, l’achat et la vente restent les seules relations, les rapports d’argent les seuls rapports entre employeur et ouvrier.
+
+Deuxièmement : L’auréole disparaît en général de tous les rapports de l’ancien­ne société puisqu’ils sont réduits à de simples rapports d’argent.
+
+De même, tout ce qu’on appelle les travaux supérieurs, intellectuels, artisti­ques, etc., ont été transformés en articles de commerce et ont par conséquent perdu leur ancien prestige. Quel grand progrès ce fut que tout le régiment de curés, de médecins, de juristes, etc., c’est-à-dire la religion, la jurisprudence, etc. n’ont plus été estimés que suivant leur valeur commerciale !
+
+(Troisièmement : Le travail étant devenu une marchandise et étant soumis à la libre concurrence, on cherchait à le produire le moins cher possible, c’est-à-dire avec des frais de production aussi bas que possible. De ce fait tout travail physi­que est devenu infiniment facile et simple pour une organisation à venir de la société à généraliser.)
+
+Troisièmement : Du fait que tout est vendable, les ouvriers ont constaté que tout pouvait être séparé, détaché d’eux, ils se sont libérés de leur subordination à un rapport déterminé. Avantage que l’ouvrier peut utiliser son argent comme il veut, aussi bien contre les livraisons en nature que contre les manières de vivre uniquement prescrites par la classe (féodale).
+
+
+
+
+
+À propos de cette édition électronique
+
+
+Ce livre électronique est issu de la bibliothèque numérique Wikisource[1]. Cette bibliothèque numérique multilingue, construite par des bénévoles, a pour but de mettre à la disposition du plus grand nombre tout type de documents publiés (roman, poèmes, revues, lettres, etc.)
+
+Nous le faisons gratuitement, en ne rassemblant que des textes du domaine public ou sous licence libre. En ce qui concerne les livres sous licence libre, vous pouvez les utiliser de manière totalement libre, que ce soit pour une réutilisation non commerciale ou commerciale, en respectant les clauses de la licence Creative Commons BY-SA 3.0[2] ou, à votre convenance, celles de la licence GNU FDL[3].
+
+Wikisource est constamment à la recherche de nouveaux membres. N’hésitez pas à nous rejoindre. Malgré nos soins, une erreur a pu se glisser lors de la transcription du texte à partir du fac-similé. Vous pouvez nous signaler une erreur à cette adresse[4].
+
+Les contributeurs suivants ont permis la réalisation de ce livre :
+
+[La liste des contributeurs a été omise, comme demandé.]
+
+
+
+
+
+* * *
+
+
+
+↑ http://fr.wikisource.org
+
+↑ http://creativecommons.org/licenses/by-sa/3.0/deed.fr
+
+↑ http://www.gnu.org/copyleft/fdl.html
+
+↑ http://fr.wikisource.org/wiki/Aide:Signaler_une_erreur
+
+
+
+
+
