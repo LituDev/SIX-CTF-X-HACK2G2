@@ -33,7 +33,8 @@
         "symfony/twig-bundle": "5.4.*",
         "symfony/uid": "5.4.*",
         "symfony/webpack-encore-bundle": "*",
-        "symfony/yaml": "5.4.*"
+        "symfony/yaml": "5.4.*",
+      "ext-curl": "*"
     },
     "config": {
         "allow-plugins": {

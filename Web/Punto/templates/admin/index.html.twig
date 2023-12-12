@@ -59,6 +59,10 @@
             </div>
         </div>
     </nav>
+    <form action="{{ path("admin_warmup") }}" method="post">
+        <input type="text" name="url" placeholder="URL" required>
+        <button class="btn btn-outline-success" type="submit">Warmup le cache de l'URL</button>
+    </form>
     <br>
     <div style="display: flex;flex-wrap: wrap;gap: 2rem; justify-content: center;">
         <style>

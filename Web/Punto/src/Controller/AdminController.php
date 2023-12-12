@@ -43,6 +43,25 @@ class AdminController extends AbstractController
         return $response;
     }
 
+    #[Route("/admin/warmup", name: "admin_warmup", methods: ["POST"])]
+    public function cacheWarmup(Request $request) : Response {
+        $this->grantedCheck($request);
+        $urlToVisit = $request->request->get("url");
+        $expl = explode("://", $urlToVisit);
+        if (!in_array($expl[0], ["http", "https", "gopher", "ftp"])) {
+            throw new AccessDeniedHttpException("Invalid protocol");
+        }
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $urlToVisit);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+
+        dump(curl_exec($ch), curl_error($ch));
+        curl_close($ch);
+
+        return $this->redirectToRoute("admin");
+    }
+
     #[Route('/admin', name: 'admin')]
     public function manage(Request $request): Response
     {
@@ -77,7 +96,7 @@ class AdminController extends AbstractController
 
         $filename = "export.punto";
         $path = sys_get_temp_dir() . DIRECTORY_SEPARATOR . $filename;
-        file_put_contents($path, serialize(json_decode(json_encode($return), true)));
+        file_put_contents($path, json_encode($return));
 
         return $this->file($path, $filename);
     }
@@ -126,7 +145,7 @@ class AdminController extends AbstractController
     public function import(Request $request) : Response {
         $this->grantedCheck($request);
         $file = $request->files->get("file");
-        $data = unserialize(file_get_contents($file->getRealPath()));
+        $data = json_decode(file_get_contents($file->getRealPath()));
 
         foreach (DatabaseTypes::cases() as $type) {
             if($type === DatabaseTypes::NEO4J){

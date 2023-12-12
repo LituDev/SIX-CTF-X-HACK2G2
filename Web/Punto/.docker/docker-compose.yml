@@ -8,6 +8,7 @@ services:
             args:
                 TIMEZONE: ${TIMEZONE}
                 FLAG_2: IUT{2}
+                FLAG_5: IUT{5}
         user: www-data
         hostname: php
         ports:
@@ -25,7 +26,6 @@ services:
             FLAG_1: IUT{1}
             FLAG_3: IUT{3}
             FLAG_4: IUT{4}
-            FLAG_5: IUT{5}
         depends_on:
             database:
                 condition: service_healthy
