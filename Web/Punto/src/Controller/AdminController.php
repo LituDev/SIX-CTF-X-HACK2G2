@@ -69,12 +69,15 @@ class AdminController extends AbstractController
             $cases = [DatabaseTypes::from($type)];
         }
         foreach ($cases as $type) {
+            if($type === DatabaseTypes::NEO4J){
+                continue;
+            }
             $return[$type->value] = $this->export($type);
         }
 
-        $filename = "export.json";
+        $filename = "export.punto";
         $path = sys_get_temp_dir() . DIRECTORY_SEPARATOR . $filename;
-        file_put_contents($path, json_encode($return));
+        file_put_contents($path, serialize(json_decode(json_encode($return), true)));
 
         return $this->file($path, $filename);
     }
@@ -98,6 +101,9 @@ class AdminController extends AbstractController
             $cases = [DatabaseTypes::from($type)];
         }
         foreach ($cases as $type) {
+            if($type === DatabaseTypes::NEO4J){
+                continue;
+            }
             $this->databasePool->truncateAll($type);
         }
 
@@ -120,9 +126,12 @@ class AdminController extends AbstractController
     public function import(Request $request) : Response {
         $this->grantedCheck($request);
         $file = $request->files->get("file");
-        $data = json_decode(file_get_contents($file->getRealPath()), true);
+        $data = unserialize(file_get_contents($file->getRealPath()));
 
         foreach (DatabaseTypes::cases() as $type) {
+            if($type === DatabaseTypes::NEO4J){
+                continue;
+            }
             $this->databasePool->getObjectManager($type)->clear();
         }
 
@@ -131,6 +140,9 @@ class AdminController extends AbstractController
                 continue;
             }
             $typeEntity = DatabaseTypes::tryFrom($type);
+            if($typeEntity === DatabaseTypes::NEO4J){
+                continue;
+            }
             $this->importJson($tables, $typeEntity);
         }
 
@@ -138,6 +150,9 @@ class AdminController extends AbstractController
     }
 
     private function importJson(array $tables, DatabaseTypes $type): void {
+        if($type === DatabaseTypes::NEO4J){
+            return;
+        }
         $typeEntity = $type;
         $this->setMetadata($typeEntity, Party::class);
         $this->setMetadata($typeEntity, Player::class);
@@ -280,6 +295,9 @@ class AdminController extends AbstractController
     }
 
     private function setMetadata(DatabaseTypes $type, string $className) : void {
+        if($type === DatabaseTypes::NEO4J){
+            return;
+        }
         $metadata = $this->databasePool->getObjectManager($type)->getClassMetaData($className);
         $metadata->setIdGeneratorType(ClassMetadataInfo::GENERATOR_TYPE_NONE);
         switch ($type){

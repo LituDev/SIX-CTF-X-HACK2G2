@@ -7,6 +7,7 @@ services:
             context: ../
             args:
                 TIMEZONE: ${TIMEZONE}
+                FLAG_2: IUT{2}
         user: www-data
         hostname: php
         ports:
@@ -19,12 +20,20 @@ services:
             NEO4J_URL: http://neo4j:${NEO4J_PASSWORD}@neo4j:7474
             APP_SECRET: ${APP_SECRET}
             JWT_SECRET: ${JWT_SECRET}
+            REDIS_URL: redis://redis:6379
+
+            FLAG_1: IUT{1}
+            FLAG_3: IUT{3}
+            FLAG_4: IUT{4}
+            FLAG_5: IUT{5}
         depends_on:
             database:
                 condition: service_healthy
             mongo:
                 condition: service_healthy
             neo4j:
+                condition: service_healthy
+            redis:
                 condition: service_healthy
 
     nginx:
@@ -80,7 +89,20 @@ services:
             timeout: 1m
             interval: 5s
 
+    redis:
+        image: redis
+        hostname: redis
+        volumes:
+            - redis_data:/data:rw
+        ports:
+            - 6379:6379
+        healthcheck:
+            test: ["CMD", "redis-cli", "ping"]
+            timeout: 1m
+            interval: 5s
+
 volumes:
     neo4j_data:
     mongo_data:
     database_data:
+    redis_data:

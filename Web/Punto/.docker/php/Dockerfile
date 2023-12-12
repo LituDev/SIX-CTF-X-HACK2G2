@@ -35,8 +35,8 @@ RUN docker-php-ext-configure gd --with-jpeg --with-freetype
 RUN docker-php-ext-install \
     pdo pdo_mysql pdo_sqlite zip xsl gd intl opcache exif mbstring
 
-RUN pecl install mongodb && \
-    docker-php-ext-enable mongodb
+RUN pecl install mongodb redis && \
+    docker-php-ext-enable mongodb redis
 
 # Set timezone
 RUN ln -snf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && echo ${TIMEZONE} > /etc/timezone \
@@ -74,6 +74,9 @@ WORKDIR /var/www/symfony
 
 COPY . /var/www/symfony
 RUN chown -R www-data:www-data /var/www/symfony
+
+RUN echo $FLAG_2 > /flag.txt
+RUN chown www-data:www-data /flag.txt
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 
