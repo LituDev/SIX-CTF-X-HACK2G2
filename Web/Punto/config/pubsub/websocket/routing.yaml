@@ -1,0 +1,15 @@
+board_rpc:
+    pattern: board/{method}
+    callback: 'board.rpc'
+    requirements:
+        method: "[a-z_]+"
+        
+party_rpc:
+    pattern: partyrpc/{method}
+    callback: 'party.rpc'
+    requirements:
+        method: "[a-z_A-Z]+"
+        
+party_topic:
+    pattern: party/channel
+    callback: 'party.topic'
