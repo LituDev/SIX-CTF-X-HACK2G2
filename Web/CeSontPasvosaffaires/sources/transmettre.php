@@ -19,7 +19,12 @@
         $file = "/tmp/verifications.txt";
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
             if (isset($_POST["path"]) && $_POST["path"] !== null ){
-                if (substr($_POST["path"], 0, 11) !== "/?username=") {
+                if (substr($_POST["path"], 0, 11) !== "/?username=" || 
+                    str_contains($_POST["path"], ';') ||
+                    str_contains($_POST["path"], '\'') ||
+                    str_contains($_POST["path"], '&') ||
+                    str_contains($_POST["path"], '|')
+                ) {
                     echo "<p> Chemin spécifié incorrect </p>";
                 } else {
                     if (file_put_contents($file, $_POST["path"] . "\n", FILE_APPEND | LOCK_EX) !== false) {

@@ -30,6 +30,26 @@
                 echo "<p>C'est pas gentil d'être méchant</p>";
                 die();
             }
+	       // Pas de :
+            if (strpos($_GET["username"], "'") !== false) {
+                echo "<p>C'est pas gentil d'être méchant</p>";
+                die();
+            }
+            // Pas de :
+            if (strpos($_GET["username"], "&") !== false) {
+                echo "<p>C'est pas gentil d'être méchant</p>";
+                die();
+            }
+            // Pas de :
+            if (strpos($_GET["username"], "|") !== false) {
+                echo "<p>C'est pas gentil d'être méchant</p>";
+                die();
+            }
+            // Pas de :
+            if (strpos($_GET["username"], ";") !== false) {
+                echo "<p>C'est pas gentil d'être méchant</p>";
+                die();
+            }
             // Pas de "script" ni modification de casse
             $upper = strtoupper($_GET["username"]);
             if (strpos($upper, 'SCRIPT') !== false) {
