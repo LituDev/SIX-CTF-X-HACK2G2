@@ -1,0 +1,41 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "TheFileIsDeleted"
+author: "Neoreo"
+category: Forensic
+description: "
+D'après nos sources, le PDG de Jack lui aurait envoyé son nouveau mot de passe au travers d'un message mais Jack, connaisseur de sécurité (ou pas) l'a supprimé de la clé USB.
+
+**Author :** Neoreo"
+
+value: 500
+type: dynamic
+
+# The extra field provides additional fields for data during the install/sync commands/
+# Fields in extra can be used to supply additional information for other challenge types
+# For example the follow extra field is for dynamic challenges. To use these following
+# extra fields, set the type to "dynamic" and uncomment the "extra" section below
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+flags:
+    - IUT{N3ver_3ver_Qu1ck_f0rm4t_4_U5B_K3y}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+topics:
+    - Data recovery
+    - Testdisk
+
+# Tags are used to provide additional public tagging to a challenge
+tags:
+    - Forensic
+
+# Provide paths to files from the same directory that this file is in
+files:
+    - ./usb_key.zip

@@ -17,7 +17,7 @@ async function goto(url) {
 		headless: "new",
 		ignoreHTTPSErrors: true,
 		args: ["--no-sandbox", "--ignore-certificate-errors" ],
-		executablePath: "/usr/bin/chromium"
+		executablePath: "/usr/bin/google-chrome-stable"
 	});
 
 
@@ -30,7 +30,7 @@ async function goto(url) {
 		"domain" : host,
 		"httpOnly": false
 	});*/
-	await page.setDefaultNavigationTimeout(5000);
+	await page.setDefaultNavigationTimeout(10000);
 
     // Go to provided URL
 	try {

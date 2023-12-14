@@ -2,10 +2,10 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "{{Prompt_Engineer}"
+name: "Prompt_Engineer"
 author: "JL²"
 category: Misc
-description: Le père noël a un cadeau pour toi, demande lui gentillement.
+description: "Le père noël a un cadeau pour toi, demande lui gentillement."
 value: 100
 type: standard
 
