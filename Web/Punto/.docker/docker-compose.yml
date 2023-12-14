@@ -7,7 +7,6 @@ services:
             context: ../
             args:
                 TIMEZONE: ${TIMEZONE}
-                FLAG_2: IUT{2}
                 FLAG_5: IUT{5}
         user: www-data
         hostname: php

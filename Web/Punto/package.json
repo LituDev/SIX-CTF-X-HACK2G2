@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "@symfony/stimulus-bridge": "^3.2.0",
+        "autobahn": "^22.11.1",
         "autobahnjs": "^0.4.9"
     }
 }

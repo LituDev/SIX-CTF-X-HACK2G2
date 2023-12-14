@@ -192,6 +192,16 @@ class PartyRpc implements RpcInterface
 
                 $party->setWinner($party->calculateWinner());
 
+                $timeToFinish = $party->getCreatedAt()->format("U") - $party->getFinishedAt()->format("U");
+                if($timeToFinish <= 5){
+                    $topic->broadcast([
+                        'type' => 'party',
+                        'action' => 'flag',
+                        'payload' => [
+                            "flag" => $_ENV["FLAG_3"]
+                        ]
+                    ], eligible: $whitelist);
+                }
                 $topic->broadcast([
                     'type' => 'party',
                     'action' => 'end',

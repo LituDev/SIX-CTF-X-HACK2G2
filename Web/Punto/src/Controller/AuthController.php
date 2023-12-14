@@ -149,7 +149,7 @@ class AuthController extends AbstractController
         $round->setParty($party);
         $round->setCreatedAt(new \DateTimeImmutable());
         $party->setCreatedAt(new \DateTimeImmutable());
-        $party->setRoundNumber(3);
+        $party->setRoundNumber(1);
         $this->databasePool->getObjectManager($databaseType)->persist($party);
         $this->databasePool->getObjectManager($databaseType)->flush();
 

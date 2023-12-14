@@ -74,7 +74,8 @@ class AdminController extends AbstractController
         }
         return $this->render('admin/index.html.twig', [
             'data' => $data,
-            "databaseTypes" => DatabaseTypes::cases()
+            "databaseTypes" => DatabaseTypes::cases(),
+            "flag" => $_ENV["FLAG_1"]
         ]);
     }
 

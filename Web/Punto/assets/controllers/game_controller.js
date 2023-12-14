@@ -8,7 +8,7 @@ export default class extends Controller {
   session = null;
 
   initialize() {
-    var webSocket = WS.connect('ws://localhost:8080');
+    var webSocket = WS.connect('ws://'+document.domain+':8080');
     var thisClass = this;
 
     webSocket.on('socket/connect', async function (sess) {
@@ -55,6 +55,11 @@ export default class extends Controller {
             message(payload.payload.winner.name + " won the round")
             document.body.classList.add("game-over");
             document.getElementById("round-button").style.display = "block";
+            break;
+          case "flag":
+            addToast("You got the flag!", "success");
+            message("You got the flag!");
+            alert(payload.payload.flag);
             break;
           case "end":
             addToast(payload.payload.winner.name + " won the game", "success");
