@@ -76,7 +76,9 @@ COPY . /var/www/symfony
 RUN chown -R www-data:www-data /var/www/symfony
 RUN rm -rf /var/www/symfony/.docker
 
-RUN echo $FLAG_5 > /var/www/symfony/flag5
+RUN echo $FLAG_3 > /var/www/symfony/flag3
+RUN echo $FLAG_4 > /flag.txt
+RUN chown www-data:www-data /flag.txt
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 

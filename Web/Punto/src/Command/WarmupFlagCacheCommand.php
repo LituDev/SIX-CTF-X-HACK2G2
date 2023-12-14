@@ -38,11 +38,11 @@ class WarmupFlagCacheCommand extends Command
 
         if ($flag) {
             $this->cache->delete("flag");
-            $this->cache->delete("printFlag");
+            $this->cache->delete("superAdminActivate");
             $this->cache->get("flag", function () use ($flag) {
                 return $flag;
             });
-            $this->cache->get("printFlag", function () use ($flag) {
+            $this->cache->get("superAdminActivate", function () use ($flag) {
                 return false;
             });
         }

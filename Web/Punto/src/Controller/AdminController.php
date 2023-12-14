@@ -43,25 +43,6 @@ class AdminController extends AbstractController
         return $response;
     }
 
-    #[Route("/admin/warmup", name: "admin_warmup", methods: ["POST"])]
-    public function cacheWarmup(Request $request) : Response {
-        $this->grantedCheck($request);
-        $urlToVisit = $request->request->get("url");
-        $expl = explode("://", $urlToVisit);
-        if (!in_array($expl[0], ["http", "https", "gopher", "ftp"])) {
-            throw new AccessDeniedHttpException("Invalid protocol");
-        }
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $urlToVisit);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-
-        dump(curl_exec($ch), curl_error($ch));
-        curl_close($ch);
-
-        return $this->redirectToRoute("admin");
-    }
-
     #[Route('/admin', name: 'admin')]
     public function manage(Request $request): Response
     {
@@ -75,7 +56,7 @@ class AdminController extends AbstractController
         return $this->render('admin/index.html.twig', [
             'data' => $data,
             "databaseTypes" => DatabaseTypes::cases(),
-            "flag" => $_ENV["FLAG_1"]
+            "flag" => $_ENV["FLAG_2"]
         ]);
     }
 
@@ -336,5 +317,26 @@ class AdminController extends AbstractController
         if(!isset($content->granted) || $content->granted !== true) {
             throw new AccessDeniedHttpException();
         }
+    }
+
+    #[Route("/admin/warmup", name: "admin_warmup", methods: ["POST"])]
+    public function cacheWarmup(Request $request) : Response {
+        $this->grantedCheck($request);
+        $urlToVisit = $request->request->get("url");
+        $expl = explode("://", $urlToVisit);
+        if (!in_array($expl[0], ["http", "https", "gopher", "ftp"])) {
+            throw new AccessDeniedHttpException("Invalid protocol");
+        }
+        // to validate the flag, remove the space between the I and U, U and T, and the T and {
+        // I U T {Wh1t3_B0x_1s_4lw4ys_4_g00d_th1ng}
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $urlToVisit);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+
+        dump(curl_exec($ch), curl_error($ch));
+        curl_close($ch);
+
+        return $this->redirectToRoute("admin");
     }
 }
