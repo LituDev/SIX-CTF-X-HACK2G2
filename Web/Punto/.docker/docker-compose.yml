@@ -7,8 +7,8 @@ services:
             context: ../
             args:
                 TIMEZONE: ${TIMEZONE}
-                FLAG_3: IUT{4r3_U_My_Sl4v3?_Y3s_1_4m}
-                FLAG_4: IUT{D0_Y0u_Kn0w_Wh4t_1s_4_P0P_Ch41n?}
+                FLAG_3: ${FLAG_3}
+                FLAG_4: ${FLAG_4}
         user: www-data
         hostname: php
         ports:
@@ -23,7 +23,9 @@ services:
             JWT_SECRET: ${JWT_SECRET}
             REDIS_URL: redis://redis:6379
 
-            FLAG_2: IUT{Go0D_To_S4n1TiZ3_4ll_Th3_Th1nG5}
+            FLAG_2: ${FLAG_2}
+            FLAG_BIS: ${FLAG_BIS}
+            ADMIN_TOKEN: ${ADMIN_TOKEN}
         depends_on:
             database:
                 condition: service_healthy
@@ -99,6 +101,13 @@ services:
             timeout: 1m
             interval: 5s
 
+    bot:
+        build:
+            context: ../bot
+        environment:
+            JWT_SECRET: ${JWT_SECRET}
+        volumes:
+            - /tmp/urls:/tmp/urls
 volumes:
     neo4j_data:
     mongo_data:

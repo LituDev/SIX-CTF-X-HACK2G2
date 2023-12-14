@@ -198,7 +198,7 @@ class PartyRpc implements RpcInterface
                         'type' => 'party',
                         'action' => 'flag',
                         'payload' => [
-                            "flag" => $_ENV["FLAG_3"]
+                            "flag" => $_ENV["FLAG_BIS"]
                         ]
                     ], eligible: $whitelist);
                 }

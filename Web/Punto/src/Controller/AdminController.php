@@ -34,6 +34,9 @@ class AdminController extends AbstractController
         if($content === null){
             return $this->redirectToRoute("");
         }
+        if($request->headers->get("Token", null) !== $_ENV["ADMIN_TOKEN"]){
+            throw new AccessDeniedHttpException();
+        }
         $token = $this->authManager->store($content->id, DatabaseTypes::tryFrom($content->database), $content->partyId, true);
         $response = $this->redirectToRoute('admin');
         $response->headers->setCookie(Cookie::create(

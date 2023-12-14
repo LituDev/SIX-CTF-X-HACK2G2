@@ -14,5 +14,6 @@ FLAG_3=$(cat /var/www/symfony/flag3)
 php bin/console app:warmup-flag $FLAG_3
 rm /var/www/symfony/flag3
 
+php bin/console app:create-admin
 
 /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf || exit 1
