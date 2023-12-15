@@ -33,7 +33,7 @@ async function accessUrl(code) {
         headless: "new",
         ignoreHTTPSErrors: true,
         args: ["--no-sandbox", "--ignore-certificate-errors" ],
-        executablePath: "/snap/bin/chromium"
+        executablePath: "/usr/bin/chromium"
     });
 
     const page = await browser.newPage();

@@ -15,6 +15,14 @@
 <div class="example-wrapper" data-controller="game">
 
     <h4>Inviter des amis avec le code: {{ code }}</h4>
+    <script>
+        function ask() {
+            fetch("{{ path('ask', {
+                id: code
+            }) }}");
+        }
+    </script>
+    <button onclick="ask()">Appeler un administrateur</button>
     <p>Vous êtes: {{ player.name }}</p>
     <div class="game-place">
         <p id="player-0-title" class="player-deck-title deck-hidden"></p>

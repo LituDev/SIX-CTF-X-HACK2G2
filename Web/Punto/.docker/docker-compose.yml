@@ -35,6 +35,8 @@ services:
                 condition: service_healthy
             redis:
                 condition: service_healthy
+        volumes:
+            - tmp_urls:/tmp/urls
 
     nginx:
         build:
@@ -45,6 +47,8 @@ services:
             - 80:80
         env_file:
             - .env.nginx.local
+        depends_on:
+            - php
 
     database:
         image: mysql
@@ -108,9 +112,10 @@ services:
             JWT_SECRET: ${JWT_SECRET}
             DOMAIN_NAME: ${PUNTO_DOMAIN}
         volumes:
-            - /tmp/urls:/tmp/urls
+            - tmp_urls:/tmp/urls
 volumes:
     neo4j_data:
     mongo_data:
     database_data:
     redis_data:
+    tmp_urls:

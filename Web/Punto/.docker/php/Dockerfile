@@ -80,6 +80,9 @@ RUN echo $FLAG_3 > /var/www/symfony/flag3
 RUN echo $FLAG_4 > /flag.txt
 RUN chown www-data:www-data /flag.txt
 
+RUN mkdir -p /tmp/urls
+RUN chown -R www-data:www-data /tmp/urls
+
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

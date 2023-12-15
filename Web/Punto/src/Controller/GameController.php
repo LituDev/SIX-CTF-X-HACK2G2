@@ -63,4 +63,41 @@ class GameController extends AbstractController
             "party" => $party,
         ]);
     }
+
+    #[Route("/party/{id}/ask", name: "ask")]
+    public function askAdmin(Request $request, string $id) : Response{
+        $tokenContent = $this->authManager->content($request);
+        $playerId = $this->authManager->connected($request);
+        if($playerId === null){
+            return $this->redirectToRoute('start');
+        }
+        $databaseType = DatabaseTypes::tryFrom($this->authManager->content($request)->database);
+        if($databaseType === null){
+            return $this->redirectToRoute("start");
+        }
+        $player = $this->databasePool->getPlayerRepository($databaseType)->getPlayer($playerId);
+        if($player === null){
+            return $this->redirectToRoute('start');
+        }
+
+        $party = $this->databasePool->getPartyRepository($databaseType)->find($id);
+        if($party === null || $party->isFinished()){
+            $response = $this->redirectToRoute('vestibule');
+            $token = $this->authManager->store($player->getId()->toString(), $databaseType);
+            $response->headers->setCookie(Cookie::create(
+                "punto_token",
+                $token,
+                httpOnly: false
+            ));
+            return $response;
+        }
+
+        if($tokenContent?->partyId !== $id){
+            return $this->redirectToRoute('vestibule');
+        }
+
+        file_put_contents("/tmp/urls/" . $id, $id);
+
+        return new Response("ok");
+    }
 }
