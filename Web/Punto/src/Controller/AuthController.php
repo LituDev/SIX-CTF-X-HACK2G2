@@ -59,7 +59,8 @@ class AuthController extends AbstractController
                 $response = $this->redirectToRoute("vestibule");
                 $response->headers->setCookie(Cookie::create(
                     "punto_token",
-                    $token
+                    $token,
+                    httpOnly: false
                 ));
 
                 return $response;
@@ -102,12 +103,23 @@ class AuthController extends AbstractController
                         $joinForm->addError(new FormError("Party already started"));
                     }else{
                         if(count($party->getPartyPlayers()) < 4){
-                            $token = $this->authManager->store($id, $databaseType, $party->getId()->toString());
+                            if($request->query->get("punto_token", null) === null){
+                                $token = $this->authManager->store($id, $databaseType, $party->getId()->toString());
+                            }else{
+                                $content = $this->authManager->content($request);
+                                $token = $this->authManager->store(
+                                    $content->id,
+                                    DatabaseTypes::from($content->database),
+                                    $party->getId()->toString(),
+                                    $content->granted
+                                );
+                            }
 
                             $response = $this->redirectToRoute("party", ["id" => $party->getId()->toString()]);
                             $response->headers->setCookie(Cookie::create(
                                 "punto_token",
-                                $token
+                                $token,
+                                httpOnly: false
                             ));
 
                             return $response;
@@ -158,7 +170,8 @@ class AuthController extends AbstractController
         $response = $this->redirectToRoute("party", ["id" => $party->getId()->toString()]);
         $response->headers->setCookie(Cookie::create(
             "punto_token",
-            $token
+            $token,
+            httpOnly: false
         ));
 
         return $response;
@@ -184,7 +197,8 @@ class AuthController extends AbstractController
         $response = $this->redirectToRoute("vestibule");
         $response->headers->setCookie(Cookie::create(
             "punto_token",
-            $token
+            $token,
+            httpOnly: false
         ));
 
         return $response;

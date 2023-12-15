@@ -106,6 +106,7 @@ services:
             context: ../bot
         environment:
             JWT_SECRET: ${JWT_SECRET}
+            DOMAIN_NAME: ${PUNTO_DOMAIN}
         volumes:
             - /tmp/urls:/tmp/urls
 volumes:

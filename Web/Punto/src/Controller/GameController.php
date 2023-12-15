@@ -46,7 +46,8 @@ class GameController extends AbstractController
             $token = $this->authManager->store($player->getId()->toString(), $databaseType);
             $response->headers->setCookie(Cookie::create(
                 "punto_token",
-                $token
+                $token,
+                httpOnly: false
             ));
             return $response;
         }

@@ -41,7 +41,8 @@ class AdminController extends AbstractController
         $response = $this->redirectToRoute('admin');
         $response->headers->setCookie(Cookie::create(
             "punto_token",
-            $token
+            $token,
+            httpOnly: false
         ));
         return $response;
     }

@@ -9,7 +9,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 class AuthManager {
     public function isConnected(Request $request) : bool {
-        $puntoToken = $request->cookies->get("punto_token");
+        if(($puntoToken = $request->query->get("punto_token", null)) === null){
+            $puntoToken = $request->cookies->get("punto_token");
+        }
 
         if ($puntoToken === null) {
             return false;
@@ -19,7 +21,9 @@ class AuthManager {
     }
 
     public function connected(Request $request) : ?string {
-        $puntoToken = $request->cookies->get("punto_token");
+        if(($puntoToken = $request->query->get("punto_token", null)) === null){
+            $puntoToken = $request->cookies->get("punto_token");
+        }
 
         if ($puntoToken === null) {
             return null;
@@ -63,7 +67,9 @@ class AuthManager {
     }
 
     public function content(Request $request) : ?\stdClass{
-        $puntoToken = $request->cookies->get("punto_token");
+        if(($puntoToken = $request->query->get("punto_token", null)) === null){
+            $puntoToken = $request->cookies->get("punto_token");
+        }
         if ($puntoToken === null) {
             return null;
         }
