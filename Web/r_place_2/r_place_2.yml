@@ -2,7 +2,7 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "r_place_1"
+name: "r_place_2"
 author: "JL²"
 category: Web
 description: Votre but est de colorier le place en entier en noir (gloire au void). Plus d'info seront recu dans le mail. Lien du challenge <Lien a modifier>
@@ -23,7 +23,7 @@ type: standard
 # If you have a Dockerfile set to .
 # If you have an imaged hosted on Docker set to the image url (e.g. python/3.8:latest, registry.gitlab.com/python/3.8:latest)
 # Follow Docker best practices and assign a tag
-# image: .
+image: .
 
 # Specify a protocol that should be used to connect to the running image
 # For example if the image is a website you can specify http or https
@@ -55,7 +55,7 @@ type: standard
 # Accepts strings or dictionaries of CTFd API data
 flags:
     # A static case sensitive flag
-    - IUT{P05T_M3_H4RD3R_D4DDY}
+    - IUT{H3LL0_R4ND0M_US3R_N_9574}
     # A static case sensitive flag created with a dictionary
     # - {
     #     type: "static",
