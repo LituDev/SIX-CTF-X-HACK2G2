@@ -2,14 +2,14 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Inception"
+name: "Arcaninclusion"
 author: "Neoreo"
-category: Stega
+category: Web
 description: "
-Je viens de trouver un sac par terre, qu'est ce qu'il y a dedans ?
+Trouvez un moyen d'accéder au code source
 
-**Author** : Neoreo"
 
+**Author :** Neoreo"
 value: 500
 type: dynamic
 
@@ -19,31 +19,28 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
+# Settings used for Dockerfile deployment
+# If you have a Dockerfile set to .
+# image: .
+connection_info: http://arcanin.sixctf.fr
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    # A static case insensitive flag
-    - {
-        type: "static",
-        content: "IUT{charizard_p0k3m0n_4r3_gr34t}",
-        data: "case_insensitive",
-    }
-    - {
-        type: "static",
-        content: "IUT{dracaufeu_p0k3m0n_4r3_gr34t}",
-        data: "case_insensitive",
-    }
+    - IUT{L0C4L_F1L3_1NCLU510N_15_4_PR377Y_C0MM0N_VULN}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Steghide
+    - Local File Inclusion
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Stega
+    - Web
 
-# Provide paths to files from the same directory that this file is in
-files:
-    - ./Bag.jpg
+# Don't touch
+state: visible
+version: "0.1"
+

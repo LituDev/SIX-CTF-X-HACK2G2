@@ -2,14 +2,14 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Too Much"
+name: "Inception"
 author: "Neoreo"
-category: Prog
+category: Stega
 description: "
-Le père Noël a voulu faire de la place en compressant la lettre de Noël d'un enfant, 
-mais ça prend plus de places que prévu, aide le à retrouver le contenu de la lettre
+Je viens de trouver un sac par terre, qu'est ce qu'il y a dedans ?
 
 **Author** : Neoreo"
+
 value: 500
 type: dynamic
 
@@ -19,23 +19,35 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
-# Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{15_TH15_700_MUCH_C0MPR35510N_?}
-
+    # A static case insensitive flag
+    - {
+        type: "static",
+        content: "IUT{charizard_p0k3m0n_4r3_gr34t}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "IUT{dracaufeu_p0k3m0n_4r3_gr34t}",
+        data: "case_insensitive",
+    }
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - unzip bunzip2 & gunzip
+    - Steghide
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Prog
+    - Stega
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./flag
+    - ./Bag.jpg
+
+# Don't touch
+state: visible
+version: "0.1"

@@ -2,15 +2,18 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Coffee"
+name: "IUT'es qui ?"
 author: "Neoreo"
-category: Realiste
+category: OSINT
 description: "
-Un nouveau groupe de developpeurs vient de lancer sont compilateur Java en ligne. 
-Parmi eux, un est joueur et propose un café a ceux qui arriveront à récupérer le flag qu'il a laissé trainer dans son /home.
+Vous enquêtez sur un vil personnage fan d'IOS 5. 
+D'après de nombreux enquêteurs, son pseudonyme semble être Neore0. 
+J'ai besoin que vous retrouviez son véritable nom ainsi que son véritable prénom pour que je puisse terminer ma mission. 
 
+Format du flag -> IUT{Nom-Prénom}
 
-**Author** : Neoreo"
+**Author :** Neoreo"
+
 value: 500
 type: dynamic
 
@@ -20,25 +23,25 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
-
-# Settings used for Dockerfile deployment
-# If you have a Dockerfile set to .
-image: .
-
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{N4N_M415_J4V4_C357_C00L_3N_VR41}
-
+    - IUT{TERRY-LINDSEY}
+    - IUT{LINDSEY-TERRY}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - RCE w/ Java
-    - Privesc w/ pic binary
+    - SocMInt 
 
 # Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
 tags:
-    - Realiste
+    - Osint
+
+# Don't touch
+state: visible
+version: "0.1"

@@ -2,11 +2,14 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Scanner"
+name: "Brute"
 author: "Neoreo"
-category: Stega
-description: " 
-Lis le message
+category: Crypto
+description: "
+Retrouve le mot de passe de l'utilisateur root
+
+Format du flag IUT{password_MD5(password)}
+Exemple -> IUT{football_37b4e2d82900d5e94b8da524fbeb33c0}
 
 **Author :** Neoreo
 "
@@ -20,22 +23,29 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
+
 flags:
-    - IUT{4L0R5_C4_C357_F4C1L3}
+    - IUT{estrellita_c26af9f32815ec696fc19aedde845107}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Code barre
+    - Linux shadow password carcking
+    - SHA-512
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Stega
+    - Crypto
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./image.png
+    - ./passwd
+    - ./shadow
+    
+# Pas touche
+state: visible
+version: "0.1"

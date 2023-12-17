@@ -2,16 +2,15 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "I Need Some Infos"
+name: "Coffee"
 author: "Neoreo"
-category: Web
+category: Realiste
 description: "
-Récupère le flag
+Un nouveau groupe de developpeurs vient de lancer sont compilateur Java en ligne. 
+Parmi eux, un est joueur et propose un café a ceux qui arriveront à récupérer le flag qu'il a laissé trainer dans son /home.
 
-https://... 
 
-**Author :** Neoreo"
-
+**Author** : Neoreo"
 value: 500
 type: dynamic
 
@@ -21,31 +20,31 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
 # Settings used for Dockerfile deployment
 # If you have a Dockerfile set to .
-image: .
+# image: .
+connection_info: http://coffee.sixctf.fr
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{7H3R3_4R3_JU57_S0M3_H77P_H3AD3R5}
+    - IUT{N4N_M415_J4V4_C357_C00L_3N_VR41}
+
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - HTTP Header basics
+    - RCE w/ Java
+    - Privesc w/ pic binary
 
 # Tags are used to provide additional public tagging to a challenge
-# Can be removed if unused
 tags:
-    - Web
+    - Realiste
+
+# Pas touche
+state: visible
+version: "0.1"
 
 
-# Hints are used to give players a way to buy or have suggestions.
-hints:
-    - {
-        content: "Modifie/ajoute les bons headers HTTP",
-        cost: 30
-    }

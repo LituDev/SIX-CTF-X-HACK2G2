@@ -2,15 +2,14 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "(C)e (S)ont (P)as vos affaires"
+name: "Exorciste"
 author: "Neoreo"
-category: Web
+category: Crypto
 description: "
-Volez le user-agent de l'administrateur
+Le flag a été chiffré par Mégarde, c'est un petit malin mais il a laissé trainer la clé.
 
-https://... 
-
-**Author: Neoreo**"
+**Author :** Neoreo
+"
 
 value: 500
 type: dynamic
@@ -21,20 +20,28 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
+
 flags:
-    - IUT{Th4t_W4s_N0t_Th4t_3asy_huh?_I_Mean_Y0u_C4n_B3_Proud}
+    - IUT{XOR}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - XSS
-    - CSP Bypass
-    - Filter bypass
+    - XOR
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Web
+    - Crypto
+
+# Provide paths to files from the same directory that this file is in
+files:
+    - ./flag.enc
+    - ./cle.bin
+# Pas touche
+state: visible
+version: "0.1"
+

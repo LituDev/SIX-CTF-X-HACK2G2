@@ -2,25 +2,13 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Rome"
+name: "Baseball"
 author: "Neoreo"
-category: Prog
+category: Misc
 description: "
-Toutes les routes mènent à Rome... ou pas.
+J'ai besoin de dire ce qu'il faut faire ?
 
-Pour résoudre ce challenge, une liste vous est présentée, chaque noeud de la liste est de la forme suivante ;
-
-['un_caractère', [x,y]] 
-
-où x et y sont les coordonnées du caractère suivant dans la string. 
-Le dernier caractère d'une chaine de caractère est identifiable car les coordonnées du suivant sont [-1,-1]. 
-
-Ah oui, le flag est la seule string de 30 caractère et n'est pas enveloppé dans IUT{}.
-N'oubliez pas de l'envelopper avant de saisir le flag
-
-Format du flag : IUT{flag}
-
-**Author** : Neoreo"
+**Author :** Neoreo"
 
 value: 500
 type: dynamic
@@ -31,22 +19,26 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
+# Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{C3773_F01S_C1_J3_5U15_ARR1V3!!}
-    - C3773_F01S_C1_J3_5U15_ARR1V3!!
+    - IUT{1_JU57_45K3D_54N74_CL4U5_F0R_C7F_P01N7S}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Follow the path
+    - Base decoding
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Prog
+    - Misc
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./chall.txt
+    - ./flag
+
+# Don't touch
+state: visible
+version: "0.1"

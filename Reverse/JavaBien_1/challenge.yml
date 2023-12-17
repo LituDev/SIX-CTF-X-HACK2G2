@@ -2,14 +2,13 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Exorciste"
+name: "JavaBien_1"
 author: "Neoreo"
-category: Crypto
+category: Reverse
 description: "
-Le flag a été chiffré par Mégarde, c'est un petit malin mais il a laissé trainer la clé.
+Décompile, trouve le bon mot de passe et récupère le flag 
 
-**Author :** Neoreo
-"
+**Author** : Neoreo"
 
 value: 500
 type: dynamic
@@ -20,24 +19,26 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
-
 flags:
-    - IUT{XOR}
+    - IUT{Decompiler_L3_J4va}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - XOR
+    - Decompiler java
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Crypto
+    - Reverse
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./flag.enc
-    - ./cle.bin
+    - ./MaClass.class
+
+# Pas touche
+state: visible
+version: "0.1"

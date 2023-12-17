@@ -2,13 +2,15 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "THM"
-author: "REDACTED"
-category: OSINT
-description: "
-Trouvez mon compte THM
+name: "Zlebounet"
+author: "Neoreo"
+category: Stega
+description: 
+"
+Va falloir mettre en oeuvre vos skills, tombez pas amoureux de lui surtout :)
 
-**Author :** REDACTED"
+**Author :** Neoreo
+"
 
 value: 500
 type: dynamic
@@ -19,18 +21,28 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{17_411_574R73D_H3R3}
+    - IUT{THAT_IS_A_CYBERBOY_WHO_TRIED_TO_HACK_ME}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - http://tryhackme.com/p/Neoreo 
+    - Binwalk
+    - Git
+    - LSB
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Osint
+    - Stega
+
+# Provide paths to files from the same directory that this file is in
+files:
+    - ./youenn.jpg
+
+# Don't touch
+state: visible
+version: "0.1"

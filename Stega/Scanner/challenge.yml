@@ -2,13 +2,14 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Nothing"
+name: "Scanner"
 author: "Neoreo"
 category: Stega
-description: "
-Tu vois quelque chose toi ?
+description: " 
+Lis le message
 
-**Author** : Neoreo"
+**Author :** Neoreo
+"
 
 value: 500
 type: dynamic
@@ -19,24 +20,26 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{AHH_JAI_VU_QUE_TU_AS_VU}
+    - IUT{4L0R5_C4_C357_F4C1L3}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - White Space code
+    - Code barre
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
     - Stega
-    # - sandbox
-    # - js
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./white
+    - ./image.png
+    
+# Don't touch
+state: visible
+version: "0.1"

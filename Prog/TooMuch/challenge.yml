@@ -2,14 +2,14 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "TheFileIsDeleted"
+name: "Too Much"
 author: "Neoreo"
-category: Forensic
+category: Prog
 description: "
-D'après nos sources, le PDG de Jack lui aurait envoyé son nouveau mot de passe au travers d'un message mais Jack, connaisseur de sécurité (ou pas) l'a supprimé de la clé USB.
+Le père Noël a voulu faire de la place en compressant la lettre de Noël d'un enfant, 
+mais ça prend plus de places que prévu, aide le à retrouver le contenu de la lettre
 
-**Author :** Neoreo"
-
+**Author** : Neoreo"
 value: 500
 type: dynamic
 
@@ -19,23 +19,28 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 50
+    decay: 20
     minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{N3ver_3ver_Qu1ck_f0rm4t_4_U5B_K3y}
+    - IUT{15_TH15_700_MUCH_C0MPR35510N_?}
+
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Data recovery
-    - Testdisk
+    - unzip bunzip2 & gunzip
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Forensic
+    - Prog
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./usb_key.zip
+    - ./flag
+
+# Pas touche
+state: visible
+version: "0.1"
+

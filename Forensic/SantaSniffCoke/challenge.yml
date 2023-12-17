@@ -2,15 +2,19 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Arcaninclusion"
+name: "Santa Sniff Coke"
 author: "Neoreo"
-category: Web
+category: Forensic
 description: "
-Trouvez un moyen d'accéder au code source
+La père noël a voulu se créer un compte sur el famoso Sporttrack mais l'appli n'était pas sécurisé.
+Un lutin black hat a sniffé le réseau mais est incapable de lire le fichier.
 
-https://... 
+Quel est le mot de passe du père Noël ?
+
+Entourez le mot de passe avec IUT{}
 
 **Author :** Neoreo"
+
 value: 500
 type: dynamic
 
@@ -20,22 +24,25 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
-
-# Settings used for Dockerfile deployment
-# If you have a Dockerfile set to .
-image: .
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{L0C4L_F1L3_1NCLU510N_15_4_PR377Y_C0MM0N_VULN}
+    - IUT{santapass13}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Local File Inclusion
+    - Wireshark
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Web
+    - Forensic
+
+# Provide paths to files from the same directory that this file is in
+files:
+    - ./capture.pcapng
+# Pas touche
+state: visible
+version: "0.1"

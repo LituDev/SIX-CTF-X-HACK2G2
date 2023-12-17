@@ -2,15 +2,13 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Zlebounet"
+name: "I Need Some Infos"
 author: "Neoreo"
-category: Stega
-description: 
-"
-Trouve le flag
+category: Web
+description: "
+Récupère le flag
 
-**Author :** Neoreo
-"
+**Author :** Neoreo"
 
 value: 500
 type: dynamic
@@ -21,25 +19,36 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
+
+# Settings used for Dockerfile deployment
+# If you have a Dockerfile set to .
+# image: .
+connection_info: http://infos.sixctf.fr
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{THAT_IS_A_CYBERBOY_WHO_TRIED_TO_HACK_ME}
+    - IUT{7H3R3_4R3_JU57_S0M3_H77P_H3AD3R5}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Binwalk
-    - Git
-    - LSB
+    - HTTP Header basics
 
 # Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
 tags:
-    - Stega
+    - Web
 
-# Provide paths to files from the same directory that this file is in
-files:
-    - ./youenn.jpg
+
+# Hints are used to give players a way to buy or have suggestions.
+hints:
+    - {
+        content: "Modifie/ajoute les bons headers HTTP",
+        cost: 30
+    }
+
+state: visible
+version: "0.1"
 

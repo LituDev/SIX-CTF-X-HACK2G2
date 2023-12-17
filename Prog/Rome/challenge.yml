@@ -2,11 +2,23 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "JavaBien_1"
+name: "Rome"
 author: "Neoreo"
-category: Reverse
+category: Prog
 description: "
-Décompile, trouve le bon mot de passe et récupère le flag 
+Toutes les routes mènent à Rome... ou pas.
+
+Pour résoudre ce challenge, une liste vous est présentée, chaque noeud de la liste est de la forme suivante ;
+
+['un_caractère', [x,y]] 
+
+où x et y sont les coordonnées du caractère suivant dans la string. 
+Le dernier caractère d'une chaine de caractère est identifiable car les coordonnées du suivant sont [-1,-1]. 
+
+Ah oui, le flag est la seule string de 30 caractère et n'est pas enveloppé dans IUT{}.
+N'oubliez pas de l'envelopper avant de saisir le flag
+
+Format du flag : IUT{flag}
 
 **Author** : Neoreo"
 
@@ -19,22 +31,26 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 50
+    decay: 20
     minimum: 100
 
-# Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{Decompiler_L3_J4va}
+    - IUT{C3773_F01S_C1_J3_5U15_ARR1V3!!}
+    - C3773_F01S_C1_J3_5U15_ARR1V3!!
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Decompiler java
+    - Follow the path
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Reverse
+    - Prog
 
 # Provide paths to files from the same directory that this file is in
 files:
-    - ./MaClass.class
+    - ./chall.txt
+
+# Pas touche
+state: visible
+version: "0.1"

@@ -2,14 +2,13 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "{{CacheCache}}"
+name: "(C)e (S)ont (P)as vos affaires"
 author: "Neoreo"
-category: Misc
-description: 
-"
-Un petit filou a caché des données dans le fichier, retrouvez les
+category: Web
+description: "
+Volez le user-agent de l'administrateur
 
-**Author :** Neoreo"
+**Author: Neoreo**"
 
 value: 500
 type: dynamic
@@ -20,22 +19,26 @@ type: dynamic
 # extra fields, set the type to "dynamic" and uncomment the "extra" section below
 extra:
     initial: 500
-    decay: 30
-    minimum: 25
+    decay: 20
+    minimum: 100
+
+connection_info: http://csp.sixctf.fr
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{4H_B4H_L4_C'357_C4CH3}
+    - IUT{Th4t_W4s_N0t_Th4t_3asy_huh?_I_Mean_Y0u_C4n_B3_Proud}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
 topics:
-    - Hide HTML tags
+    - XSS
+    - CSP Bypass
+    - Filter bypass
 
 # Tags are used to provide additional public tagging to a challenge
 tags:
-    - Misc
+    - Web
 
-# Provide paths to files from the same directory that this file is in
-files:
-    - ./CacheCache.txt
+state: visible
+version: "0.1"
+
