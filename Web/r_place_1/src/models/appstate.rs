@@ -36,7 +36,7 @@ pub enum AppStateError {
     #[error("Error creating verification email")]
     EmailCreationError,
     #[error("Error sending verification email: {0}")]
-    EmailSendingError(#[from] lettre::transport::smtp::Error),
+    EmailSendingError(#[from] smtp::Error),
 }
 
 pub struct AppState {
@@ -69,8 +69,6 @@ impl AppState {
         let base_image = image::open(&base_image_path)
             .map_err(|_| AppStateError::FileReadError(std::io::Error::new(std::io::ErrorKind::Other, "Error reading image")))?;
 
-        let pixels_color = HashMap::new();
-
         let cooldown = env::var("COOLDOWN_SEC")
             .map_err(|_| AppStateError::EnvVarNotSet("COOLDOWN_SEC".to_string()))?
             .parse::<u16>()
@@ -87,8 +85,10 @@ impl AppState {
             .map_err(AppStateError::JsonParseError)?;
         let palette: Vec<(u8, u8, u8)> = color_file.colors
             .iter()
-            .map(|color| hex_to_rgb(color)).collect();
+            .map(|color| hex_to_rgb(color))
+            .collect();
 
+        let pixels_color = HashMap::new();
         let last_update = HashMap::new();
         let png = HashMap::new();
         let message_updates = HashMap::new();
@@ -224,6 +224,10 @@ impl AppState {
     }
 
     pub fn draw(&mut self, x: usize, y: usize, color: u8, chall_code: &str) -> Result<(), AppStateError> {
+        if x >= self.width || y >= self.height {
+            return Err(AppStateError::InvalidValueError("x or y out of bounds".to_string()));
+        }
+
         let index = x * self.height + y;
         self.pixels_color.get_mut(chall_code)
             .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?[index] = color;

@@ -2,7 +2,7 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "{{r_place_1}}"
+name: "r_place_1"
 author: "JL²"
 category: Web
 description: Votre but est de colorier le place en entier en noir (gloire au void). Plus d'info seront recu dans le mail. Lien du challenge <Lien a modifier>

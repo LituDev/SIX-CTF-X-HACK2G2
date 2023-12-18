@@ -1,0 +1,121 @@
+version: "3"
+
+services:
+    php:
+        build:
+            dockerfile: .docker/php/Dockerfile
+            context: ../
+            args:
+                TIMEZONE: ${TIMEZONE}
+                FLAG_3: ${FLAG_3}
+                FLAG_4: ${FLAG_4}
+        user: www-data
+        hostname: php
+        ports:
+            - 8080:8080
+        environment:
+            MYSQL_DATABASE_URL: mysql://root:${MYSQL_ROOT_PASSWORD}@database:3306/${MYSQL_DB}
+            SQLITE_DATABASE_URL: sqlite:///%kernel.project_dir%/var/data.db
+            MONGODB_URL: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017
+            MONGODB_DB: ${MONGO_INITDB_DATABASE}
+            NEO4J_URL: http://neo4j:${NEO4J_PASSWORD}@neo4j:7474
+            APP_SECRET: ${APP_SECRET}
+            JWT_SECRET: ${JWT_SECRET}
+            REDIS_URL: redis://redis:6379
+
+            FLAG_2: ${FLAG_2}
+            FLAG_BIS: ${FLAG_BIS}
+            ADMIN_TOKEN: ${ADMIN_TOKEN}
+        depends_on:
+            database:
+                condition: service_healthy
+            mongo:
+                condition: service_healthy
+            neo4j:
+                condition: service_healthy
+            redis:
+                condition: service_healthy
+        volumes:
+            - tmp_urls:/tmp/urls
+
+    nginx:
+        build:
+            context: ./nginx
+        volumes:
+            - ../public:/var/www/symfony/public
+        ports:
+            - 80:80
+        env_file:
+            - .env.nginx.local
+        depends_on:
+            - php
+
+    database:
+        image: mysql
+        hostname: database
+        environment:
+            MYSQL_DATABASE: ${MYSQL_DB}
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        volumes:
+            - database_data:/var/lib/mysql:rw
+        healthcheck:
+            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+            timeout: 1m
+            interval: 5s
+
+    mongo:
+        image: mongo
+        hostname: mongo
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+            MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+            MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+        volumes:
+            - mongo_data:/data/db:rw
+            - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+        healthcheck:
+            test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+            timeout: 1m
+            interval: 5s
+
+    neo4j:
+        image: neo4j
+        hostname: neo4j
+        restart: always
+        environment:
+            NEO4J_AUTH: neo4j/${NEO4J_PASSWORD}
+        volumes:
+            - neo4j_data:/data:rw
+        healthcheck:
+            test: ["CMD", "neo4j", "version"]
+            timeout: 1m
+            interval: 5s
+
+    redis:
+        image: redis
+        hostname: redis
+        volumes:
+            - redis_data:/data:rw
+        ports:
+            - 6379:6379
+        healthcheck:
+            test: ["CMD", "redis-cli", "ping"]
+            timeout: 1m
+            interval: 5s
+
+    bot:
+        build:
+            context: ../bot
+        environment:
+            JWT_SECRET: ${JWT_SECRET}
+            DOMAIN_NAME: ${PUNTO_DOMAIN}
+        volumes:
+            - tmp_urls:/tmp/urls
+volumes:
+    neo4j_data:
+    mongo_data:
+    database_data:
+    redis_data:
+    tmp_urls:

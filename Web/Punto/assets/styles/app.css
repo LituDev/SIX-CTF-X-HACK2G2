@@ -1,0 +1,105 @@
+body {
+    background-color: lightgray;
+}
+
+.toast-container{
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    width: 100px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+
+.board {
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.board tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.board td {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.board td:hover{
+    cursor: pointer;
+    background-color: #333;
+}
+
+.game-board{
+    position: relative;
+    width: fit-content;
+}
+
+.table-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index:  999;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.actual-tag{
+    color: white;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.player-tag{
+    color: white;
+    background-color: #62ad46;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.game-place{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.player-deck{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.deck-hidden{
+    display: none;
+}

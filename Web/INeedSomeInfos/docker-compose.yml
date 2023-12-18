@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ineedsomeinfos:
+    build: .
+    ports:
+      - "8082:80"
+    container_name: ineedsomeinfos1
+    restart: unless-stopped

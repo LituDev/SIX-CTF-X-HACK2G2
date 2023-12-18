@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello GameController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    <div class="toast-container">
+
+    </div>
+
+<div class="example-wrapper" data-controller="game">
+
+    <h4>Inviter des amis avec le code: {{ code }}</h4>
+    <script>
+        function ask() {
+            fetch("{{ path('ask', {
+                id: code
+            }) }}");
+        }
+    </script>
+    <button onclick="ask()">Appeler un administrateur</button>
+    <p>Vous êtes: {{ player.name }}</p>
+    <div class="game-place">
+        <p id="player-0-title" class="player-deck-title deck-hidden"></p>
+        <span id="player-0" class="player-deck deck-hidden"></span>
+        <div style="gap: 10px;display: flex;flex-direction: column">
+            <div style="display: flex;flex-direction: column; align-items: center;">
+                <p id="player-1-title" class="player-deck-title deck-hidden"></p>
+                <span id="player-1" class="player-deck deck-hidden"> </span>
+            </div>
+            <div class="game-board" data-user="{{ player.id }}">
+                <table class="board">
+                    <tbody>
+                    {% for i in 1..6 %}
+                        <tr>
+                            {% for j in 1..6 %}
+                                <td class="board-cell" {{ stimulus_action('game', 'addCard',' click', {
+                                    x: i,
+                                    z: j
+                                }) }} id="{{ i ~ " " ~ j }}">
+                                    +
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div class="table-overlay" id="table-overlay" {% if party.started and party.finished == false %}style="display: none;"{% endif %}>
+                    {% if party.started == false %}
+                        <p class="no-remove">Partie non démarré</p>
+                    {% else %}
+                        {% if party.finished == true %}
+                            <p class="no-remove">Partie terminé</p>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: column; align-items: center;">
+                <span id="player-3" class="player-deck deck-hidden"> </span>
+                <p id="player-3-title" class="player-deck-title deck-hidden"></p>
+            </div>
+        </div>
+        <span id="player-2" class="player-deck deck-hidden"></span>
+        <p id="player-2-title" class="player-deck-title deck-hidden"></p>
+    </div>
+
+    <button id="start-button" {% if party.partyPlayers|length < 2 %}disabled{% endif %} {{ stimulus_action('game', 'start') }} style="{% if party.isStarted %}display:none;{% endif %}">Démarrer la manche</button>
+    <button id="round-button" {{ stimulus_action('game', 'round') }} style="display:none;">Démarrer la manche</button>
+    <a href="{{ path("leave") }}">Quitter la partie</a>
+
+    <p>Joueurs connecté: </p>
+    <ul id="playerConnected">
+    </ul>
+</div>
+<script src="{{ asset('bundles/goswebsocket/js/vendor/autobahn.min.js') }}"></script>
+{% endblock %}

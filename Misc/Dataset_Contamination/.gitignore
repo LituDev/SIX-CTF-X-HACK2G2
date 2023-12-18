@@ -1,0 +1,4 @@
+final_model/
+.venv/
+.env/
+cached*

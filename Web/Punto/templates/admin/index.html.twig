@@ -1,0 +1,163 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Manage datas{% endblock %}
+
+{% block style %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Exporter
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for databaseType in databaseTypes %}
+                                {% if databaseType.name != "NEO4J" %}
+                                    <li><a class="dropdown-item" href="{{ path("admin_export", {
+                                            type: databaseType.value
+                                        }) }}">{{ databaseType.name }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{{ path("admin_export", {
+                                    type: "all"
+                                }) }}">Tout exporter</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Supprimer
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for databaseType in databaseTypes %}
+                                {% if databaseType.name != "NEO4J" %}
+                                    <li><a class="dropdown-item" href="{{ path("admin_truncate", {
+                                            type: databaseType.value
+                                        }) }}">{{ databaseType.name }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{{ path("admin_truncate", {
+                                    type: "all"
+                                }) }}">Tout supprimer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex mx-4" action="{{ path("admin_warmup") }}" method="post">
+                    <input class="form-control me-2" type="text" name="url" placeholder="URL" required>
+                    <button class="btn btn-outline-success" type="submit">Warmup</button>
+                </form>
+                <form class="d-flex" action="{{ path("admin_import") }}" method="post" enctype="multipart/form-data">
+                    <input class="form-control me-2" type="file" id="file" name="file" required>
+                    <button class="btn btn-outline-success" type="submit">Importer</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <p>Good job! Here is your flag: {{ flag }}</p>
+    <br>
+    <div style="display: flex;flex-wrap: wrap;gap: 2rem; justify-content: center;">
+        <style>
+            .cell{
+                height:4rem;
+                width: 4rem;
+            }
+        </style>
+        {% for base, baseData in data %}
+            {% for party in baseData.parties %}
+                <div class="card d-flex align-items-center" >
+                    {% set board = party.board %}
+                    {% if board == null %}
+                        <table class="card-img-top row" style="background-color: black;height: 24rem;width: 24rem;">
+                            <tr>
+                                <td style="color: white">Aucun plateau de jeu en cours</td>
+                            </tr>
+                        </table>
+                    {% else %}
+                        <table class="card-img-top row m-0 p-0" style="background-color: black;height: 24rem;width: 24rem;">
+                            <tbody class="p-0 m-0">
+                                {% for x in range(1, 6) %}
+                                    <tr class="col p-0 m-0">
+                                        {% for y in range(1, 6) %}
+                                            {% set cell = board.getCell(x, y) %}
+                                            {% if cell != null %}
+                                                {% set card = cell.frontCard %}
+                                                {% if card != null %}
+                                                    <td class="cell text-center align-middle" style="color: {{ card.colorAsHtml }}!important;">{{ card.number }}</td>
+                                                {% else %}
+                                                    <td class="cell text-center align-middle" style="color: white!important;">X</td>
+                                                {% endif %}
+                                            {% else %}
+                                                <td class="cell text-center align-middle" style="color: white!important;">X</td>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+                    <div class="card-body">
+                        <h6 class="card-title">#{{ party.id }} <span class="badge text-bg-primary">{{ base }}</span></h6>
+                        <p class="card-text text-secondary">Créer le {{ party.createdAt|date('d/m/Y H:i:s') }} {% if party.finishedAt == null %}<span class="badge text-bg-danger">Non terminé</span>{% endif %}</p>
+                        {% if party.finishedAt != null %}
+                            <p class="card-text text-secondary">Fini le {{ party.finishedAt|date('d/m/Y H:i:s') }}</p>
+                            {% if party.winner.player != null %}
+                                <p>Gagnant: {{ party.winner.player.name }}</p>
+                            {% endif %}
+                        {% endif %}
+                        <ul class="list-group">
+                            {% for player in party.partyPlayers %}
+                                <li class="list-group-item">
+                                    {{ player.player.name }}
+                                    {% if player.connected %}
+                                        <span class="badge text-bg-success">Connecté</span>
+                                    {% else %}
+                                        <span class="badge text-bg-danger">Non connecté</span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <hr>
+                        <p>Manches: ({{ party.rounds|length }} / {{ party.roundNumber }})</p>
+                        <table class="table p-0">
+                            <thead>
+                                <tr>
+                                    <th>Créer le</th>
+                                    <th>Démarrer le</th>
+                                    <th>Fini</th>
+                                </tr>
+                            </thead>
+                            <tbody class="p-0 m-0">
+                                {% for round in party.rounds %}
+                                    <tr>
+                                        <td>{{ round.createdAt|date('d/m/Y H:i:s') }}</td>
+                                        <td>{{ round.startedAt|date('d/m/Y H:i:s') }}</td>
+                                        <td>
+                                            {% if round.finishedAt == null %}
+                                                Non terminé
+                                            {% else %}
+                                                {{ round.finishedAt|date('d/m/Y H:i:s') }}
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                        </table>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+{% endblock %}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Place INFO</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place INFO is a website that allows you to draw on a canvas with other people.">
+</head>
+<body>
+    <div class="container">
+        <div class="canvas-wrapper">
+            <canvas class="pixel-img" id="canvas"></canvas>
+        </div>
+        <div class="toolbar">
+            <div class="flex-row">
+                <div class="color-picker border-shadow" id="colorContainer"></div>
+                <button class="border-shadow draw-btn" id="drawButton">Draw !</button>
+            </div>
+            <div class="border-shadow tool-info tool" id="cooldownButton">0 seconds</div>
+            <button class="border-shadow tool" id="notConnected">Not connected</button>
+            <div class="border-shadow tool-info tool" id="notVerified">Email not verified</div>
+        </div>
+        <div class="leaderboard border-shadow">
+            <div class="title-top">
+                <p class="title">Leaderboard</p>
+                <button class="reload" id="reloadButton">
+                    <img src="/img/reload.png" alt="reload" class="reload pixel-img">
+                </button>
+            </div>
+            <div class="flex-col" id="leaderboardList"></div>
+        </div>
+        <div class="pixel-info border-shadow" id="pixelInfo">(255, 255) ( click )</div>
+        <img src="/img/cursor.png" id="cursor" class="selected-pixel cursor pixel-img swing-animation" alt="">
+        <img src="/img/cursor.png" id="selectedPixel" class="selected-pixel pixel-img" alt="">
+        <button class="menu-btn border-shadow" id="menuButton">
+            <img class="menu-img pixel-img" src="/img/menu.png" alt="menu">
+        </button>
+        <div class="menu flex-col border-shadow" id="menu">
+            <div class="flex-col" id="login">
+                <p class="title title-top">Log In</p>
+                <p>Username:</p>
+                <input type="text" id="loginUsername" placeholder="Username">
+                <p class="p-error" id="loginUsernameError"></p>
+                <p>Password:</p>
+                <input type="password" id="loginPassword" placeholder="Password">
+                <p class="p-error" id="loginPasswordError"></p>
+                <button class="login-btn border-shadow" id="loginButton">Log In</button>
+                <div class="flex-col bottom-txt">
+                    <p>Don't have an account?</p>
+                    <p class="p-btn" id="signupLink">Sign Up</p>
+                </div>
+            </div>
+            <div class="flex-col" id="signup">
+                <p class="title title-top">Sign Up</p>
+                <p>Email:</p>
+                <input type="email" id="signupEmail" placeholder="Email">
+                <p class="p-error" id="signupEmailError"></p>
+                <p>Username:</p>
+                <input type="text" id="signupUsername" placeholder="Username">
+                <p class="p-error" id="signupUsernameError"></p>
+                <p>Password:</p>
+                <input type="password" id="signupPassword" placeholder="Password">
+                <p class="p-error" id="signupPasswordError"></p>
+                <button class="login-btn border-shadow" id="signupButton">Sign Up</button>
+                <div class="flex-col bottom-txt">
+                    <p>Already have an account?</p>
+                    <p class="p-btn" id="loginLink">Log In</p>
+                </div>
+            </div>
+            <div class="flex-col" id="profile">
+                <div class="title-top">
+                    <p class="title">Profile</p>
+                    <button class="reload" id="profileReloadButton">
+                        <img src="/img/reload.png" alt="reload" class="reload pixel-img">
+                    </button>
+                </div>
+                <p>Placed Pixels:</p>
+                <input type="number" id="profilePlacedPixels" placeholder="-1" disabled>
+                <p class="p-error" id="profilePlacedPixelsError"></p>
+                <p>Change Username:</p>
+                <input type="text" id="profileUsername" placeholder="Username">
+                <p class="p-error" id="profileUsernameError"></p>
+                <p>Change Password:</p>
+                <input type="password" id="profilePassword" placeholder="Optional">
+                <p class="p-error" id="profilePasswordError"></p>
+                <p>Current Password: *</p>
+                <input type="password" id="profileCurrentPassword" placeholder="Required">
+                <p class="p-error" id="profileCurrentPasswordError"></p>
+                <div class="flex-between">
+                    <button id="logoutButton" class="border-shadow">Log Out</button>
+                    <button id="saveButton" class="border-shadow">Save</button>
+                </div>
+            </div>
+        </div>
+        <button class="github" id="githubButton">
+            <img src="/img/github.gif" alt="github" class="pixel-img">
+        </button>
+    </div>
+    <script src="/js/bundle.js"></script>
+</body>
+</html>
