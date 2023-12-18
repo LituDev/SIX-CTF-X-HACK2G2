@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  arcaninclusion:
+    build: .
+    ports:
+      - "8084:80"
+    container_name: arcaninclusion1
+    restart: unless-stopped

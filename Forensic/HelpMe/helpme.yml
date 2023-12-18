@@ -1,0 +1,44 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "HelpMe"
+author: "ShockedPlot7560"
+category: Forensic
+description: "
+On vient de poutrer votre application web. En plus des dégâts faits à votre infrastructure, vous remarquez quelque chose d'étrange dans vos logs.
+
+Sauriez-vous retrouver les données que l'attaquant a réussies à exfiltrer ?
+
+**Author :** ShockedPlot7560"
+
+value: 500
+type: dynamic
+
+# The extra field provides additional fields for data during the install/sync commands/
+# Fields in extra can be used to supply additional information for other challenge types
+# For example the follow extra field is for dynamic challenges. To use these following
+# extra fields, set the type to "dynamic" and uncomment the "extra" section below
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+flags:
+    - IUT{L0G_C4N_BE_US3FUL_SOME_T1MES}
+
+# Topics are used to help tell what techniques/information a challenge involves
+# They are generally only visible to admins
+topics:
+    - Dev 
+    - Logs
+
+# Tags are used to provide additional public tagging to a challenge
+tags:
+    - Forensic
+    - Dev
+
+# Provide paths to files from the same directory that this file is in
+files:
+    - ./logs.txt

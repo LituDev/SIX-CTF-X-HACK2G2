@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  cesontpasvosaffaires:
+    build:
+      context: .
+    ports:
+      - "8083:80"
+    network_mode: bridge
+    container_name: cesontpasvosaffaires1
