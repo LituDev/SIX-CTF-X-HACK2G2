@@ -24,7 +24,7 @@ extra:
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
-    - IUT{Decompiler_L3_J4va}
+    - IUT{javaaaaaaaaaa}
 
 # Topics are used to help tell what techniques/information a challenge involves
 # They are generally only visible to admins
