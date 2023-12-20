@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  client:
+    image: node:latest
+    working_dir: /app/client
+    ports:
+      - "30690:3000"
+    volumes:
+      - ./Cigar2:/app/client/
+    command: sh -c "npm install && node webserver.js"
+
+  server:
+    image: node:latest
+    working_dir: /app/server
+    ports:
+      - "30069:8080"
+    volumes:
+      - ./MultiOgarII:/app/server/
+      - ./config.js:/app/server/src/config.js
+      - ./Server.js:/app/server/src/Server.js
+      - ./Alert.js:/app/server/src/packet/Alert.js
+      - ./Player.js:/app/server/src/Player.js
+      - ./index.js:/app/server/src/packet/index.js
+    command: sh -c "npm install && node ./src/index.js"
