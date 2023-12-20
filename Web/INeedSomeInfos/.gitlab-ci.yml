@@ -1,0 +1,31 @@
+stages:          # List of stages for jobs, and their order of execution
+  - build
+
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  image:
+      name: ubuntu:latest
+      entrypoint: [""]
+
+  before_script:
+      - apt update -qy && apt install python3 python3-pip openssh-client curl gnupg lsb-core software-properties-common -qy
+      - eval $(ssh-agent -s)
+      - echo "${SSH_Key}" | ssh-add -
+      - mkdir -p ~/.ssh
+      - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+      - pip install ctfcli
+
+  script:
+    - ssh interiut@192.168.1.210 "cd /home/interiut/INeedSomeInfos/ && sudo docker-compose down"
+    - ssh interiut@192.168.1.210 "rm -rf /home/interiut/INeedSomeInfos"
+    - ssh interiut@192.168.1.210 "mkdir -p /home/interiut/INeedSomeInfos/"
+    - ctf challenge add . && ctf challenge install $PWD
+    # - ctf challenge add . && ctf challenge sync $PWD
+
+    - scp ./Dockerfile interiut@192.168.1.210:/home/interiut/INeedSomeInfos/Dockerfile
+    - scp ./docker-compose.yml interiut@192.168.1.210:/home/interiut/INeedSomeInfos/docker-compose.yml
+    - scp -r ./config/ interiut@192.168.1.210:/home/interiut/INeedSomeInfos/config/
+    - scp -r ./sources/ interiut@192.168.1.210:/home/interiut/INeedSomeInfos/sources/
+
+    - ssh interiut@192.168.1.210 "cd /home/interiut/INeedSomeInfos/ && sudo docker-compose up -d --build"
+    - echo "Container Start !"
