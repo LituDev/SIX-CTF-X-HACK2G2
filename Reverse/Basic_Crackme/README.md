@@ -2,7 +2,7 @@
 
 Auteur : NineLine
 Type : Reverse
-***Difficulté : Moyen***
+***Difficulté : Facile***
 
 ### Enoncé : 
 

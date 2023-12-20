@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  rplace1:
+    build: .
+    ports:
+      - "60001:8080"
+    container_name: rplace11
+    restart: unless-stopped
