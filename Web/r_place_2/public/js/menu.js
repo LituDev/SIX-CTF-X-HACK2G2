@@ -112,7 +112,7 @@ async function saveProfile() {
     }
 
     try {
-        const response = await fetch(`${window.location.pathname}/api/profile/edit`, {
+        const response = await fetch('/api/profile/edit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ async function getProfile() {
     }
 
     try {
-        let profileResponse = await fetch(`${window.location.pathname}/api/profile/me`, {
+        let profileResponse = await fetch('/api/profile/me', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -171,7 +171,7 @@ async function getProfile() {
             }
         });
 
-        let countResponse = await fetch(`${window.location.pathname}/api/users/count`, {
+        let countResponse = await fetch('/api/users/count', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -216,7 +216,7 @@ async function login() {
     }
 
     try {
-        const response = await fetch(`${window.location.pathname}/api/login`, {
+        const response = await fetch('/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -268,7 +268,7 @@ async function signup() {
         }
         signupPasswordError.textContent = "";
 
-        const signupResponse = await fetch(`${window.location.pathname}/api/signup`, {
+        const signupResponse = await fetch('/api/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

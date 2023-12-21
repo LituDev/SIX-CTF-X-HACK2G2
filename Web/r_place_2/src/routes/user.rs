@@ -29,24 +29,21 @@ pub struct ProfileEdit {
     pub current_password: String,
 }
 
-#[post("{chall_code}/api/login")]
+#[post("/api/login")]
 async fn login(
     appstate: web::Data<RwLock<AppState>>,
     info: web::Json<LoginInfo>,
-    path: web::Path<(String,)>,
 ) -> Result<HttpResponse, Error> {
     let appstate = appstate
         .write()
         .map_err(|_| error::ErrorInternalServerError("appstate read error"))?;
 
     let user_id = appstate
-        .get_user_id(&info.username, &path.0)
-        .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?
+        .get_user_id(&info.username)
         .ok_or_else(|| error::ErrorBadRequest("User not found"))?;
 
     let user = appstate
-        .get_user(user_id, &path.0)
-        .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?
+        .get_user(user_id)
         .ok_or_else(|| error::ErrorBadRequest("User not found"))?;
 
     if user.password != info.password {
@@ -68,11 +65,10 @@ async fn login(
     Ok(HttpResponse::Ok().body(token))
 }
 
-#[post("{chall_code}/api/signup")]
+#[post("/api/signup")]
 async fn signup(
     appstate: web::Data<RwLock<AppState>>,
     info: web::Json<SignupInfo>,
-    path: web::Path<(String,)>,
 ) -> Result<HttpResponse, Error> {
     if info.username.len() < 3 || info.username.len() > 15 {
         return Err(error::ErrorBadRequest("username must be between 3 and 15 characters"));
@@ -90,16 +86,14 @@ async fn signup(
         return Err(error::ErrorBadRequest("Invalid email format"));
     }
 
-    match appstate.email_exists(&info.email, &path.0) {
-        Ok(true) => return Err(error::ErrorBadRequest("Email already registered")),
-        Ok(false) => (),
-        Err(err) => return Err(error::ErrorInternalServerError(format!("appstate error: {}", err))),
+    match appstate.email_exists(&info.email) {
+        true => return Err(error::ErrorBadRequest("Email already registered")),
+        false => (),
     }
 
-    match appstate.is_username_taken(&info.username, &path.0) {
-        Ok(true) => return Err(error::ErrorBadRequest("Username taken")),
-        Ok(false) => (),
-        Err(err) => return Err(error::ErrorInternalServerError(format!("appstate error: {}", err))),
+    match appstate.is_username_taken(&info.username) {
+        true => return Err(error::ErrorBadRequest("Username taken")),
+        false => (),
     }
 
     let user = User::new(
@@ -108,35 +102,32 @@ async fn signup(
         info.password.clone(),
     );
 
-    appstate.insert_user(user, &path.0)
+    appstate.insert_user(user)
         .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?;
 
     Ok(HttpResponse::Ok().body("ok"))
 }
 
-#[get("{chall_code}/api/profile/me")]
+#[get("/api/profile/me")]
 async fn get_profile(
     appstate: web::Data<RwLock<AppState>>,
     req: HttpRequest,
-    path: web::Path<(String,)>,
 ) -> Result<HttpResponse, Error> {
     let appstate = appstate.read()
         .map_err(|_| error::ErrorInternalServerError("appstate read error"))?;
 
     let user_id = token_to_id(req, appstate.jwt_secret().as_bytes())?;
-    let user = appstate.get_user(user_id, &path.0)
-        .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?
+    let user = appstate.get_user(user_id)
         .ok_or_else(|| error::ErrorBadRequest("invalid user"))?;
 
     Ok(HttpResponse::Ok().json(user))
 }
 
-#[post("{chall_code}/api/profile/edit")]
+#[post("/api/profile/edit")]
 async fn edit_profile(
     appstate: web::Data<RwLock<AppState>>,
     info: web::Json<ProfileEdit>,
     req: HttpRequest,
-    path: web::Path<(String,)>,
 ) -> Result<HttpResponse, Error> {
     let mut appstate = appstate
         .write()
@@ -153,12 +144,10 @@ async fn edit_profile(
     }
 
     let user = appstate
-        .get_user(user_id, &path.0)
-        .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?
+        .get_user(user_id)
         .ok_or_else(|| error::ErrorBadRequest("invalid user"))?;
 
-    let is_username_taken = appstate.is_username_taken(&info.username, &path.0)
-        .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?;
+    let is_username_taken = appstate.is_username_taken(&info.username);
 
     if user.username != info.username && is_username_taken {
         return Err(error::ErrorBadRequest("username taken"));
@@ -169,8 +158,7 @@ async fn edit_profile(
     }
 
     let user = appstate
-        .get_user_mut(user_id, &path.0)
-        .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?
+        .get_user_mut(user_id)
         .ok_or_else(|| error::ErrorBadRequest("invalid user"))?;
 
     user.username = info.username.clone();
@@ -179,16 +167,12 @@ async fn edit_profile(
     Ok(HttpResponse::Ok().body("ok"))
 }
 
-#[get("{chall_code}/api/users/count")]
+#[get("/api/users/count")]
 async fn get_user_count(
     appstate: web::Data<RwLock<AppState>>,
-    path: web::Path<(String,)>,
 ) -> Result<HttpResponse, Error> {
     let appstate = appstate.read()
         .map_err(|_| error::ErrorInternalServerError("appstate read error"))?;
 
-    let count = appstate.user_count(&path.0)
-        .map_err(|err| error::ErrorInternalServerError(format!("appstate error: {}", err)))?;
-
-    Ok(HttpResponse::Ok().json(count))
+    Ok(HttpResponse::Ok().json(appstate.user_count()))
 }

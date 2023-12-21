@@ -33,7 +33,7 @@ async function initApp() {
 
 function initSocket() {
     let wsProtocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
-    socket = new WebSocket(`${wsProtocol}://${window.location.host}${window.location.pathname}/api/ws`);
+    socket = new WebSocket(`${wsProtocol}://${window.location.host}/api/ws`);
 
     socket.onmessage = function(event) {
         let data = JSON.parse(event.data);
@@ -52,7 +52,7 @@ async function sendPixel() {
     let token = localStorage.getItem("token");
 
     try {
-        const response = await fetch(`${window.location.pathname}/api/draw`, {
+        const response = await fetch('/api/draw', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -80,12 +80,12 @@ async function sendPixel() {
 
 async function getGrid() {
     try {
-        const sizeResponse = await fetch(`${window.location.pathname}/api/size`);
+        const sizeResponse = await fetch('/api/size');
         const sizeData = await sizeResponse.json();
         canvas.width = sizeData[0];
         canvas.height = sizeData[1];
 
-        const pngResponse = await fetch(`${window.location.pathname}/api/png`, {
+        const pngResponse = await fetch('/api/png', {
             method: 'GET',
             headers: {
                 'Accept': 'image/png'
@@ -101,7 +101,7 @@ async function getGrid() {
             ctx.drawImage(img, 0, 0);
             URL.revokeObjectURL(img.src);
 
-            const updatesResponse = await fetch(`${window.location.pathname}/api/updates`);
+            const updatesResponse = await fetch('/api/updates');
             const updates = await updatesResponse.json();
             updates.forEach(update => {
                 ctx.fillStyle = colors[update.color];

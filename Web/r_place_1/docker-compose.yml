@@ -1,9 +1,9 @@
-version: '3.3'
+version: '3'
 
 services:
-  rplace1:
-    build: .
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "60001:8080"
-    container_name: rplace11
-    restart: unless-stopped

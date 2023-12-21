@@ -8,7 +8,7 @@ async function getLeaderboard() {
     }
 
     try {
-        const response = await fetch(`${window.location.pathname}/api/leaderboard`);
+        const response = await fetch('/api/leaderboard');
         if (!response.ok) {
             console.error(`Failed to fetch leaderboard: ${await response.text()}`);
         }

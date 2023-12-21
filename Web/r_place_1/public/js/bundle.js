@@ -1,3 +1,92 @@
+// public/js/toolbar.js
+
+let colorPicker = document.getElementById("colorContainer");
+let cooldownButton = document.getElementById("cooldownButton");
+
+let oldSelectedColorBlock = null;
+
+function deselectColor() {
+    if(oldSelectedColorBlock !== null) {
+        oldSelectedColorBlock.className = 'color-block';
+    }
+    selectedColor = -1;
+    cursor.style.backgroundColor = "transparent";
+    selectedPixel.style.backgroundColor = "transparent";
+}
+
+async function initPalette() {
+    try {
+        let response = await fetch("/misc/colors.json",
+            {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        if (response.ok) {
+            colors = await response.json();
+            colors = colors.colors;
+        } else {
+            console.error(await response.text());
+        }
+    } catch (error) {
+        console.error("Error:", error);
+    }
+
+    colors.forEach((color) => {
+        const colorBlock = document.createElement('button');
+        colorBlock.className = 'color-block';
+        colorBlock.style.backgroundColor = color;
+        colorBlock.setAttribute('aria-label', `Select color ${color}`);
+        colorBlock.addEventListener('click', () => {
+            deselectColor();
+            selectedColor = colors.indexOf(color);
+            colorBlock.className = 'color-block selected-color-block';
+            oldSelectedColorBlock = colorBlock;
+            selectedPixel.style.backgroundColor = color;
+            showDrawButton();
+        });
+        colorPicker.appendChild(colorBlock);
+    });
+}
+
+function switchState(state) {
+    cooldownButton.style.display = "none";
+    colorPicker.style.display = "none";
+    drawButton.style.display = "none";
+
+    if(state === "cooldown") {
+        cooldownButton.style.display = "block";
+    } else if(state === "palette") {
+        colorPicker.style.display = "grid";
+        showDrawButton();
+    }
+}
+
+function showDrawButton() {
+    if(oldPixel && oldPixel.x !== -1 && oldPixel.y !== -1 && selectedColor !== -1 && drawButton.style.display === "none") {
+        drawButton.style.display = "block";
+        drawButton.classList.toggle("swing-one");
+        drawButton.onanimationend = () => {
+            drawButton.classList.toggle("swing-one");
+        }
+    } else if((oldPixel && oldPixel.x === -1 && oldPixel.y === -1) || selectedColor === -1) {
+        drawButton.style.display = "none";
+    }
+}
+
+function updateCooldownDisplay() {
+    if (localCooldown <= 0) {
+        switchState("palette");
+        return;
+    } else {
+        switchState("cooldown");
+    }
+    cooldownButton.textContent = `${Math.ceil(localCooldown)} seconds`;
+    localCooldown--;
+    setTimeout(updateCooldownDisplay, 1000);
+}
+
 // public/js/app.js
 
 let cursor = document.getElementById("cursor");
@@ -36,7 +125,7 @@ async function initApp() {
 
 function initSocket() {
     let wsProtocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
-    socket = new WebSocket(`${wsProtocol}://${window.location.host}${window.location.pathname}/api/ws`);
+    socket = new WebSocket(`${wsProtocol}://${window.location.host}/api/ws`);
 
     socket.onmessage = function(event) {
         let data = JSON.parse(event.data);
@@ -53,7 +142,7 @@ async function sendPixel() {
     if (selectedColor === -1) return;
 
     try {
-        const response = await fetch(`${window.location.pathname}/api/draw`, {
+        const response = await fetch('/api/draw', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -79,12 +168,12 @@ async function sendPixel() {
 
 async function getGrid() {
     try {
-        const sizeResponse = await fetch(`${window.location.pathname}/api/size`);
+        const sizeResponse = await fetch('/api/size');
         const sizeData = await sizeResponse.json();
         canvas.width = sizeData[0];
         canvas.height = sizeData[1];
 
-        const pngResponse = await fetch(`${window.location.pathname}/api/png`, {
+        const pngResponse = await fetch('/api/png', {
             method: 'GET',
             headers: {
                 'Accept': 'image/png'
@@ -101,7 +190,7 @@ async function getGrid() {
             URL.revokeObjectURL(img.src);
         };
 
-        const updatesResponse = await fetch(`${window.location.pathname}/api/updates`);
+        const updatesResponse = await fetch('/api/updates');
         const updates = await updatesResponse.json();
         const ctx = canvas.getContext('2d');
         updates.forEach(update => {
@@ -204,95 +293,6 @@ canvas.addEventListener('click', async () => {
 drawButton.addEventListener('click', sendPixel);
 
 initApp();
-
-// public/js/toolbar.js
-
-let colorPicker = document.getElementById("colorContainer");
-let cooldownButton = document.getElementById("cooldownButton");
-
-let oldSelectedColorBlock = null;
-
-function deselectColor() {
-    if(oldSelectedColorBlock !== null) {
-        oldSelectedColorBlock.className = 'color-block';
-    }
-    selectedColor = -1;
-    cursor.style.backgroundColor = "transparent";
-    selectedPixel.style.backgroundColor = "transparent";
-}
-
-async function initPalette() {
-    try {
-        let response = await fetch("/misc/colors.json",
-            {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-        if (response.ok) {
-            colors = await response.json();
-            colors = colors.colors;
-        } else {
-            console.error(await response.text());
-        }
-    } catch (error) {
-        console.error("Error:", error);
-    }
-
-    colors.forEach((color) => {
-        const colorBlock = document.createElement('button');
-        colorBlock.className = 'color-block';
-        colorBlock.style.backgroundColor = color;
-        colorBlock.setAttribute('aria-label', `Select color ${color}`);
-        colorBlock.addEventListener('click', () => {
-            deselectColor();
-            selectedColor = colors.indexOf(color);
-            colorBlock.className = 'color-block selected-color-block';
-            oldSelectedColorBlock = colorBlock;
-            selectedPixel.style.backgroundColor = color;
-            showDrawButton();
-        });
-        colorPicker.appendChild(colorBlock);
-    });
-}
-
-function switchState(state) {
-    cooldownButton.style.display = "none";
-    colorPicker.style.display = "none";
-    drawButton.style.display = "none";
-
-    if(state === "cooldown") {
-        cooldownButton.style.display = "block";
-    } else if(state === "palette") {
-        colorPicker.style.display = "grid";
-        showDrawButton();
-    }
-}
-
-function showDrawButton() {
-    if(oldPixel && oldPixel.x !== -1 && oldPixel.y !== -1 && selectedColor !== -1 && drawButton.style.display === "none") {
-        drawButton.style.display = "block";
-        drawButton.classList.toggle("swing-one");
-        drawButton.onanimationend = () => {
-            drawButton.classList.toggle("swing-one");
-        }
-    } else if((oldPixel && oldPixel.x === -1 && oldPixel.y === -1) || selectedColor === -1) {
-        drawButton.style.display = "none";
-    }
-}
-
-function updateCooldownDisplay() {
-    if (localCooldown <= 0) {
-        switchState("palette");
-        return;
-    } else {
-        switchState("cooldown");
-    }
-    cooldownButton.textContent = `${Math.ceil(localCooldown)} seconds`;
-    localCooldown--;
-    setTimeout(updateCooldownDisplay, 1000);
-}
 
 // public/js/pixelInfo.js
 
