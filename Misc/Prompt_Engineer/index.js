@@ -1,13 +1,18 @@
-const fs = require("fs");
-const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
-const { OpenAI } = require('openai');
-require('dotenv').config();
+import express from 'express';
+import path from 'path';
+import bodyParser from 'body-parser';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import MistralClient from '@mistralai/mistralai';
+import fs from 'fs';
 
 const app = express();
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const apiKey = process.env.MISTRAL_API_KEY;
+const client = new MistralClient(apiKey);
 const systemPrompt = fs.readFileSync("./prompt.txt", "utf8");
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 app.use(bodyParser.json());
 
@@ -17,26 +22,35 @@ app.get('/', (req, res) => {
 
 app.post('/ai', async (req, res) => {
     const userContent = req.body.user;
+    if (userContent.length > 1000) {
+        res.json({ response: "Context too long (>1000)" });
+    }
+
+    console.log(userContent);
 
     try {
-        const completion = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
+        const chatResponse = await client.chat({
+            model: 'mistral-tiny',
             messages: [
-                { "role": "system", "content": systemPrompt },
-                { "role": "user", "content": userContent }
+                { role: "system", content: systemPrompt },
+                { role: 'user', content: userContent }
             ],
+            max_tokens: 200
         });
+        console.log(chatResponse.choices[0].message);
 
-        if(userContent.length < 200){
-            completion.choices[0].message.content = completion.choices[0].message.content.replace("IUT{n0t_t00_0p3n_41}", "IUT{***************}");
+        let responseContent = chatResponse.choices[0].message.content;
+        if (userContent.length < 200) {
+            responseContent = responseContent.replace("IUT{N0T_T00_0P3N_41}", "IUT{***************}");
         }
-        
-        res.json({ response: completion.choices[0].message.content });
+
+        res.json({ response: responseContent });
     } catch (error) {
         res.status(500).json({ error: "Error processing request" });
     }
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server running at http://localhost:${process.env.PORT}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
