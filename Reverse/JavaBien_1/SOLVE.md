@@ -14,7 +14,4 @@ On peut en déduire le mot de passe valide : javaaaaaaaaaa
 java MaClass javaaaaaaaaaa
 ```
 
-## Solution 2
-Se rendre compte que c'est un chiffrement césar de décalage 3 en le devinant ou via le source code décompilé
-
 ### Flag IUT{Decompiler_L3_J4va}
