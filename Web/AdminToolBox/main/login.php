@@ -62,9 +62,9 @@ if(isset($_COOKIE["token"])){
         if (days) {
             var date = new Date();
             date.setTime(date.getTime() + (days*24*60*60*1000));
-            expires = "; expires=" + date.toUTCString();
+            expires = "; expires=" + date.toUTCString()
         }
-        document.cookie = name + "=" + (value || "")  + expires + "; Domain=<?= $_ENV['BASE_DOMAIN'] ?>; SameSite=Lax;";
+        document.cookie = name + "=" + (value || "")  + expires + "; Domain="+window.location.hostname+"; SameSite=Lax;";
         console.log(document.cookie)
     }
     function getCookie(name) {
@@ -82,7 +82,7 @@ if(isset($_COOKIE["token"])){
         e.preventDefault();
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
-        fetch("http://<?= $_ENV['AUTH_DOMAIN'] ?>/?route=login&username=" + username + "&password=" + password)
+        fetch("/creds/?route=login&username=" + username + "&password=" + password)
             .then(response => response.json())
             .then(data => {
                 if(data.token){

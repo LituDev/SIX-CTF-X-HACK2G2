@@ -64,7 +64,7 @@ if(isset($_GET["logout"])){
                                         const cookie = cookies[i];
                                         const eqPos = cookie.indexOf("=");
                                         const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                                        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT; Domain=<?= $_ENV['BASE_DOMAIN'] ?>; SameSite=Lax;";
+                                        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT; Domain="+window.location.hostname+"; path=/; SameSite=Lax;";
                                     }
                                 }
                             </script>
@@ -102,7 +102,7 @@ if(isset($_GET["logout"])){
                         </div>
                         <hr class="dark horizontal my-0">
                         <div class="card-footer p-3">
-                            <iframe src="http://<?= $_ENV["COOKIES_DOMAIN"] ?>"  frameborder="0" style="width: 100%"></iframe>
+                            <iframe src="/cookies/"  frameborder="0" style="width: 100%"></iframe>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ if(isset($_GET["logout"])){
                         </div>
                         <hr class="dark horizontal my-0">
                         <div class="card-footer p-3">
-                            <iframe src="http://<?= $_ENV["CALCULATOR_DOMAIN"] ?>"  frameborder="0" style="width: 100%"></iframe>
+                            <iframe src="/calculator"  frameborder="0" style="width: 100%"></iframe>
                         </div>
                     </div>
                 </div>

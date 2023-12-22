@@ -1,0 +1,90 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+
+# Nom du challenge
+name: "Admin Toolbox 1/3"
+
+# Auteur du challenge
+author: "ShockedPlot7560"
+
+# Catégorie du challenge
+category: Web
+
+# Déscription du challenge
+description: Accéder aux fichiers du service d'authentification
+
+
+# A ne pas modifier
+value: 100
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+image: null
+protocol: null
+host: null
+
+
+# Si vous avez besoin de spécifier comment se connecter au challenges ( nc, http, https, ssh ect ...) sinon commenté le avec un croisillon
+connection_info: http://admintoolbox.sixctf.fr
+
+# Si vous souhaité limité le nombre de tentative su votre challenge décommenté ce paramètre.
+#attempts: 5
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag
+    - IUT{P4TH_Tr4v3rs4l_1s_4w3s0M3}
+    # A static case insensitive flag 
+    # décommenté si vous souhaité l'utiliser
+#    - {
+#        type: "static",
+#        content: "flag{wat}",
+#        data: "case_insensitive",
+#    }
+
+# Tags are used to provide additional public tagging to a challenge
+# Accepts strings
+# Les tags disponibles pour colorer les challenges sont Intro/Facile/Facile-Moyen/Moyen/Moyen-Difficile/Difficile
+# Remettre votre nom de chall maker
+#Obligatoire
+
+tags:
+    - Facile
+    - ShockedPlot7560
+
+# Provide paths to files from the same directory that this file is in
+# Can be removed if unused
+# Accepts strings
+files:
+    # - docker-compose.yml
+
+# permet de laisser des hints
+# Can be removed if unused
+# Accepts strings
+hints:
+    # - {
+    #     content: "This hint costs points",
+    #     cost: 11
+    # }
+#    - This hint is free
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+#requirements:
+#    - "Warmup"
+#    - "Are you alive"
+
+
+
+# Pas touche
+state: visible
+version: "0.1"
+

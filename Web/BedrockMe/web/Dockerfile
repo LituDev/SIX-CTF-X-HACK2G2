@@ -13,18 +13,19 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 RUN a2enmod rewrite
 
-ENV COMPOSER_ALLOW_SUPERUSER=1
-COPY --from=composer_upstream --link /composer /usr/bin/composer
-ADD config/apache/vhost.conf /etc/apache2/sites-enabled/000-default.conf
-ADD config/apache/apache.conf /etc/apache2/conf-enabled/z-app.conf
-
-ADD index.php /app/
-ADD .htaccess /app/
-ADD entrypoint.sh /bin/entrypoint.sh
-RUN chmod +x /bin/entrypoint.sh
-
 WORKDIR /app
 
 RUN chown -R www-data:www-data /app
 
-ENTRYPOINT ["/bin/entrypoint.sh"]
+USER www-data
+
+COPY --from=composer_upstream /composer /usr/bin/composer
+ADD config/apache/vhost.conf /etc/apache2/sites-enabled/000-default.conf
+ADD config/apache/apache.conf /etc/apache2/conf-enabled/z-app.conf
+
+ADD index.php .
+ADD .htaccess .
+ADD composer.json .
+ADD composer.lock .
+
+RUN composer install --no-dev --no-interaction --no-progress --no-suggest --optimize-autoloader

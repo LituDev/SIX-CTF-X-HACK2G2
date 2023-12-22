@@ -3,6 +3,9 @@
 require __DIR__.'/vendor/autoload.php';
 
 error_reporting(0);
+ini_set('display_errors', 0);
+
+$_SERVER["HTTP_HOST"] = "localhost";
 
 const SESSION_ID = 2;
 const TYPE_HANDSHAKE = 0x09;
@@ -138,10 +141,10 @@ if(isset($_POST['server'])){
         }
 
         if(!$psr16->has("server_" . $serverId)){
-            $psr16->set("server_" . $serverId, getInfo($serverIp[0], $serverIp[1]), 5 * 60);
+            $psr16->set("server_" . $serverId, [getInfo($serverIp[0], $serverIp[1]),$serverId], 5 * 60);
         }
 
-        $info = $psr16->get("server_" . $serverId);
+        [$info, $serverId] = $psr16->get("server_" . $serverId);
         $error = false;
     } catch (\Exception $e) {
         $error = true;
@@ -188,7 +191,8 @@ if(isset($_POST['server'])){
 
             }else{ ?>
                 <br>
-                <div class="container d-flex justify-content-center">
+                <div class="container d-flex justify-content-center items-align-center" style="flex-direction:column;gap:15px;align-items: center;">
+                    <small>ID: <?= $serverId ?></small>
                     <table class="table table-striped w-50">
                         <tbody>
                             <tr>

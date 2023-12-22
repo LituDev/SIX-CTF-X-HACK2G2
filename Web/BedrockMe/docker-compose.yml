@@ -15,7 +15,7 @@ services:
       dockerfile: Dockerfile
     hostname: localweb
     ports:
-      - 80:80
+      - 50000:80
 
   admin_crawler:
     build:

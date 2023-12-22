@@ -4,9 +4,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 header("Access-Control-Allow-Origin: *");
 
-$_ENV["JWT_SECRET"] = "the_jwt_secret_from_env";
-$_ENV['ADMIN_PASSWORD'] = '$2y$10$F4.bFZTB7oD2IvHLCjFwC.qSlKfvk5T3gSoqHP8A1z9eWfGT8tzg2';
-
 function request_path(){
     return $_GET["route"] ?? null;
 }
