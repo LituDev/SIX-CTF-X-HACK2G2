@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 
 ENV PORT=80
-ENV MISTRAL_API_KEY=lAgWCL44A48XdgjLMBce8u4855qzmaZI
+ENV MISTRAL_API_KEY=lAgWCL44A48XdgjLMBce8u4855qzmaZI(la cle marche plus uwu)
 
 EXPOSE 80
 

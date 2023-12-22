@@ -1,0 +1,53 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+
+# Nom du challenge
+name: "r/place1"
+
+# Auteur du challenge
+author: "JL²"
+
+# Catégorie du challenge
+category: Web
+
+# Déscription du challenge
+description: Votre but est de colorier le place en entier en noir (gloire au void). Plus d'info seront recu dans le mail.
+
+# A ne pas modifier
+value: 100
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 50
+image: null
+protocol: null
+host: null
+
+
+# Si vous avez besoin de spécifier comment se connecter au challenges ( nc, http, https, ssh ect ...) sinon commenté le avec un croisillon
+connection_info: https://rplace1.sixctf.fr
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag
+    - IUT{P05T_M3_H4RD3R_D4DDY}
+
+# Tags are used to provide additional public tagging to a challenge
+# Accepts strings
+# Les tags disponibles pour colorer les challenges sont Intro/Facile/Facile-Moyen/Moyen/Moyen-Difficile/Difficile
+# Remettre votre nom de chall maker
+#Obligatoire
+
+tags:
+    - Facile
+    - JL²
+
+# Pas touche
+state: visible
+version: "0.1"
+
