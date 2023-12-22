@@ -14,4 +14,4 @@ On peut en déduire le mot de passe valide : javaaaaaaaaaa
 java MaClass javaaaaaaaaaa
 ```
 
-### Flag IUT{Decompiler_L3_J4va}
+### Flag IUT{javaaaaaaaaaa}
