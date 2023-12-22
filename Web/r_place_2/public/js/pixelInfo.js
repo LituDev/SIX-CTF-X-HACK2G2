@@ -9,7 +9,7 @@ async function updatePixelInfo() {
             pixelInfo.classList.toggle("swing-one");
         }
 
-        let response = await fetch(`/api/username/${pixel.x}/${pixel.y}`)
+        let response = await fetch(`${window.location.pathname}/api/username/${pixel.x}/${pixel.y}`)
 
         if (response.ok) {
             let username = await response.text();

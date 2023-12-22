@@ -17,6 +17,7 @@ pub struct MessageUpdate {
 
 pub struct PlaceWebSocketConnection {
     appstate: web::Data<RwLock<AppState>>,
+    chall_code: String,
 }
 
 impl Actor for PlaceWebSocketConnection {
@@ -26,7 +27,7 @@ impl Actor for PlaceWebSocketConnection {
         self.appstate.write()
             .map_err(|_| eprintln!("Error writing to app state"))
             .and_then(|appstate| {
-                appstate.add_session(ctx.address())
+                appstate.add_session(ctx.address(), &self.chall_code)
                     .map_err(|err| eprintln!("Error adding session: {}", err))
             })
             .unwrap_or_else(|_| ctx.stop());
@@ -55,12 +56,13 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for PlaceWebSocketCon
     }
 }
 
-#[get("/api/ws")]
+#[get("{chall_code}/api/ws")]
 async fn ws_index(
     req: HttpRequest,
     stream: web::Payload,
     data: web::Data<RwLock<AppState>>,
+    path: web::Path<(String,)>,
 ) -> Result<HttpResponse, Error> {
-    ws::start(PlaceWebSocketConnection { appstate: data }, &req, stream)
+    ws::start(PlaceWebSocketConnection { appstate: data, chall_code: path.0.clone() }, &req, stream)
         .map_err(|_| error::ErrorInternalServerError("websocket error"))
 }

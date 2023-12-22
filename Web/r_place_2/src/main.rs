@@ -10,17 +10,16 @@ use std::sync::RwLock;
 use actix_cors::Cors;
 use actix_files::Files;
 use actix_web::{web, App, HttpServer};
-use dotenv::dotenv;
 
 use crate::models::appstate::AppState;
-use crate::routes::place::{draw, get_flag, get_leaderboard, get_png, get_size, get_updates, get_username};
+use crate::routes::place::{draw, get_chall_index, get_leaderboard, get_png, get_size, get_updates, get_username};
 use crate::routes::user::{edit_profile, get_profile, get_user_count, login, signup};
+use crate::routes::ctf::{get_flag, new_instance};
 use crate::websocket::ws_index;
 
 #[actix_web::main]
 async fn main() -> io::Result<()> {
     bundle_js().expect("Error bundling js");
-    dotenv().unwrap_or_default();
 
     let width: usize = env::var("WIDTH")
         .expect("WIDTH must be set")
@@ -42,8 +41,6 @@ async fn main() -> io::Result<()> {
     let appstate = web::Data::new(RwLock::new(AppState::new(width, height)
         .expect("Error creating appstate")));
 
-    appstate.write().unwrap().set_image();
-
     HttpServer::new(move || {
         let app = App::new()
             .wrap(
@@ -54,6 +51,7 @@ async fn main() -> io::Result<()> {
                     .max_age(3600),
             )
             .app_data(appstate.clone())
+            .service(get_chall_index)
             .service(get_png)
             .service(get_updates)
             .service(draw)
@@ -65,9 +63,10 @@ async fn main() -> io::Result<()> {
             .service(get_profile)
             .service(edit_profile)
             .service(get_username)
+            .service(new_instance)
             .service(get_user_count)
             .service(get_flag)
-            .service(Files::new("/", "public").index_file("index.html"));
+            .service(Files::new("/", "public").index_file("newinstance.html"));
 
         app
     })

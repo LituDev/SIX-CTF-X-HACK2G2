@@ -5,6 +5,9 @@ use std::{env, fs};
 use actix::Addr;
 use chrono::Utc;
 use image::{DynamicImage, GenericImageView, ImageBuffer, Rgb};
+use lettre::{transport::smtp, Transport};
+use rand::distributions::Alphanumeric;
+use rand::Rng;
 use regex::Regex;
 use thiserror::Error;
 
@@ -14,6 +17,8 @@ use crate::websocket::{MessageUpdate, PlaceWebSocketConnection};
 
 #[derive(Error, Debug)]
 pub enum AppStateError {
+    #[error("SMTP configuration error")]
+    SmtpConfigError,
     #[error("Regex compilation error")]
     RegexCompileError,
     #[error("File read error: {0}")]
@@ -24,6 +29,12 @@ pub enum AppStateError {
     EnvVarNotSet(String),
     #[error("Invalid value: {0}")]
     InvalidValueError(String),
+    #[error("Error parsing email")]
+    EmailParseError,
+    #[error("Error creating verification email")]
+    EmailCreationError,
+    #[error("Error sending verification email: {0}")]
+    EmailSendingError(#[from] smtp::Error),
     #[error("Error adding session")]
     SessionAddError,
 }
@@ -32,19 +43,25 @@ pub struct AppState {
     width: usize,
     height: usize,
     cooldown: u16,
-    pixels_color: Vec<u8>,
-    pixels_user: Vec<u16>,
+    pixels_color: HashMap<String, Vec<u8>>,
+    pixels_user: HashMap<String, Vec<u16>>,
     base_image: DynamicImage,
     palette: Vec<(u8, u8, u8)>,
-    users: HashMap<u16, User>,
-    png: Vec<u8>,
-    last_update: i64,
+    users: HashMap<String, HashMap<u16, User>>,
+    png: HashMap<String, Vec<u8>>,
+    last_update: HashMap<String, i64>,
     update_cooldown: u16,
-    message_updates: Vec<MessageUpdate>,
-    sessions:RwLock<Vec<Addr<PlaceWebSocketConnection>>>,
-    jwt_secret: String,
-    flag: String,
+    message_updates: HashMap<String, Vec<MessageUpdate>>,
+    sessions: HashMap<String, RwLock<Vec<Addr<PlaceWebSocketConnection>>>>,
     email_regex: Regex,
+    ubs_regex: Regex,
+    extract_id_regex: Regex,
+    chall_users: HashMap<u32, String>,
+    jwt_secret: String,
+    smtp_user: String,
+    mailer: lettre::SmtpTransport,
+    url: String,
+    flag: String,
 }
 
 impl AppState {
@@ -74,19 +91,44 @@ impl AppState {
             .map(|color| hex_to_rgb(color))
             .collect();
 
+        let pixels_color = HashMap::new();
+        let pixels_user = HashMap::new();
+        let users = HashMap::new();
+        let last_update = HashMap::new();
+        let png = HashMap::new();
+        let message_updates = HashMap::new();
+        let sessions = HashMap::new();
+        let chall_users = HashMap::new();
+
+        let smtp_server = env::var("SMTP_SERVER")
+            .map_err(|_| AppStateError::EnvVarNotSet("SMTP_SERVER".to_string()))?;
+        let smtp_port: u16 = env::var("SMTP_PORT")
+            .map_err(|_| AppStateError::EnvVarNotSet("SMTP_PORT".to_string()))?
+            .parse()
+            .map_err(|_| AppStateError::InvalidValueError("SMTP_PORT".to_string()))?;
+        let smtp_user = env::var("SMTP_USER")
+            .map_err(|_| AppStateError::EnvVarNotSet("SMTP_USER".to_string()))?;
+        let smtp_password = env::var("SMTP_PASSWORD")
+            .map_err(|_| AppStateError::EnvVarNotSet("SMTP_PASSWORD".to_string()))?;
+
+        let mailer = lettre::SmtpTransport::starttls_relay(&smtp_server)
+            .map_err(|_| AppStateError::SmtpConfigError)?
+            .port(smtp_port)
+            .credentials(smtp::authentication::Credentials::new(smtp_user.clone(), smtp_password))
+            .build();
+
         let email_regex = Regex::new(r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$")
             .map_err(|_| AppStateError::RegexCompileError)?;
-
-        let pixels_color = vec![31; width * height];
-        let pixels_user = vec![0; width * height];
-        let users = HashMap::new();
-        let last_update = 0;
-        let png = Vec::new();
-        let message_updates = Vec::new();
-        let sessions = RwLock::new(Vec::new());
+        let ubs_regex = Regex::new(r"^[a-z0-9.]+@(etud\.)?univ-ubs\.fr$")
+            .map_err(|_| AppStateError::RegexCompileError)?;
+        let extract_id_regex = Regex::new(r"(?P<id>e\d+)@")
+            .map_err(|_| AppStateError::RegexCompileError)?;
 
         let jwt_secret = env::var("JWT_SECRET")
             .map_err(|_| AppStateError::EnvVarNotSet("JWT_SECRET".to_string()))?;
+
+        let url = env::var("URL")
+            .map_err(|_| AppStateError::EnvVarNotSet("URL".to_string()))?;
 
         let flag = env::var("FLAG")
             .map_err(|_| AppStateError::EnvVarNotSet("FLAG".to_string()))?;
@@ -102,12 +144,18 @@ impl AppState {
             last_update,
             update_cooldown,
             message_updates,
+            mailer,
             sessions,
+            email_regex,
+            ubs_regex,
+            extract_id_regex,
             cooldown,
             jwt_secret,
             png,
+            smtp_user,
+            url,
+            chall_users,
             flag,
-            email_regex,
         })
     }
 
@@ -126,44 +174,105 @@ impl AppState {
         min_index as u8
     }
 
-    pub fn set_image(&mut self) {
-        self.pixels_color.clear();
+    pub fn add_chall_place(&mut self, ubs_id: u32, email: &str) -> Result<(), AppStateError> {
+        if self.chall_users.contains_key(&ubs_id) {
+            return Err(AppStateError::InvalidValueError("UBS id already registered".to_string()));
+        }
+
+        let chall_code: String = rand::thread_rng()
+            .sample_iter(&Alphanumeric)
+            .take(16)
+            .map(char::from)
+            .collect();
+
+        self.pixels_color.insert(chall_code.clone(), vec![31; self.width * self.height]);
+        self.pixels_user.insert(chall_code.clone(), vec![0; self.width * self.height]);
+        self.users.insert(chall_code.clone(), HashMap::new());
+        self.last_update.insert(chall_code.clone(), 0);
+        self.message_updates.insert(chall_code.clone(), Vec::new());
+        self.sessions.insert(chall_code.clone(), RwLock::new(Vec::new()));
+        self.chall_users.insert(ubs_id, chall_code.clone());
+
+        self.set_image(&chall_code);
+        self.send_chall_url_mail(email, &chall_code)?;
+
+        Ok(())
+    }
+
+    pub fn set_image(&mut self, chall_code: &str) {
+        let mut pixels_color: Vec<u8> = Vec::new();
+
         for x in 0..self.width {
             for y in 0..self.height {
                 let pixel = self.base_image.get_pixel(x as u32, y as u32);
                 let color = (pixel[0], pixel[1], pixel[2]);
-                self.pixels_color.push(self.closest_color(color));
+                pixels_color.push(self.closest_color(color));
             }
         }
+
+        self.pixels_color.insert(chall_code.to_string(), pixels_color);
     }
 
-    pub fn draw(&mut self, x: usize, y: usize, user_id: u16, color: u8) -> Result<(), AppStateError> {
+    pub fn send_chall_url_mail(&self, email: &str, chall_code: &str) -> Result<(), AppStateError> {
+        let parsed_from = self.smtp_user.parse().map_err(|_| AppStateError::EmailParseError)?;
+        let parsed_to = email.parse().map_err(|_| AppStateError::EmailParseError)?;
+
+        let email_body = format!(
+            "Voici le lien pour accéder a votre instance du chall r/place : {}/{}\n\
+            Votre but est de colorier le place en entier en noir (gloire au void).\n\
+            Je previens a l'avance tenter de faire ca a la main prendra 45h.\n\
+            Vous pourrez accéder au flag ici : {}/{}/flag",
+            self.url, chall_code, self.url, chall_code
+        );
+
+        let email = lettre::Message::builder()
+            .from(parsed_from)
+            .to(parsed_to)
+            .subject("[CTF] Url chall r/place (1/2)")
+            .body(email_body)
+            .map_err(|_| AppStateError::EmailCreationError)?;
+
+        self.mailer.send(&email).map_err(|err| AppStateError::EmailSendingError(err))?;
+        Ok(())
+    }
+
+    pub fn draw(&mut self, x: usize, y: usize, user_id: u16, color: u8, chall_code: &str) -> Result<(), AppStateError> {
         if x >= self.width || y >= self.height {
             return Err(AppStateError::InvalidValueError("x or y out of bounds".to_string()));
         }
 
         let index = x * self.height + y;
-        self.pixels_color[index] = color;
-        self.pixels_user[index] = user_id;
-        self.users.get_mut(&user_id)
+        self.pixels_color.get_mut(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?[index] = color;
+        self.pixels_user.get_mut(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?[index] = user_id;
+        self.users.get_mut(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?
+            .get_mut(&user_id)
             .ok_or_else(|| AppStateError::InvalidValueError("User not found".to_string()))?
             .score += 1;
 
         let message_update = MessageUpdate { x, y, color };
-        self.message_updates.push(message_update.clone());
-        self.broadcast(message_update)?;
+        self.message_updates.get_mut(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?
+            .push(message_update.clone());
+        self.broadcast(message_update, chall_code)?;
 
         Ok(())
     }
 
-    pub fn add_session(&self, session: Addr<PlaceWebSocketConnection>) -> Result<(), AppStateError> {
-        self.sessions.write()
+    pub fn add_session(&self, session: Addr<PlaceWebSocketConnection>, chall_code: &str) -> Result<(), AppStateError> {
+        self.sessions.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?
+            .write()
             .map(|mut sessions| sessions.push(session))
             .map_err(|_| AppStateError::SessionAddError)
     }
 
-    fn broadcast(&self, msg: MessageUpdate) -> Result<(), AppStateError> {
-        let sessions = self.sessions.read()
+    fn broadcast(&self, msg: MessageUpdate, chall_code: &str) -> Result<(), AppStateError> {
+        let sessions = self.sessions.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?
+            .read()
             .map_err(|_| AppStateError::SessionAddError)?;
         for session in sessions.iter() {
             session.do_send(msg);
@@ -171,16 +280,21 @@ impl AppState {
         Ok(())
     }
 
-    pub fn try_update(&mut self) -> Result<(), AppStateError> {
+    pub fn try_update(&mut self, chall_code: &str) -> Result<(), AppStateError> {
         let time = Utc::now().timestamp();
+        let last_update = self.last_update.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
 
-        if time - self.last_update < self.update_cooldown as i64 {
+        if time - last_update < self.update_cooldown as i64 {
             return Ok(());
         }
 
+        let pixels_color = self.pixels_color.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
         let image = ImageBuffer::from_fn(self.width as u32, self.height as u32, |x, y| {
             let index = (x as usize) * self.height + (y as usize);
-            let color = self.palette[self.pixels_color[index] as usize];
+            let color = self.palette[pixels_color[index] as usize];
             Rgb([color.0, color.1, color.2])
         });
 
@@ -191,19 +305,25 @@ impl AppState {
                 .map_err(|_| AppStateError::FileReadError(std::io::Error::new(std::io::ErrorKind::Other, "Error writing image")))?;
         }
 
-        self.png = new_png;
+        self.png.remove(chall_code);
+        self.png.insert(chall_code.to_string(), new_png);
 
-        self.message_updates.clear();
-        self.last_update = time;
+        self.message_updates.remove(chall_code);
+        self.message_updates.insert(chall_code.to_string(), Vec::new());
+        self.last_update.remove(chall_code);
+        self.last_update.insert(chall_code.to_string(), time);
 
         Ok(())
     }
 
-    pub fn get_flag(&self) -> Result<String, AppStateError> {
+    pub fn get_flag(&self, chall_code: &str) -> Result<String, AppStateError> {
+        let pixel_color = self.pixels_color.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
         for i in 0..self.width {
             for j in 0..self.height {
                 let index = i * self.height + j;
-                if self.pixels_color[index] != 27 {
+                if pixel_color[index] != 27 {
                     return Err(AppStateError::InvalidValueError("Chall not completed".to_string()));
                 }
             }
@@ -220,82 +340,134 @@ impl AppState {
         self.cooldown
     }
 
-    pub fn get_png(&self) -> Vec<u8> {
-        self.png.clone()
+    pub fn get_png(&self, chall_code: &str) -> Result<Vec<u8>, AppStateError> {
+        self.png.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))
+            .map(|png| png.clone())
     }
 
-    pub fn get_message_updates(&self) -> Vec<MessageUpdate> {
-        self.message_updates.clone()
+    pub fn get_message_updates(&self, chall_code: &str) -> Result<Vec<MessageUpdate>, AppStateError> {
+        self.message_updates.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))
+            .map(|updates| updates.clone())
     }
 
-    pub fn get_user(&self, id: u16) -> Option<&User> {
-        self.users.get(&id)
+    pub fn chall_exists(&self, chall_code: &str) -> bool {
+        self.pixels_color.contains_key(chall_code)
     }
 
-    pub fn get_user_id(&self, username: &str) -> Option<u16> {
-        for (id, user) in self.users.iter() {
-            if user.username == username {
-                return Some(*id);
-            }
-        }
-        None
+    pub fn get_user(&self, id: u16, chall_code: &str) -> Result<Option<&User>, AppStateError> {
+        let users = self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
+        let user = users.get(&id);
+
+        Ok(user)
     }
 
-    pub fn get_user_mut(&mut self, id: u16) -> Option<&mut User> {
-        self.users.get_mut(&id)
+    pub fn get_user_id(&self, username: &str, chall_code: &str) -> Result<Option<u16>, AppStateError> {
+        let users = self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
+        let user_id = users
+            .iter()
+            .find(|(_, user)| user.username == username)
+            .map(|(id, _)| *id);
+
+        Ok(user_id)
     }
 
-    pub fn email_exists(&self, email: &str) -> bool {
-        self.users
+    pub fn get_user_mut(&mut self, id: u16, chall_code: &str) -> Result<Option<&mut User>, AppStateError> {
+        let users = self.users.get_mut(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
+        let user = users.get_mut(&id);
+
+        Ok(user)
+    }
+
+    pub fn email_exists(&self, email: &str, chall_code: &str) -> Result<bool, AppStateError> {
+        let users = self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
+        let email_exists = users
             .values()
-            .any(|user| user.email == email)
+            .any(|user| user.email == email);
+
+        Ok(email_exists)
     }
 
-    pub fn insert_user(&mut self, user: User) -> Result<(), AppStateError> {
-        let id = self.users.len() as u16 + 1;
+    pub fn insert_user(&mut self, user: User, chall_code: &str) -> Result<(), AppStateError> {
+        let id = self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))
+            .map(|users| users.len() as u16)? + 1;
 
-        self.users.insert(id, user);
+        let users = self.users.get_mut(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
+        users.insert(id, user);
 
         Ok(())
     }
 
-    pub fn get_leaderboard(&self) -> Vec<User> {
-        let mut users = self.users.clone();
+    pub fn get_leaderboard(&self, chall_code: &str) -> Result<Vec<User>, AppStateError> {
+        let mut users = self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?
+            .clone();
 
         let mut users: Vec<User> = users.drain().map(|(_, user)| user).collect();
 
         users.sort_by(|a, b| a.score.cmp(&b.score));
-        users.into_iter().take(10).collect()
+        Ok(users.into_iter().take(10).collect())
     }
 
-    pub fn is_username_taken(&self, username: &str) -> bool {
-        self.users
+    pub fn is_username_taken(&self, username: &str, chall_code: &str) -> Result<bool, AppStateError> {
+        let users = self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
+        let username_taken = users
             .values()
-            .any(|user| user.username == username)
+            .any(|user| user.username == username);
+
+        Ok(username_taken)
     }
 
-    pub fn get_username_from_pixel(&self, x: usize, y: usize) -> String {
+    pub fn get_username_from_pixel(&self, x: usize, y: usize, chall_code: &str) -> Result<String, AppStateError> {
         if x >= self.width || y >= self.height {
-            return "Invalid Coordinates".to_string();
+            return Err(AppStateError::InvalidValueError("x or y out of bounds".to_string()));
         }
 
         let index = x * self.height + y;
 
-        let user_id = self.pixels_user[index];
+        let user_id = self.pixels_user.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?[index];
 
-        match self.users.get(&user_id)
+        match self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?
+            .get(&user_id)
         {
-            Some(user) => user.username.clone(),
-            None => "No Username".to_string()
+            Some(user) => Ok(user.username.clone()),
+            None => Ok("No Username".to_string())
         }
     }
 
-    pub fn user_count(&self) -> usize {
-        self.users.len()
+    pub fn user_count(&self, chall_code: &str) -> Result<usize, AppStateError> {
+        let users = self.users.get(chall_code)
+            .ok_or_else(|| AppStateError::InvalidValueError("Chall instance not found".to_string()))?;
+
+        Ok(users.len())
     }
 
     pub fn email_regex(&self) -> &Regex {
         &self.email_regex
+    }
+
+    pub fn ubs_regex(&self) -> &Regex {
+        &self.ubs_regex
+    }
+
+    pub fn extract_id_regex(&self) -> &Regex {
+        &self.extract_id_regex
     }
 
     pub fn jwt_secret(&self) -> &str {

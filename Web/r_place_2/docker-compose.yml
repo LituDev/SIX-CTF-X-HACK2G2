@@ -1,9 +1,9 @@
-version: '3'
+version: '3.8'
 
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  ineedsomeinfos:
+    build: .
     ports:
-      - "60002:8080"
+      - "8082:80"
+    container_name: ineedsomeinfos1
+    restart: unless-stopped
